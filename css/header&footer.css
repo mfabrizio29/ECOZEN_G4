@@ -480,6 +480,67 @@ footer.footer-ecozen {
 }
 
 
+.dropdown-menu-custom {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #7E9F5C;
+  color: white;
+  padding: 24px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+  flex-direction: column;
+  gap: 24px;
+  width: max-content;
+  min-width: 600px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu-custom {
+  display: flex;
+}
+
+.category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+}
+
+.subcategory-columns {
+  display: flex;
+  gap: 48px;
+}
+
+.subcategory-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.subcategory-columns li a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.subcategory-columns li a:hover {
+  color: #EAEAEA;
+  text-decoration: underline;
+}
+
+
 @media (max-width: 992px) {
   .header-central .icon-group {
     display: none !important;
