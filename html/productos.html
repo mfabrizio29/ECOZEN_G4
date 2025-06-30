@@ -1,17 +1,23 @@
+<!-- PENDIENTE DE ARREGLOS -->
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoZenShop</title>
-    <link rel="stylesheet" href="../css/inicio.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="icon" href="../img/fooder-header/icono.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/vars.css">
+  <link rel="stylesheet" href="../css/productos.css">
+  <link rel="stylesheet" href="../css/inicio.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="icon" href="../img/fooder-header/icono.png">
+  <title>EcoZenShop | Productos</title>
 </head>
 
 <body>
-    <!-- ENCABEZADO / HEADER -->
+
+  <!-- ENCABEZADO / HEADER -->
     <header class="header-container py-2 d-flex justify-content-center align-items-center">
         <div class="d-flex flex-wrap gap-3 text-center align-items-center">
             <div class="select-wrapper">
@@ -136,7 +142,91 @@
     </nav>
     <!-- FIN ENCABEZADO / HEADER -->
 
-    <!-- PIE DE PÁGINA / FOOTER -->
+  <div class="product-page">
+  <div class="pagination">Página 1 de 20</div>
+
+  <img class="banner" src="../img/productos/image0.png" alt="Banner" />
+  <img class="arrow-left" src="../img/productos/polygon-50.svg" alt="Anterior" />
+  <img class="arrow-right" src="../img/productos/polygon-60.svg" alt="Siguiente" />
+  <img class="promo" src="../img/productos/image1.png" alt="Promoción" />
+
+  <div class="search-bar">
+    <img src="../img/productos/group0.svg" alt="Buscar" />
+    <span>Search</span>
+  </div>
+
+  <button class="btn btn-search">Buscar</button>
+
+  <div class="filter-section">
+    <h2>Filtrar Productos</h2>
+    <div class="filters">
+      <p>Precio</p>
+      <p>Abonos y fertilizantes</p>
+      <p>Herramientas</p>
+      <p>Sistema de riego</p>
+      <p>Kits</p>
+    </div>
+    <ul class="filter-options">
+      <li>Abonos orgánicos</li>
+      <li>Fertilizantes orgánicos</li>
+      <li>Palas</li>
+      <li>Rastrillos</li>
+      <li>Tijeras de podar</li>
+      <li>Aspersores</li>
+      <li>Mangueras</li>
+      <li>Temporizadores</li>
+    </ul>
+  </div>
+
+  <div class="sort-section">
+    <p>Ordenar por popularidad</p>
+  </div>
+
+  <div class="product-grid">
+    <!-- Producto -->
+    <div class="product-card">
+      <img src="../img/productos/image-300.png" alt="COMPO BIO Abono" class="product-img" />
+      <h3>COMPO BIO Abono orgánico Universal</h3>
+      <div class="price">S/ 24.90</div>
+      <div class="rating">
+        <img src="../img/productos/group1.svg" alt="Estrella" />
+        <img src="../img/productos/group2.svg" alt="Estrella" />
+        <img src="../img/productos/group3.svg" alt="Estrella" />
+        <img src="../img/productos/group4.svg" alt="Estrella" />
+        <img src="../img/productos/group5.svg" alt="Estrella" />
+      </div>
+      <div class="actions">
+        <button class="btn-cart"><img src="../img/productos/bag0.svg" alt="Carrito" /></button>
+        <button class="btn-wishlist"><img src="../img/productos/heart0.svg" alt="Favorito" /></button>
+        <button class="btn-view"><img src="../img/productos/group6.svg" alt="Vista rápida" /></button>
+      </div>
+    </div>
+
+    <!-- Puedes duplicar esta tarjeta cambiando los datos y las imágenes -->
+    <div class="product-card">
+      <img src="../img/productos/image-240.png" alt="Temporizador de Riego" class="product-img" />
+      <h3>Temporizador de riego automático para grifo</h3>
+      <div class="price">S/ 295.00</div>
+      <div class="rating">
+        <img src="../img/productos/group7.svg" alt="Estrella" />
+        <img src="../img/productos/group8.svg" alt="Estrella" />
+        <img src="../img/productos/group9.svg" alt="Estrella" />
+        <img src="../img/productos/group10.svg" alt="Estrella" />
+        <img src="../img/productos/group11.svg" alt="Estrella" />
+      </div>
+      <div class="actions">
+        <button class="btn-cart"><img src="../img/productos/bag1.svg" alt="Carrito" /></button>
+        <button class="btn-wishlist"><img src="../img/productos/heart1.svg" alt="Favorito" /></button>
+        <button class="btn-view"><img src="../img/productos/group12.svg" alt="Vista rápida" /></button>
+      </div>
+    </div>
+
+    <!-- ...continúan más tarjetas similares... -->
+  </div>
+</div>
+
+
+  <!-- PIE DE PÁGINA / FOOTER -->
     <footer class="footer-ecozen mt-5">
         <div class="container">
             <div class="row gy-4">
@@ -212,6 +302,7 @@
         }
     </script>
     <!-- FIN SCRIPT MENU HEADER -->
+
 </body>
 
 </html>
