@@ -1,0 +1,84 @@
+body {
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .info-block {
+    max-width: 400px;
+  }
+
+  .info-block h6 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .info-block p {
+    font-size: 0.95rem;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .formulario-box {
+    background-color: #DDE8C0;
+    border-radius: 20px;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+
+  .btn-enviar {
+    background-color:#7E9F5C;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: lowercase;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .btn-enviar:hover {
+    background-color: #78995a;
+  }
+
+  .upload-box {
+    background-color: #f8f9f6;
+    border: 1px dashed #ccc;
+    position: relative;
+  }
+
+  .custom-file-upload {
+    display: inline-block;
+    background-color: #fff;
+    color: #1a73e8;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+
+  .custom-file-upload:hover {
+    background-color: #f0f0f0;
+  }
+
+  #archivo {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    .col-lg-6 {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }

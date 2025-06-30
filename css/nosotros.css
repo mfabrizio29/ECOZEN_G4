@@ -1,0 +1,25 @@
+/* Título principal */
+.titulo-seccion {
+    color: #000;
+    font-size: 28px;
+  }
+  
+  /* Subtítulos */
+  .subtitulo {
+    color: #2f2f2f;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Párrafos */
+  .descripcion {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Imágenes */
+.imgNosotros {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }

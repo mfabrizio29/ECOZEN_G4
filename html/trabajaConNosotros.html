@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoZenShop -Trabaja Con Nosotros</title>
+    <link rel="stylesheet" href="../css/header&footer.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" href="../img/fooder-header/icono.png">
+    <link rel="stylesheet" href="../css/trabajaConNosotros.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- ENCABEZADO / HEADER -->
+        <header class="header-container py-2 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-wrap gap-3 text-center align-items-center">
+                <div class="select-wrapper">
+                    <select class="delicate-select text-center">
+                        <option value="es">Es</option>
+                        <option value="en">En</option>
+                        <option value="fr">Fr</option>
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+
+                <div class="select-wrapper">
+                    <select class="delicate-select text-center">
+                        <option value="pen">PEN</option>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+
+                <div class="vertical-separator mx-2"></div>
+                <div class="custom-text">Nos visitas desde: PE</div>
+            </div>
+        </header>
+
+        <section class="header-central px-4 py-1">
+            <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+                <div class="logo-container me-4">
+                    <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
+                </div>
+
+                <div class="search-group mx-4">
+                    <div class="search-wrapper">
+                        <span class="search-icon">
+                            <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+                            <span class="search-text">Search</span>
+                        </span>
+                        <input type="text" class="search-input" />
+                        <button class="search-button">Buscar</button>
+                    </div>
+                </div>
+
+                <div class="icon-group d-flex align-items-center gap-3 ms-4">
+                    <button class="icon-btn" title="Favoritos">
+                        <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+                    </button>
+
+                    <div class="vertical-separator"></div>
+
+                    <button class="icon-btn" title="Carrito">
+                        <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+                    </button>
+
+                    <div class="vertical-separator"></div>
+
+                    <div class="select-wrapper d-flex align-items-center select-container gap-1">
+                        <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+                        <select class="delicate-select">
+                            <option>Perfil</option>
+                            <option>Salir</option>
+                        </select>
+                        <div class="dropdown-arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <nav class="navbar-principal navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
+                    <img src="../img/fooder-header/menu.png" alt="Menú" class="toggler-icon" />
+                </button>
+
+                <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
+                    <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                        <li class="nav-item">
+                            <select class="menu-select">
+                                <option value="" hidden selected>Categorías</option>
+
+                                <optgroup label="🌿 Abonos y fertilizantes">
+                                    <option>Fertilizantes líquidos</option>
+                                    <option>Fertilizantes sólidos o granulados</option>
+                                    <option>Compost orgánico</option>
+                                    <option>Humus de lombriz</option>
+                                    <option>Abonos granulados</option>
+                                    <option>Abonos líquidos</option>
+                                </optgroup>
+
+                                <optgroup label="🛠️ Herramientas">
+                                    <option>Palas y palines</option>
+                                    <option>Rastrillos</option>
+                                    <option>Tijeras de podar</option>
+                                    <option>Pulverizadores manuales</option>
+                                    <option>Cortasetos</option>
+                                    <option>Azadas y escardillas</option>
+                                    <option>Regaderas</option>
+                                    <option>Guantes y protección</option>
+                                </optgroup>
+
+                                <optgroup label="💧 Sistema de riego">
+                                    <option>Mangueras</option>
+                                    <option>Aspersores</option>
+                                    <option>Riego por goteo</option>
+                                    <option>Temporizadores / controladores</option>
+                                    <option>Accesorios</option>
+                                </optgroup>
+
+                                <optgroup label="🌱 Kits">
+                                    <option>Jardines de interior automatizados</option>
+                                    <option>Jardines verticales de pared</option>
+                                    <option>Kits de cultivo básico</option>
+                                    <option>Kits para niños o principiantes</option>
+                                    <option>Jardines hidropónicos</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+                        <li class="nav-item">
+                            <select class="menu-select">
+                                <option selected>Sobre nosotros</option>
+                                <option>Sostenibilidad</option>
+                                <option>Trabaja con Nosotros</option>
+                            </select>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+                    </ul>
+
+                    <!-- Iconos en mobile -->
+                    <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
+                        <button class="icon-btn" title="Favoritos">
+                            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+                        </button>
+                        <div class="vertical-separator"></div>
+                        <button class="icon-btn" title="Carrito">
+                            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+                        </button>
+                        <div class="vertical-separator"></div>
+                        <div class="d-flex align-items-center select-container gap-1">
+                            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+                            <select class="delicate-select">
+                                <option>Perfil</option>
+                                <option>Salir</option>
+                            </select>
+                            <div class="dropdown-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- FIN ENCABEZADO / HEADER -->
+
+    <div class="container py-5">
+        <div class="row justify-content-between">
+          <!-- Columna Izquierda -->
+          <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="info-block mb-5">
+              <h6 class="fw-bold">Ambiente saludable</h6>
+              <p>
+                Fomentamos un entorno de trabajo positivo, donde el respeto, la empatía y la buena comunicación son parte de nuestro día a día.
+                Queremos que te sientas cómodo/a siendo tú mismo/a.
+              </p>
+            </div>
+    
+            <div class="info-block mb-5">
+              <h6 class="fw-bold">Equilibrio personal y laboral</h6>
+              <p>
+                Promovemos la flexibilidad de horarios y la modalidad remota, para que puedas organizar tu tiempo y mantener un equilibrio
+                que beneficie tu bienestar físico y mental.
+              </p>
+            </div>
+    
+            <div class="info-block mb-5">
+              <h6 class="fw-bold">Crecimiento con propósito</h6>
+              <p>
+                Impulsamos tu desarrollo profesional con capacitaciones constantes, espacios para proponer ideas y oportunidades reales de crecimiento.
+              </p>
+            </div>
+    
+            <div class="info-block">
+              <h6 class="fw-bold">Cultura con impacto</h6>
+              <p>
+                Trabajar en EcoZen es ser parte de un propósito mayor: construir un futuro más verde. Cada decisión y acción dentro del equipo
+                busca generar un cambio positivo en el entorno.
+              </p>
+            </div>
+          </div>
+          
+          
+
+
+          <div class="col-md-6">
+            <div class="formulario-box p-4 rounded-3 shadow-sm">
+                <h4 class="text-center fw-bold mb-3">ÚNETE</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nacionalidad" class="form-label">Nacionalidad:</label>
+                        <select class="form-select" id="nacionalidad">
+                            <option selected>Selecciona</option>
+                            <option value="mex">México</option>
+                            <option value="arg">Argentina</option>
+                            <option value="esp">España</option>
+                            <!-- etc. -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">N° de celular:</label>
+                        <input type="tel" class="form-control" id="celular" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="correo" required>
+                    </div>
+    
+                <!-- Archivo -->
+                <div class="upload-box border rounded-3 p-3 text-center mb-4">
+                  <div class="mb-2">
+                    <i class="bi bi-cloud-arrow-up fs-3 d-block"></i>
+                  </div>
+                  <small class="d-block mb-2">Select a file or drag and drop here</small>
+                  <small class="text-muted d-block mb-2">JPG, PNG or PDF, file size no more than 10MB</small>
+                  <label for="archivo" class="custom-file-upload">SELECT FILE</label>
+                  <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf">
+                </div>
+    
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-enviar">enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- PIE DE PÁGINA / FOOTER -->
+    <footer class="footer-ecozen mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <h5>Sobre Ecozen</h5>
+                    <p>....</p>
+                    <p>Tel: (219) 555-0114</p>
+                    <p>Email: ecozen@gmail.com</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Mi cuenta</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Sobre mi cuenta</a></li>
+                        <li><a href="#">Carrito</a></li>
+                        <li><a href="#">Historial de pedidos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Contáctanos</h5>
+                    <p>Chatea con nosotros 24h</p>
+                    <p>Email: servicio@ecozen.pe</p>
+                    <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+                    <p>Tiendas y Horarios</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Atención al cliente</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Libro de reclamaciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Redes Sociales</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+                        <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+                        <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+                        <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+                <p class="mb-0">&copy; Ecozen 2025</p>
+                <div class="d-flex gap-3 align-items-center">
+                    <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+                    <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+                    <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+                    <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+                        <span>Pago Seguro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FIN PIE DE PÁGINA / HEADER -->
+
+    <!-- SCRIPT MENU HEADER -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        }
+    </script>
+    <!-- FIN SCRIPT MENU HEADER -->
+</body>
+
+</html>
