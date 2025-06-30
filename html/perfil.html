@@ -45,17 +45,13 @@
                     <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
                 </div>
 
-                <button class="navbar-toggle-btn d-lg-none" onclick="toggleMenu()">
-                    <img src="../img/fooder-header/menu-icon.png" alt="Menú" class="toggler-icon" />
-                </button>
-
                 <div class="search-group mx-4">
                     <div class="search-wrapper">
                         <span class="search-icon">
                             <img src="../img/fooder-header/buscar.png" alt="Buscar" />
                             <span class="search-text">Search</span>
                         </span>
-                        <input type="text" class="search-input" placeholder="Buscar..." />
+                        <input type="text" class="search-input" />
                         <button class="search-button">Buscar</button>
                     </div>
                 </div>
@@ -65,24 +61,40 @@
                         <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
                     </button>
 
-                    <div class="vertical-separator"></div>
+                    <div class="search-group mx-4">
+                        <div class="search-wrapper">
+                            <span class="search-icon">
+                                <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+                                <span class="search-text">Search</span>
+                            </span>
+                            <input type="text" class="search-input" placeholder="Buscar..." />
+                            <button class="search-button">Buscar</button>
+                        </div>
+                    </div>
 
-                    <button class="icon-btn" title="Carrito">
-                        <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
-                    </button>
+                    <div class="icon-group d-flex align-items-center gap-3 ms-4">
+                        <button class="icon-btn" title="Favoritos">
+                            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+                        </button>
 
-                    <div class="vertical-separator"></div>
+                        <div class="vertical-separator"></div>
 
-                    <div class="d-flex align-items-center select-container gap-1">
-                        <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
-                        <select class="delicate-select">
-                            <option>Perfil</option>
-                            <option>Salir</option>
-                        </select>
-                        <div class="dropdown-arrow"></div>
+                        <button class="icon-btn" title="Carrito">
+                            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+                        </button>
+
+                        <div class="vertical-separator"></div>
+
+                        <div class="select-wrapper d-flex align-items-center select-container gap-1">
+                            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+                            <select class="delicate-select">
+                                <option>Perfil</option>
+                                <option>Salir</option>
+                            </select>
+                            <div class="dropdown-arrow"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
 
@@ -93,7 +105,7 @@
                 </button>
 
                 <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
-                    <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
+                    <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
                         <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
                         <li class="nav-item">
@@ -207,7 +219,8 @@
                 </div>
             </div>
         </nav>
-        <!-- FIN ENCABEZADO / HEADER -->
+    </div>
+    <!-- FIN ENCABEZADO / HEADER -->
 
 
         <section class="container my-5 cuenta-section">
