@@ -1,0 +1,24 @@
+.categoria-card {
+  height: 461px;
+  width: 292px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.categoria-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.categoria-texto {
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
