@@ -1,0 +1,160 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfb;
+  color: #333;
+}
+
+h1{
+    color: black;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.product {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.gallery {
+  flex: 1;
+}
+
+.gallery .thumbnails img {
+  width: 60px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.details {
+  flex: 1;
+}
+
+.rating {
+  font-size: 1.1rem;
+  color: green;
+}
+
+.brand {
+  color: #777;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #111;
+  font-weight: bold;
+}
+
+.quantity button {
+  padding: 5px 10px;
+}
+
+.quantity span {
+  margin: 0 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.add-cart, .buy {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 1px solid #555;
+  background: white;
+  cursor: pointer;
+}
+
+.buy {
+  background: black;
+  color: white;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.white { background: #fff; }
+.green { background: #b7d2a7; }
+.gray { background: #c2c2c2; }
+.yellow { background: #f9ec74; }
+.pink { background: #e573af; }
+
+.description, .tech-specs, .extra-details, .reviews, .similar {
+  margin-top: 3rem;
+}
+
+.tech-specs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-specs li {
+  margin-bottom: 0.5rem;
+}
+
+.btn-secondary {
+  padding: 8px 16px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.ratings-bar > div {
+  margin-top: 5px;
+}
+
+.ratings-bar .bar {
+  display: inline-block;
+  height: 10px;
+  background: #4caf50;
+  margin: 0 5px;
+}
+
+.rate-form .stars {
+  font-size: 1.5rem;
+}
+
+.user-review {
+  margin-top: 1rem;
+}
+
+.similar .product-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.similar-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.similar-card img {
+  width: 100px;
+  margin-bottom: 10px;
+}
