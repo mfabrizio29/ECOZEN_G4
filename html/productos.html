@@ -98,13 +98,47 @@
 
       <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
         <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
           <li class="nav-item">
             <select class="menu-select">
-              <option selected>Categorías</option>
-              <option>Interior</option>
-              <option>Exterior</option>
+              <option value="" hidden selected>Categorías</option>
+
+              <optgroup label="🌿 Abonos y fertilizantes">
+                <option>Fertilizantes líquidos</option>
+                <option>Fertilizantes sólidos o granulados</option>
+                <option>Compost orgánico</option>
+                <option>Humus de lombriz</option>
+                <option>Abonos granulados</option>
+                <option>Abonos líquidos</option>
+              </optgroup>
+
+              <optgroup label="🛠️ Herramientas">
+                <option>Palas y palines</option>
+                <option>Rastrillos</option>
+                <option>Tijeras de podar</option>
+                <option>Pulverizadores manuales</option>
+                <option>Cortasetos</option>
+                <option>Azadas y escardillas</option>
+                <option>Regaderas</option>
+                <option>Guantes y protección</option>
+              </optgroup>
+
+              <optgroup label="💧 Sistema de riego">
+                <option>Mangueras</option>
+                <option>Aspersores</option>
+                <option>Riego por goteo</option>
+                <option>Temporizadores / controladores</option>
+                <option>Accesorios</option>
+              </optgroup>
+
+              <optgroup label="🌱 Kits">
+                <option>Jardines de interior automatizados</option>
+                <option>Jardines verticales de pared</option>
+                <option>Kits de cultivo básico</option>
+                <option>Kits para niños o principiantes</option>
+                <option>Jardines hidropónicos</option>
+              </optgroup>
             </select>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
@@ -167,15 +201,37 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Siguiente</span>
       </button>
-    </div>
+    </div><br>
   </section>
+
+  <div class="barra-superior">
+    <div class="search-group mx-4">
+      <div class="search-wrapper">
+        <span class="search-icon">
+          <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+          <span class="search-text">Search</span>
+        </span>
+        <input type="text" class="search-input" placeholder="Buscar..." />
+        <button class="search-button">Buscar</button>
+      </div>
+    </div>
+
+    <select class="ordenar">
+      <option selected>Ordenar por popularidad</option>
+      <option>Ordenar por precio: bajo a alto</option>
+      <option>Ordenar por precio: alto a bajo</option>
+      <option>Ordenar por más recientes</option>
+      <option>Ordenar por puntuación media</option>
+      <option>Ordenar por descuentos</option>
+    </select>
+  </div>
 
   <div class="contenedor">
     <aside class="filtro">
       <h2>Filtrar Productos</h2>
       <div class="filtro-precio">
         <label>Precio</label><br>
-        <input type="text" placeholder="S/" /> - <input type="text" placeholder="S/" />
+        <label>S/ <input type="text" placeholder="..." /> - S/ <input type="text" placeholder="..." /></label>
       </div>
       <div class="filtro-categorias">
         <a href="#">Abonos y fertilizantes</a>
@@ -240,7 +296,7 @@
         <p class="precio">S/ 295.00</p>
         <div class="acciones">
           <span>★★★★☆</span>
-          <button onclick="agregarAlCarrito(3)">🛒</button>
+          <button onclick="agregarAlCarrito(4)">🛒</button>
         </div>
       </div>
 
@@ -251,7 +307,7 @@
         <p class="precio">S/ 358.80</p>
         <div class="acciones">
           <span>★★★★☆</span>
-          <button onclick="agregarAlCarrito(3)">🛒</button>
+          <button onclick="agregarAlCarrito(5)">🛒</button>
         </div>
       </div>
 
@@ -262,16 +318,89 @@
         <p class="precio">S/ 533.90</p>
         <div class="acciones">
           <span>★★★★☆</span>
+          <button onclick="agregarAlCarrito(6)">🛒</button>
+        </div>
+      </div>
+
+      <!-- CAMBIAR PRODUCTOS -->
+      <!-- Producto 1 -->
+      <div class="producto">
+        <a href="producto1.html"><img src="../img/productos/producto1.png" alt="Manguera espiral" /></a>
+        <p>Gardena Manguera espiral para terrazas</p>
+        <p class="precio">S/ 141.60</p>
+        <div class="acciones">
+          <span>★★★★☆</span>
+          <button onclick="agregarAlCarrito(1)">🛒</button>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="producto">
+        <a href="producto2.html"><img src="../img/productos/producto2.png" alt="Rainbird Programador" /></a>
+        <p>Rainbird Programador de riego ESP-RZXe</p>
+        <p class="precio">S/ 480.00</p>
+        <div class="acciones">
+          <span>★★★★★</span>
+          <button onclick="agregarAlCarrito(2)">🛒</button>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto">
+        <a href="producto3.html"><img src="../img/productos/producto3.png" alt="Abono orgánico" /></a>
+        <p>COMPO BIO Abono orgánico Universal</p>
+        <p class="precio">S/ 24.90</p>
+        <div class="acciones">
+          <span>★★★★☆</span>
           <button onclick="agregarAlCarrito(3)">🛒</button>
+        </div>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="producto">
+        <a href="producto4.html"><img src="../img/productos/producto4.png" alt="Abono orgánico" /></a>
+        <p>Temporizador de riego automático para grifo</p>
+        <p class="precio">S/ 295.00</p>
+        <div class="acciones">
+          <span>★★★★☆</span>
+          <button onclick="agregarAlCarrito(4)">🛒</button>
+        </div>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="producto">
+        <a href="producto5.html"><img src="../img/productos/producto5.png" alt="Abono orgánico" /></a>
+        <p>Click & Grow Kit de jardinería para interiores</p>
+        <p class="precio">S/ 358.80</p>
+        <div class="acciones">
+          <span>★★★★☆</span>
+          <button onclick="agregarAlCarrito(5)">🛒</button>
+        </div>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="producto">
+        <a href="producto6.html"><img src="../img/productos/producto6.png" alt="Abono orgánico" /></a>
+        <p>Gardena Cortacésped helicoidal 330</p>
+        <p class="precio">S/ 533.90</p>
+        <div class="acciones">
+          <span>★★★★☆</span>
+          <button onclick="agregarAlCarrito(6)">🛒</button>
         </div>
       </div>
     </main>
   </div>
+
+  <div class="paginacion">
+    <button class="paginacion-btn" disabled>
+      <img src="../img/productos/flechaIzq.svg" alt="Anterior" />
+    </button>
+    <span class="paginacion-info">Página 1 de 5</span>
+    <button class="paginacion-btn">
+      <img src="../img/productos/flechaDer.svg" alt="Siguiente" />
+    </button>
+  </div>
 </body>
-
-</html>
-
-
 
 <!-- PIE DE PÁGINA / FOOTER -->
 <footer class="footer-ecozen mt-5">
