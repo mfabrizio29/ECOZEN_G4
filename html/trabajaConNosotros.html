@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../img/fooder-header/icono.png">
     <link rel="stylesheet" href="../css/trabajaConNosotros.css">
+    <link rel="stylesheet" href="../css/fuente.css">
+
 </head>
 
 <body>
@@ -93,52 +95,57 @@
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
                         <li class="nav-item">
-                            <select class="menu-select">
+                            <select class="menu-select redireccion-menu"
+                                onchange="if(this.value) window.location.href=this.value;">
                                 <option value="" hidden selected>Categorías</option>
 
                                 <optgroup label="🌿 Abonos y fertilizantes">
-                                    <option>Fertilizantes líquidos</option>
-                                    <option>Fertilizantes sólidos o granulados</option>
-                                    <option>Compost orgánico</option>
-                                    <option>Humus de lombriz</option>
-                                    <option>Abonos granulados</option>
-                                    <option>Abonos líquidos</option>
+                                    <option value="../html/fertilizantesLiquidos.html">Fertilizantes líquidos</option>
+                                    <option value="../html/fertilizantesSolidos.html">Fertilizantes sólidos o granulados
+                                    </option>
+                                    <option value="../html/compostOrganico.html">Compost orgánico</option>
+                                    <option value="../html/humusLombriz.html">Humus de lombriz</option>
+                                    <option value="../html/abonosGranulados.html">Abonos granulados</option>
+                                    <option value="../html/abonosLiquidos.html">Abonos líquidos</option>
                                 </optgroup>
 
                                 <optgroup label="🛠️ Herramientas">
-                                    <option>Palas y palines</option>
-                                    <option>Rastrillos</option>
-                                    <option>Tijeras de podar</option>
-                                    <option>Pulverizadores manuales</option>
-                                    <option>Cortasetos</option>
-                                    <option>Azadas y escardillas</option>
-                                    <option>Regaderas</option>
-                                    <option>Guantes y protección</option>
+                                    <option value="../html/palas.html">Palas y palines</option>
+                                    <option value="../html/rastrillos.html">Rastrillos</option>
+                                    <option value="../html/tijeras.html">Tijeras de podar</option>
+                                    <option value="../html/pulverizadores.html">Pulverizadores manuales</option>
+                                    <option value="../html/cortasetos.html">Cortasetos</option>
+                                    <option value="../html/azadas.html">Azadas y escardillas</option>
+                                    <option value="../html/regaderas.html">Regaderas</option>
+                                    <option value="../html/guantes.html">Guantes y protección</option>
                                 </optgroup>
 
                                 <optgroup label="💧 Sistema de riego">
-                                    <option>Mangueras</option>
-                                    <option>Aspersores</option>
-                                    <option>Riego por goteo</option>
-                                    <option>Temporizadores / controladores</option>
-                                    <option>Accesorios</option>
+                                    <option value="../html/mangueras.html">Mangueras</option>
+                                    <option value="../html/aspersores.html">Aspersores</option>
+                                    <option value="../html/riegoGoteo.html">Riego por goteo</option>
+                                    <option value="../html/temporizadores.html">Temporizadores / controladores</option>
+                                    <option value="../html/accesoriosRiego.html">Accesorios</option>
                                 </optgroup>
 
                                 <optgroup label="🌱 Kits">
-                                    <option>Jardines de interior automatizados</option>
-                                    <option>Jardines verticales de pared</option>
-                                    <option>Kits de cultivo básico</option>
-                                    <option>Kits para niños o principiantes</option>
-                                    <option>Jardines hidropónicos</option>
+                                    <option value="../html/kitsInterior.html">Jardines de interior automatizados
+                                    </option>
+                                    <option value="../html/kitsVerticales.html">Jardines verticales de pared</option>
+                                    <option value="../html/kitsBasicos.html">Kits de cultivo básico</option>
+                                    <option value="../html/kitsNinos.html">Kits para niños o principiantes</option>
+                                    <option value="../html/kitsHidroponicos.html">Jardines hidropónicos</option>
                                 </optgroup>
                             </select>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                         <li class="nav-item">
-                            <select class="menu-select">
-                                <option selected>Sobre nosotros</option>
-                                <option>Sostenibilidad</option>
-                                <option>Trabaja con Nosotros</option>
+                            <select class="menu-select redireccion-menu"
+                                onchange="if(this.value) window.location.href=this.value;">
+                                <option value="" selected disabled hidden>Sobre nosotros</option>
+                                <option value="../html/sobreNosotros.html">Sobre nosotros</option>
+                                <option value="../html/sostenibilidad.html">Sostenibilidad</option>
+                                <option value="../html/trabajaConNosotros.html">Trabaja con Nosotros</option>
                             </select>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
@@ -169,96 +176,118 @@
     </div>
     <!-- FIN ENCABEZADO / HEADER -->
 
-    <div class="container py-5">
-        <div class="row justify-content-between">
-          <!-- Columna Izquierda -->
-          <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center text-center">
-            <div class="info-block mb-5">
-              <h6 class="fw-bold">Ambiente saludable</h6>
-              <p>
-                Fomentamos un entorno de trabajo positivo, donde el respeto, la empatía y la buena comunicación son parte de nuestro día a día.
-                Queremos que te sientas cómodo/a siendo tú mismo/a.
-              </p>
-            </div>
-    
-            <div class="info-block mb-5">
-              <h6 class="fw-bold">Equilibrio personal y laboral</h6>
-              <p>
-                Promovemos la flexibilidad de horarios y la modalidad remota, para que puedas organizar tu tiempo y mantener un equilibrio
-                que beneficie tu bienestar físico y mental.
-              </p>
-            </div>
-    
-            <div class="info-block mb-5">
-              <h6 class="fw-bold">Crecimiento con propósito</h6>
-              <p>
-                Impulsamos tu desarrollo profesional con capacitaciones constantes, espacios para proponer ideas y oportunidades reales de crecimiento.
-              </p>
-            </div>
-    
-            <div class="info-block">
-              <h6 class="fw-bold">Cultura con impacto</h6>
-              <p>
-                Trabajar en EcoZen es ser parte de un propósito mayor: construir un futuro más verde. Cada decisión y acción dentro del equipo
-                busca generar un cambio positivo en el entorno.
-              </p>
-            </div>
-          </div>
-          
-          
+    <main class="container py-5" id="sobre-nosotros">
+        <!-- Título Principal -->
+        <h2 class="text-center fw-bold mb-5 titulo-seccion">TRABAJA CON NOSOTROS</h2>
 
-
-          <div class="col-md-6">
-            <div class="formulario-box p-4 rounded-3 shadow-sm">
-                <h4 class="text-center fw-bold mb-3">ÚNETE</h4>
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="apellido" class="form-label">Apellido:</label>
-                        <input type="text" class="form-control" id="apellido" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="nacionalidad" class="form-label">Nacionalidad:</label>
-                        <select class="form-select" id="nacionalidad">
-                            <option selected>Selecciona</option>
-                            <option value="mex">México</option>
-                            <option value="arg">Argentina</option>
-                            <option value="esp">España</option>
-                            <!-- etc. -->
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="celular" class="form-label">N° de celular:</label>
-                        <input type="tel" class="form-control" id="celular" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="correo" class="form-label">Correo:</label>
-                        <input type="email" class="form-control" id="correo" required>
-                    </div>
-    
-                <!-- Archivo -->
-                <div class="upload-box border rounded-3 p-3 text-center mb-4">
-                  <div class="mb-2">
-                    <i class="bi bi-cloud-arrow-up fs-3 d-block"></i>
-                  </div>
-                  <small class="d-block mb-2">Select a file or drag and drop here</small>
-                  <small class="text-muted d-block mb-2">JPG, PNG or PDF, file size no more than 10MB</small>
-                  <label for="archivo" class="custom-file-upload">SELECT FILE</label>
-                  <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf">
+        <div class="row justify-content-between align-items-start">
+            <!-- Columna Izquierda -->
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <div class="info-block mb-5">
+                    <h6 class="fw-bold">Ambiente saludable</h6>
+                    <p>
+                        Fomentamos un entorno de trabajo positivo, donde el respeto, la empatía y la buena comunicación
+                        son parte de nuestro día a día. Queremos que te sientas cómodo/a siendo tú mismo/a.
+                    </p>
                 </div>
-    
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-enviar">enviar</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
 
+                <div class="info-block mb-5">
+                    <h6 class="fw-bold">Equilibrio personal y laboral</h6>
+                    <p>
+                        Promovemos la flexibilidad de horarios y la modalidad remota, para que puedas organizar tu
+                        tiempo y mantener un equilibrio que beneficie tu bienestar físico y mental.
+                    </p>
+                </div>
+
+                <div class="info-block mb-5">
+                    <h6 class="fw-bold">Crecimiento con propósito</h6>
+                    <p>
+                        Impulsamos tu desarrollo profesional con capacitaciones constantes, espacios para proponer ideas
+                        y oportunidades reales de crecimiento.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h6 class="fw-bold">Cultura con impacto</h6>
+                    <p>
+                        Trabajar en EcoZen es ser parte de un propósito mayor: construir un futuro más verde. Cada
+                        decisión y acción dentro del equipo busca generar un cambio positivo en el entorno.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="formulario-contenedor">
+                    <!-- Título "ÚNETE" centrado y separado -->
+                    <div class="titulo-formulario text-center">
+                        <h4 class="fw-bold">ÚNETE</h4>
+                    </div>
+
+                    <div class="formulario-box p-4 rounded-3 shadow-sm">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nacionalidad" class="form-label">Nacionalidad:</label>
+                                <select class="form-select" id="nacionalidad">
+                                    <option selected>Selecciona</option>
+                                    <option value="per">Peruana</option>
+                                    <option value="arg">Argentina</option>
+                                    <option value="esp">España</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="celular" class="form-label">N° de celular:</label>
+                                <input type="tel" class="form-control" id="celular" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo:</label>
+                                <input type="email" class="form-control" id="correo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="idiomas" class="form-label">Idiomas:</label>
+                                <input type="text" class="form-control" id="idiomas" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="puesto" class="form-label">Puesto:</label>
+                                <select class="form-select" id="puesto">
+                                    <option selected>Selecciona</option>
+                                    <option value="rrhh">RR.HH</option>
+                                    <option value="ventas">Asesor de Ventas</option>
+                                    <option value="gerente">Gerente</option>
+                                </select>
+                            </div>
+
+                            <!-- Archivo -->
+                            <div class="upload-box mb-4">
+                                <div class="upload-content d-flex align-items-center justify-content-between flex-wrap">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <i class="bi bi-cloud-arrow-up fs-3 text-muted"></i>
+                                        <div>
+                                            <p class="mb-1 fw">Select a file or drag and drop here</p>
+                                            <small class="text-muted">JPG, PNG or PDF, file size no more than
+                                                10MB</small>
+                                        </div>
+                                    </div>
+                                    <label for="archivo" class="custom-file-upload">SELECT FILE</label>
+                                    <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf">
+                                </div>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-enviar">enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+    </main>
 
     <!-- PIE DE PÁGINA / FOOTER -->
     <footer class="footer-ecozen mt-5">
@@ -337,6 +366,17 @@
         }
     </script>
     <!-- FIN SCRIPT MENU HEADER -->
+
+    <script>
+        const archivoInput = document.getElementById("archivo");
+        const archivoNombre = document.getElementById("archivo-nombre");
+
+        archivoInput.addEventListener("change", function () {
+            archivoNombre.textContent = this.files.length > 0 ? this.files[0].name : "Ningún archivo seleccionado";
+        });
+    </script>
+
+    <script src="../js/trabajaConNosotros.js"></script>
 </body>
 
 </html>

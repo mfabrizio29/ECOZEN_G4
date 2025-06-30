@@ -4,131 +4,77 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/vars.css">
-  <link rel="stylesheet" href="../css/productos.css">
-  <link rel="stylesheet" href="../css/header&footer.css">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="icon" href="../img/fooder-header/icono.png">
-  <title>EcoZenShop | Productos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vars.css">
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/header&footer.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" href="../img/fooder-header/icono.png">
+    <title>EcoZenShop | Productos</title>
 </head>
 
 <body>
 
-  <!-- ENCABEZADO / HEADER -->
-    <header class="header-container py-2 d-flex justify-content-center align-items-center">
-        <div class="d-flex flex-wrap gap-3 text-center align-items-center">
-            <div class="select-wrapper">
-                <select class="delicate-select text-center">
-                    <option value="es">Es</option>
-                    <option value="en">En</option>
-                    <option value="fr">Fr</option>
-                </select>
-                <div class="dropdown-arrow"></div>
-            </div>
-
-            <div class="select-wrapper">
-                <select class="delicate-select text-center">
-                    <option value="pen">PEN</option>
-                    <option value="usd">USD</option>
-                    <option value="eur">EUR</option>
-                </select>
-                <div class="dropdown-arrow"></div>
-            </div>
-
-            <div class="vertical-separator mx-2"></div>
-            <div class="custom-text">Nos visitas desde: PE</div>
-        </div>
-    </header>
-
-    <section class="header-central px-4 py-1">
-        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
-            <div class="logo-container me-4">
-                <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
-            </div>
-
-            <button class="navbar-toggle-btn d-lg-none" onclick="toggleMenu()">
-                <img src="../img/fooder-header/menu-icon.png" alt="Menú" class="toggler-icon" />
-            </button>
-
-            <div class="search-group mx-4">
-                <div class="search-wrapper">
-                    <span class="search-icon">
-                        <img src="../img/fooder-header/buscar.png" alt="Buscar" />
-                        <span class="search-text">Search</span>
-                    </span>
-                    <input type="text" class="search-input" placeholder="Buscar..." />
-                    <button class="search-button">Buscar</button>
-                </div>
-            </div>
-
-            <div class="icon-group d-flex align-items-center gap-3 ms-4">
-                <button class="icon-btn" title="Favoritos">
-                    <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
-                </button>
-
-                <div class="vertical-separator"></div>
-
-                <button class="icon-btn" title="Carrito">
-                    <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
-                </button>
-
-                <div class="vertical-separator"></div>
-
-                <div class="d-flex align-items-center select-container gap-1">
-                    <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
-                    <select class="delicate-select">
-                        <option>Perfil</option>
-                        <option>Salir</option>
+    <div class="main-wrapper">
+        <!-- ENCABEZADO / HEADER -->
+        <header class="header-container py-2 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-wrap gap-3 text-center align-items-center">
+                <div class="select-wrapper">
+                    <select class="delicate-select text-center">
+                        <option value="es">Es</option>
+                        <option value="en">En</option>
+                        <option value="fr">Fr</option>
                     </select>
                     <div class="dropdown-arrow"></div>
                 </div>
+
+                <div class="select-wrapper">
+                    <select class="delicate-select text-center">
+                        <option value="pen">PEN</option>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+
+                <div class="vertical-separator mx-2"></div>
+                <div class="custom-text">Nos visitas desde: PE</div>
             </div>
-        </div>
-    </section>
+        </header>
 
+        <section class="header-central px-4 py-1">
+            <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+                <div class="logo-container me-4">
+                    <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
+                </div>
 
-    <nav class="navbar-principal navbar navbar-expand-lg">
-        <div class="container">
-            <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
-                <img src="../img/fooder-header/menu.png" alt="Menú" class="toggler-icon" />
-            </button>
+                <div class="search-group mx-4">
+                    <div class="search-wrapper">
+                        <span class="search-icon">
+                            <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+                            <span class="search-text">Search</span>
+                        </span>
+                        <input type="text" class="search-input" />
+                        <button class="search-button">Buscar</button>
+                    </div>
+                </div>
 
-            <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
-                <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
-                    <li class="nav-item">
-                        <select class="menu-select">
-                            <option selected>Categorías</option>
-                            <option>Interior</option>
-                            <option>Exterior</option>
-                        </select>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
-                    <li class="nav-item">
-                        <select class="menu-select">
-                            <option selected>Sobre nosotros</option>
-                            <option>Sostenibilidad</option>
-                            <option>Trabaja con Nosotros</option>
-                        </select>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
-                </ul>
-
-                <!-- Iconos en mobile -->
-                <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
+                <div class="icon-group d-flex align-items-center gap-3 ms-4">
                     <button class="icon-btn" title="Favoritos">
                         <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
                     </button>
+
                     <div class="vertical-separator"></div>
+
                     <button class="icon-btn" title="Carrito">
                         <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
                     </button>
+
                     <div class="vertical-separator"></div>
-                    <div class="d-flex align-items-center select-container gap-1">
+
+                    <div class="select-wrapper d-flex align-items-center select-container gap-1">
                         <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
                         <select class="delicate-select">
                             <option>Perfil</option>
@@ -138,95 +84,187 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </section>
+
+
+        <nav class="navbar-principal navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
+                    <img src="../img/fooder-header/menu.png" alt="Menú" class="toggler-icon" />
+                </button>
+
+                <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
+                    <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                        <li class="nav-item">
+                            <select class="menu-select redireccion-menu"
+                                onchange="if(this.value) window.location.href=this.value;">
+                                <option value="" hidden selected>Categorías</option>
+
+                                <optgroup label="🌿 Abonos y fertilizantes">
+                                    <option value="../html/fertilizantesLiquidos.html">Fertilizantes líquidos</option>
+                                    <option value="../html/fertilizantesSolidos.html">Fertilizantes sólidos o granulados
+                                    </option>
+                                    <option value="../html/compostOrganico.html">Compost orgánico</option>
+                                    <option value="../html/humusLombriz.html">Humus de lombriz</option>
+                                    <option value="../html/abonosGranulados.html">Abonos granulados</option>
+                                    <option value="../html/abonosLiquidos.html">Abonos líquidos</option>
+                                </optgroup>
+
+                                <optgroup label="🛠️ Herramientas">
+                                    <option value="../html/palas.html">Palas y palines</option>
+                                    <option value="../html/rastrillos.html">Rastrillos</option>
+                                    <option value="../html/tijeras.html">Tijeras de podar</option>
+                                    <option value="../html/pulverizadores.html">Pulverizadores manuales</option>
+                                    <option value="../html/cortasetos.html">Cortasetos</option>
+                                    <option value="../html/azadas.html">Azadas y escardillas</option>
+                                    <option value="../html/regaderas.html">Regaderas</option>
+                                    <option value="../html/guantes.html">Guantes y protección</option>
+                                </optgroup>
+
+                                <optgroup label="💧 Sistema de riego">
+                                    <option value="../html/mangueras.html">Mangueras</option>
+                                    <option value="../html/aspersores.html">Aspersores</option>
+                                    <option value="../html/riegoGoteo.html">Riego por goteo</option>
+                                    <option value="../html/temporizadores.html">Temporizadores / controladores</option>
+                                    <option value="../html/accesoriosRiego.html">Accesorios</option>
+                                </optgroup>
+
+                                <optgroup label="🌱 Kits">
+                                    <option value="../html/kitsInterior.html">Jardines de interior automatizados
+                                    </option>
+                                    <option value="../html/kitsVerticales.html">Jardines verticales de pared</option>
+                                    <option value="../html/kitsBasicos.html">Kits de cultivo básico</option>
+                                    <option value="../html/kitsNinos.html">Kits para niños o principiantes</option>
+                                    <option value="../html/kitsHidroponicos.html">Jardines hidropónicos</option>
+                                </optgroup>
+                            </select>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+                        <li class="nav-item">
+                            <select class="menu-select redireccion-menu"
+                                onchange="if(this.value) window.location.href=this.value;">
+                                <option value="" selected disabled hidden>Sobre nosotros</option>
+                                <option value="../html/sobreNosotros.html">Sobre nosotros</option>
+                                <option value="../html/sostenibilidad.html">Sostenibilidad</option>
+                                <option value="../html/trabajaConNosotros.html">Trabaja con Nosotros</option>
+                            </select>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+                    </ul>
+
+                    <!-- Iconos en mobile -->
+                    <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
+                        <button class="icon-btn" title="Favoritos">
+                            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+                        </button>
+                        <div class="vertical-separator"></div>
+                        <button class="icon-btn" title="Carrito">
+                            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+                        </button>
+                        <div class="vertical-separator"></div>
+                        <div class="d-flex align-items-center select-container gap-1">
+                            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+                            <select class="delicate-select">
+                                <option>Perfil</option>
+                                <option>Salir</option>
+                            </select>
+                            <div class="dropdown-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
     <!-- FIN ENCABEZADO / HEADER -->
 
-  <div class="product-page">
-  <div class="pagination">Página 1 de 20</div>
+    <div class="product-page">
+        <div class="pagination">Página 1 de 20</div>
 
-  <img class="banner" src="../img/productos/image0.png" alt="Banner" />
-  <img class="arrow-left" src="../img/productos/polygon-50.svg" alt="Anterior" />
-  <img class="arrow-right" src="../img/productos/polygon-60.svg" alt="Siguiente" />
-  <img class="promo" src="../img/productos/image1.png" alt="Promoción" />
+        <img class="banner" src="../img/productos/image0.png" alt="Banner" />
+        <img class="arrow-left" src="../img/productos/polygon-50.svg" alt="Anterior" />
+        <img class="arrow-right" src="../img/productos/polygon-60.svg" alt="Siguiente" />
+        <img class="promo" src="../img/productos/image1.png" alt="Promoción" />
 
-  <div class="search-bar">
-    <img src="../img/productos/group0.svg" alt="Buscar" />
-    <span>Search</span>
-  </div>
+        <div class="search-bar">
+            <img src="../img/productos/group0.svg" alt="Buscar" />
+            <span>Search</span>
+        </div>
 
-  <button class="btn btn-search">Buscar</button>
+        <button class="btn btn-search">Buscar</button>
 
-  <div class="filter-section">
-    <h2>Filtrar Productos</h2>
-    <div class="filters">
-      <p>Precio</p>
-      <p>Abonos y fertilizantes</p>
-      <p>Herramientas</p>
-      <p>Sistema de riego</p>
-      <p>Kits</p>
+        <div class="filter-section">
+            <h2>Filtrar Productos</h2>
+            <div class="filters">
+                <p>Precio</p>
+                <p>Abonos y fertilizantes</p>
+                <p>Herramientas</p>
+                <p>Sistema de riego</p>
+                <p>Kits</p>
+            </div>
+            <ul class="filter-options">
+                <li>Abonos orgánicos</li>
+                <li>Fertilizantes orgánicos</li>
+                <li>Palas</li>
+                <li>Rastrillos</li>
+                <li>Tijeras de podar</li>
+                <li>Aspersores</li>
+                <li>Mangueras</li>
+                <li>Temporizadores</li>
+            </ul>
+        </div>
+
+        <div class="sort-section">
+            <p>Ordenar por popularidad</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Producto -->
+            <div class="product-card">
+                <img src="../img/productos/image-300.png" alt="COMPO BIO Abono" class="product-img" />
+                <h3>COMPO BIO Abono orgánico Universal</h3>
+                <div class="price">S/ 24.90</div>
+                <div class="rating">
+                    <img src="../img/productos/group1.svg" alt="Estrella" />
+                    <img src="../img/productos/group2.svg" alt="Estrella" />
+                    <img src="../img/productos/group3.svg" alt="Estrella" />
+                    <img src="../img/productos/group4.svg" alt="Estrella" />
+                    <img src="../img/productos/group5.svg" alt="Estrella" />
+                </div>
+                <div class="actions">
+                    <button class="btn-cart"><img src="../img/productos/bag0.svg" alt="Carrito" /></button>
+                    <button class="btn-wishlist"><img src="../img/productos/heart0.svg" alt="Favorito" /></button>
+                    <button class="btn-view"><img src="../img/productos/group6.svg" alt="Vista rápida" /></button>
+                </div>
+            </div>
+
+            <!-- Puedes duplicar esta tarjeta cambiando los datos y las imágenes -->
+            <div class="product-card">
+                <img src="../img/productos/image-240.png" alt="Temporizador de Riego" class="product-img" />
+                <h3>Temporizador de riego automático para grifo</h3>
+                <div class="price">S/ 295.00</div>
+                <div class="rating">
+                    <img src="../img/productos/group7.svg" alt="Estrella" />
+                    <img src="../img/productos/group8.svg" alt="Estrella" />
+                    <img src="../img/productos/group9.svg" alt="Estrella" />
+                    <img src="../img/productos/group10.svg" alt="Estrella" />
+                    <img src="../img/productos/group11.svg" alt="Estrella" />
+                </div>
+                <div class="actions">
+                    <button class="btn-cart"><img src="../img/productos/bag1.svg" alt="Carrito" /></button>
+                    <button class="btn-wishlist"><img src="../img/productos/heart1.svg" alt="Favorito" /></button>
+                    <button class="btn-view"><img src="../img/productos/group12.svg" alt="Vista rápida" /></button>
+                </div>
+            </div>
+
+            <!-- ...continúan más tarjetas similares... -->
+        </div>
     </div>
-    <ul class="filter-options">
-      <li>Abonos orgánicos</li>
-      <li>Fertilizantes orgánicos</li>
-      <li>Palas</li>
-      <li>Rastrillos</li>
-      <li>Tijeras de podar</li>
-      <li>Aspersores</li>
-      <li>Mangueras</li>
-      <li>Temporizadores</li>
-    </ul>
-  </div>
-
-  <div class="sort-section">
-    <p>Ordenar por popularidad</p>
-  </div>
-
-  <div class="product-grid">
-    <!-- Producto -->
-    <div class="product-card">
-      <img src="../img/productos/image-300.png" alt="COMPO BIO Abono" class="product-img" />
-      <h3>COMPO BIO Abono orgánico Universal</h3>
-      <div class="price">S/ 24.90</div>
-      <div class="rating">
-        <img src="../img/productos/group1.svg" alt="Estrella" />
-        <img src="../img/productos/group2.svg" alt="Estrella" />
-        <img src="../img/productos/group3.svg" alt="Estrella" />
-        <img src="../img/productos/group4.svg" alt="Estrella" />
-        <img src="../img/productos/group5.svg" alt="Estrella" />
-      </div>
-      <div class="actions">
-        <button class="btn-cart"><img src="../img/productos/bag0.svg" alt="Carrito" /></button>
-        <button class="btn-wishlist"><img src="../img/productos/heart0.svg" alt="Favorito" /></button>
-        <button class="btn-view"><img src="../img/productos/group6.svg" alt="Vista rápida" /></button>
-      </div>
-    </div>
-
-    <!-- Puedes duplicar esta tarjeta cambiando los datos y las imágenes -->
-    <div class="product-card">
-      <img src="../img/productos/image-240.png" alt="Temporizador de Riego" class="product-img" />
-      <h3>Temporizador de riego automático para grifo</h3>
-      <div class="price">S/ 295.00</div>
-      <div class="rating">
-        <img src="../img/productos/group7.svg" alt="Estrella" />
-        <img src="../img/productos/group8.svg" alt="Estrella" />
-        <img src="../img/productos/group9.svg" alt="Estrella" />
-        <img src="../img/productos/group10.svg" alt="Estrella" />
-        <img src="../img/productos/group11.svg" alt="Estrella" />
-      </div>
-      <div class="actions">
-        <button class="btn-cart"><img src="../img/productos/bag1.svg" alt="Carrito" /></button>
-        <button class="btn-wishlist"><img src="../img/productos/heart1.svg" alt="Favorito" /></button>
-        <button class="btn-view"><img src="../img/productos/group12.svg" alt="Vista rápida" /></button>
-      </div>
-    </div>
-
-    <!-- ...continúan más tarjetas similares... -->
-  </div>
-</div>
 
 
-  <!-- PIE DE PÁGINA / FOOTER -->
+    <!-- PIE DE PÁGINA / FOOTER -->
     <footer class="footer-ecozen mt-5">
         <div class="container">
             <div class="row gy-4">
@@ -276,6 +314,7 @@
                 </div>
             </div>
 
+
             <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
                 <p class="mb-0">&copy; Ecozen 2025</p>
                 <div class="d-flex gap-3 align-items-center">
@@ -302,7 +341,6 @@
         }
     </script>
     <!-- FIN SCRIPT MENU HEADER -->
-
 </body>
 
 </html>

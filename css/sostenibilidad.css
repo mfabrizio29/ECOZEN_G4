@@ -2,7 +2,6 @@
 .titulo-seccion {
     color: #000;
     font-size: 28px;
-    font-family: "Poppins";
   }
   
   /* Subtítulos */
@@ -10,7 +9,6 @@
     color: #2f2f2f;
     font-size: 20px;
     margin-bottom: 15px;
-    font-family: "Poppins";
   }
   
   /* Párrafos */
@@ -18,7 +16,6 @@
     color: #444;
     font-size: 16px;
     line-height: 1.6;
-    font-family: "Poppins";
   }
   
   /* Imágenes */
