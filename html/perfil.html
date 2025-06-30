@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoZenShop</title>
     <link rel="stylesheet" href="../css/header&footer.css" />
-    <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="../css/perfil.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="icon" href="../img/fooder-header/icono.png">
 </head>
@@ -173,103 +173,71 @@
     <!-- FIN ENCABEZADO / HEADER -->
 
 
-
-
-<!-- Carrusel de Imágenes -->
-<section id="carousel" class="mt-4">
-  <div id="ecozenCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner" style="height: 308px; max-width: 1432px; margin: 0 auto; overflow: hidden; border-radius: 8px;">
-      <div class="carousel-item active">
-        <img src="../img/imghomepage/primeraimagenCarusel.svg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
-      </div>
-      <div class="carousel-item">
-        <img src=" ../img/imghomepage/primeraimagenCarusel.svg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src=" ../img/imghomepage/primeraimagenCarusel.svg"d-block w-100 h-100 object-fit-cover" alt="Slide 3">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#ecozenCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#ecozenCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-</section>
-
-<!-- Sección de anuncios y ofertas -->
-<section class="anuncios my-5">
-  <div class="container" style="max-width: 1384px;">
-    <div class="mb-4">
-      <img src=" ../img/imghomepage/anuncio1.jpg" class="img-fluid rounded shadow-sm w-100" alt="Anuncio Principal" style="height: 102px; object-fit: cover;">
-    </div>
-    <div class="row g-4 justify-content-between">
-      <div class="col-md-6">
-        <img src=" ../img/imghomepage/anuncio2.jpg" class=" class="img-fluid rounded shadow-sm" alt="Oferta 1" style="width: 591px; height: 319px; object-fit: cover;">
-      </div>
-      <div class="col-md-6">
-        <img src=" ../img/imghomepage/anuncio3.jpg" class="img-fluid rounded shadow-sm" alt="Oferta 2" style="width: 591px; height: 319px; object-fit: cover;">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Categorías Populares -->
-<section class="categorias-populares py-5 bg-light">
-  <div class="container text-center" style="max-width: 1384px;">
-    <h2 class="mb-5 text-uppercase" style="color:#7E9F5C">Categorías Populares</h2>
-    <div class="row g-4 justify-content-center">
-      <div class="col-6 col-md-3">
-        <div class="card categoria-card">
-          <img src=" ../img/imghomepage/dispersadorpng.jpg" class="card-img-top" alt="Sistemas de Riego">
-          <div class="card-img-overlay d-flex align-items-center justify-content-center">
-            <div class="categoria-texto">
-              <div>Sistemas</div>
-              <div>de</div>
-              <div>Riego</div>
-            </div>
-          </div>
+<section class="container my-5 cuenta-section">
+  <h1 class="text-center fw-bold mb-5">MI CUENTA</h1>
+  <div class="row">
+    <!-- Menú lateral -->
+    <aside class="col-md-3 mb-4">
+      <div class="bg-light p-4 rounded shadow-sm">
+        <div class="text-center mb-3">
+          <img src="../img/fooder-header/usuario.png" alt="Usuario" width="60" class="rounded-circle">
+          <p class="fw-semibold mt-2">usuario</p>
         </div>
+        <hr>
+        <ul class="list-unstyled">
+          <li class="mb-2"><strong>cuenta</strong></li>
+          <li><a href="#" class="text-decoration-none text-dark">Dirección</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Historial de compra</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Cerrar sesión</a></li>
+        </ul>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="card categoria-card">
-          <img src=" ../img/imghomepage/cherramienta.jpg" class="card-img-top" alt="Herramientas de Jardinería">
-          <div class="card-img-overlay d-flex align-items-center justify-content-center">
-            <div class="categoria-texto">
-              <div>Herramientas</div>
-              <div>de</div>
-              <div>Jardinería</div>
-            </div>
-          </div>
+    </aside>
+
+    <!-- Formulario -->
+    <div class="col-md-9">
+      <form>
+        <h5 class="fw-semibold">Detalles de la cuenta</h5>
+
+        <div class="mb-3">
+          <label for="nombres" class="form-label text-uppercase small">Nombres *</label>
+          <input type="text" class="form-control" id="nombres" placeholder="nombres">
         </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card categoria-card">
-          <img src=" ../img/imghomepage/ckit.jpg" class="card-img-top" alt="Kits de Jardinería">
-          <div class="card-img-overlay d-flex align-items-center justify-content-center">
-            <div class="categoria-texto">
-              <div>Kits</div>
-              <div>de</div>
-              <div>Jardinería</div>
-            </div>
-          </div>
+
+        <div class="mb-3">
+          <label for="apellidos" class="form-label text-uppercase small">Apellidos</label>
+          <input type="text" class="form-control" id="apellidos" placeholder="apellidos">
         </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card categoria-card">
-          <img src=" ../img/imghomepage/cabono.jpg" class="card-img-top" alt="Fertilizante y Abonos">
-          <div class="card-img-overlay d-flex align-items-center justify-content-center">
-            <div class="categoria-texto">
-              <div>Fertilizante</div>
-              <div>y</div>
-              <div>Abonos</div>
-            </div>
-          </div>
+
+        <div class="mb-3">
+          <label for="alias" class="form-label text-uppercase small">Alias*</label>
+          <input type="text" class="form-control" id="alias" placeholder="llámame como">
+          <div class="form-text">Así es como se mostrará tu nombre en la sección de cuenta y en las reseñas.</div>
         </div>
-      </div>
+
+        <div class="mb-5">
+          <label for="correo" class="form-label text-uppercase small">Correo *</label>
+          <input type="email" class="form-control" id="correo" placeholder="correo">
+        </div>
+
+        <h5 class="fw-semibold">Contraseña</h5>
+
+        <div class="mb-3">
+          <label for="antigua" class="form-label text-uppercase small">Antigua contraseña</label>
+          <input type="password" class="form-control" id="antigua" placeholder="antigua contraseña">
+        </div>
+
+        <div class="mb-3">
+          <label for="nueva" class="form-label text-uppercase small">Nueva contraseña</label>
+          <input type="password" class="form-control" id="nueva" placeholder="nueva contraseña">
+        </div>
+
+        <div class="mb-4">
+          <label for="repetir" class="form-label text-uppercase small">Repetir contraseña nueva</label>
+          <input type="password" class="form-control" id="repetir" placeholder="repetir contraseña nueva">
+        </div>
+
+        <button type="submit" class="btn btn-dark px-4">Guardar cambios</button>
+      </form>
     </div>
   </div>
 </section>
@@ -278,7 +246,10 @@
 
 
 
-<!-- PIE DE PÁGINA / FOOTER -->
+
+
+
+    <!-- PIE DE PÁGINA / FOOTER -->
     <footer class="footer-ecozen mt-5">
         <div class="container">
             <div class="row gy-4">
@@ -346,6 +317,7 @@
 
     <!-- FIN PIE DE PÁGINA / HEADER -->
 
+    
     <!-- SCRIPT MENU HEADER -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
