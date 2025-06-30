@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoZenShop</title>
     <link rel="stylesheet" href="../css/header&footer.css" />
+    <link rel="stylesheet" href="../css/perfil.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="icon" href="../img/fooder-header/icono.png">
 </head>
@@ -44,27 +45,9 @@
                     <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
                 </div>
 
-<<<<<<< HEAD
-                <div class="search-group mx-4">
-                    <div class="search-wrapper">
-                        <span class="search-icon">
-                            <img src="../img/fooder-header/buscar.png" alt="Buscar" />
-                            <span class="search-text">Search</span>
-                        </span>
-                        <input type="text" class="search-input" />
-                        <button class="search-button">Buscar</button>
-                    </div>
-                </div>
-
-                <div class="icon-group d-flex align-items-center gap-3 ms-4">
-                    <button class="icon-btn" title="Favoritos">
-                        <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
-                    </button>
-=======
                 <button class="navbar-toggle-btn d-lg-none" onclick="toggleMenu()">
                     <img src="../img/fooder-header/menu-icon.png" alt="Menú" class="toggler-icon" />
                 </button>
->>>>>>> e3981392d9d14edede69e5da91b56a1d042afa1a
 
                 <div class="search-group mx-4">
                     <div class="search-wrapper">
@@ -90,11 +73,7 @@
 
                     <div class="vertical-separator"></div>
 
-<<<<<<< HEAD
-                    <div class="select-wrapper d-flex align-items-center select-container gap-1">
-=======
                     <div class="d-flex align-items-center select-container gap-1">
->>>>>>> e3981392d9d14edede69e5da91b56a1d042afa1a
                         <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
                         <select class="delicate-select">
                             <option>Perfil</option>
@@ -114,15 +93,9 @@
                 </button>
 
                 <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
-<<<<<<< HEAD
-                    <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
-=======
                     <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
                         <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
->>>>>>> e3981392d9d14edede69e5da91b56a1d042afa1a
                         <li class="nav-item">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#">Categorías</a>
@@ -234,12 +207,81 @@
                 </div>
             </div>
         </nav>
-<<<<<<< HEAD
-    </div>
-    <!-- FIN ENCABEZADO / HEADER -->
-=======
         <!-- FIN ENCABEZADO / HEADER -->
->>>>>>> e3981392d9d14edede69e5da91b56a1d042afa1a
+
+
+        <section class="container my-5 cuenta-section">
+            <h1 class="text-center fw-bold mb-5">MI CUENTA</h1>
+            <div class="row">
+                <!-- Menú lateral -->
+                <aside class="col-md-3 mb-4">
+                    <div class="bg-light p-4 rounded shadow-sm">
+                        <div class="text-center mb-3">
+                            <img src="../img/fooder-header/usuario.png" alt="Usuario" width="60" class="rounded-circle">
+                            <p class="fw-semibold mt-2">usuario</p>
+                        </div>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>cuenta</strong></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Dirección</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Historial de compra</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Formulario -->
+                <div class="col-md-9">
+                    <form>
+                        <h5 class="fw-semibold">Detalles de la cuenta</h5>
+
+                        <div class="mb-3">
+                            <label for="nombres" class="form-label text-uppercase small">Nombres *</label>
+                            <input type="text" class="form-control" id="nombres" placeholder="nombres">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label text-uppercase small">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" placeholder="apellidos">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="alias" class="form-label text-uppercase small">Alias*</label>
+                            <input type="text" class="form-control" id="alias" placeholder="llámame como">
+                            <div class="form-text">Así es como se mostrará tu nombre en la sección de cuenta y en las
+                                reseñas.</div>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="correo" class="form-label text-uppercase small">Correo *</label>
+                            <input type="email" class="form-control" id="correo" placeholder="correo">
+                        </div>
+
+                        <h5 class="fw-semibold">Contraseña</h5>
+
+                        <div class="mb-3">
+                            <label for="antigua" class="form-label text-uppercase small">Antigua contraseña</label>
+                            <input type="password" class="form-control" id="antigua" placeholder="antigua contraseña">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nueva" class="form-label text-uppercase small">Nueva contraseña</label>
+                            <input type="password" class="form-control" id="nueva" placeholder="nueva contraseña">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="repetir" class="form-label text-uppercase small">Repetir contraseña
+                                nueva</label>
+                            <input type="password" class="form-control" id="repetir"
+                                placeholder="repetir contraseña nueva">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark px-4">Guardar cambios</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
 
         <!-- PIE DE PÁGINA / FOOTER -->
         <footer class="footer-ecozen mt-5">
@@ -306,26 +348,8 @@
             </div>
         </footer>
 
-<<<<<<< HEAD
-
-            <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
-                <p class="mb-0">&copy; Ecozen 2025</p>
-                <div class="d-flex gap-3 align-items-center">
-                    <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
-                    <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
-                    <img src="../img/fooder-header/discover0.svg" alt="Discover" />
-                    <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
-                    <div class="d-flex align-items-center gap-1">
-                        <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
-                        <span>Pago Seguro</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-=======
         <!-- FIN PIE DE PÁGINA / HEADER -->
->>>>>>> e3981392d9d14edede69e5da91b56a1d042afa1a
+
 
         <!-- SCRIPT MENU HEADER -->
         <script src="../js/bootstrap.bundle.min.js"></script>
