@@ -1,0 +1,25 @@
+.ruc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .separador {
+    display: block;
+    height: 6px;
+    background-color: black;
+    border: none;
+    width: 1000px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .subtitulo-con-linea {
+    font-size: 20px;
+    color: #2f2f2f;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 6px; 
+    text-decoration-thickness: 2px; 
+    margin-bottom: 20px;
+  }

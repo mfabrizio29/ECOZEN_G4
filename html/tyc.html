@@ -5,15 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoZenShop</title>
+    <link rel="stylesheet" href="../css/fuente.css">
     <link rel="stylesheet" href="../css/header&footer.css" />
-    <link rel="stylesheet" href="../css/perfil.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="icon" href="../img/fooder-header/icono.png">
+    <link rel="stylesheet" href="../css/tyc.css" />
 </head>
 
 <body>
-     <div class="main-wrapper">
-        <!-- ENCABEZADO / HEADER -->
+    <!-- ENCABEZADO / HEADER -->
         <header class="header-container py-2 d-flex justify-content-center align-items-center">
             <div class="d-flex flex-wrap gap-3 text-center align-items-center">
                 <div class="select-wrapper">
@@ -99,8 +99,8 @@
                             <a class="nav-link dropdown-toggle" href="#">Categorías</a>
                             <div class="dropdown-menu-custom">
 
-                                 <!-- Abonos y fertilizantes -->
-                                 <div class="category-block">
+                                <!-- Abonos y fertilizantes -->
+                                <div class="category-block">
                                   <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
                                   <div class="subcategory-columns">
                                       <ul>
@@ -170,7 +170,6 @@
                           </div>
                         </li>
 
-
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                         <li class="nav-item">
@@ -181,7 +180,7 @@
                             </select>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="cuidadoplantas.html">Cuidado de Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/cuidadoplantas.html">Cuidado de Plantas</a></li>
                     </ul>
 
                     <!-- Iconos en mobile -->
@@ -209,62 +208,56 @@
     </div>
     <!-- FIN ENCABEZADO / HEADER -->
 
-<h1 class="text-center my-4 fw-bold">MI CUENTA</h1>
-
-  <div class="container my-5">
-    <div class="row">
-
-      <!-- ========= Sidebar (mismo diseño que perfil) ========= -->
-      <aside class="col-md-3 mb-4">
-        <div class="bg-light p-4 rounded shadow-sm">
-          <div class="text-center mb-3">
-            <img src="../img/fooder-header/usuario.png"
-                 alt="Usuario" width="60" class="rounded-circle"
-                 style="background:#d9d9d9;padding:4px;">
-            <p class="fw-semibold mt-2">usuario</p>
+    <main class="container py-5" id="terminos-condiciones">
+        <h2 class="text-center fw-bold mb-1 titulo-seccion">TÉRMINOS Y CONDICIONES</h2>
+        <p class="ruc">Homecenters Peruanos S.A. RUC: 20536537958</p>
+        <hr class="separador">
+      
+        <!-- Bienvenida -->
+        <div class="row align-items-start mb-5">
+          <div class="col">
+            <h3 class="fw-bold subtitulo-con-linea">BIENVENIDO A WWW.ECOZEN.PE</h3>
+            <p class="descripcion">
+              El uso de Ecozen.pe está sujeto a los siguientes Términos y Condiciones de uso que deberán ser cumplidos por nuestros clientes y usuarios. Ecozen se reserva expresamente el derecho de modificar, actualizar o ampliar en cualquier momento los presentes Términos y Condiciones.<br><br>
+              Cualquier modificación, actualización o ampliación producida en los presentes Términos y Condiciones será inmediatamente publicada por este mismo medio. Es responsabilidad del cliente y del usuario revisar los Términos y Condiciones vigentes al momento de la navegación.
+              <br><br>
+              En caso de que el cliente y/o el usuario no estuviera de acuerdo con las modificaciones mencionadas, podrá optar por no hacer uso de los Servicios de Ecozen.<br><br>
+              Hacemos notar que se respetarán los Términos y Condiciones vigentes al momento de realizarse la transacción con el Usuario.
+              <br><br>
+              Tome en cuenta que la información proporcionada por otros sitios web, especialmente cuando el acceso al sitio www.ecozen.pe se haya efectuado a través de un link o banner en sitios que no dispongan de contratos o alianzas con nosotros, es bajo su responsabilidad.
+            </p>
           </div>
-          <hr>
-          <ul class="list-unstyled">
-            <li class="mb-2"><strong>cuenta</strong></li>
-            <li><a href="../html/direccion.html"
-                   class="text-decoration-none text-dark">Dirección</a></li>
-            <li><a href="#"
-                   class="text-decoration-none text-dark fw-semibold">Historial de compra</a></li>
-            <li><a href="#" class="text-decoration-none text-dark">Cerrar sesión</a></li>
-          </ul>
         </div>
-      </aside>
-
-      <!-- ========= Historial de pedidos ========= -->
-      <section class="col-md-9">
-        <h5 class="mb-3 text-capitalize">historial de pedido</h5>
-
-        <div class="table-responsive shadow-sm">
-          <table class="table align-middle" id="orders-table">
-            <thead class="small text-muted">
-              <tr>
-                <th>número ID</th>
-                <th>fecha</th>
-                <th>estado</th>
-                <th class="text-end">precio</th>
-              </tr>
-            </thead>
-            <tbody id="orders-body">
-              <!-- JS insertará filas aquí -->
-            </tbody>
-          </table>
+      
+        <!-- Proceso de Compra -->
+        <div class="row align-items-start mb-5">
+          <div class="col">
+            <h3 class="fw-bold subtitulo-con-linea">PROCESO DE COMPRA</h3>
+            <p class="descripcion">
+              A través de este sitio web la empresa realiza ofertas de bienes y servicios (“Productos”), que pueden ser aceptadas por vía electrónica, y utilizando los mecanismos que el mismo sitio ofrece para ello. Una vez que hayamos recibido tu pedido, validaremos el método de pago que hayas utilizado y haremos el cargo correspondiente. De ser el caso, te enviaremos una comunicación confirmándote que tu compra ha sido realizada satisfactoriamente; o en su defecto, indicando que no ha podido ser procesada.
+              <br><br>
+              Ante cualquier pedido de anulación o cancelación, que haya sido realizado por el titular de la compra o el titular del medio de pago usado para esta y que se encuentre acorde a nuestras políticas, procederemos a comunicar este hecho a la entidad financiera emisora de la tarjeta que hayas utilizado para tu solicitud de compra. Dicha entidad financiera será la única responsable de proceder con la liberación del importe retenido para la compra o la devolución del importe cobrado, de acuerdo con sus procedimientos y políticas correspondientes.
+              <br><br>
+              Para efectuar una solicitud de compra a través del sitio web, debes identificarte como persona natural, con DNI o con RUC emitido en Perú (si eres persona jurídica) y realizar el pago a través de la plataforma con cualquiera de los métodos de pago aceptados (tarjeta de crédito, pago en efectivo o financiamiento). Las tarjetas de crédito y débito aceptadas son las que figuran en nuestro aplicativo o página web.
+            </p>
+          </div>
         </div>
-
-        <p id="empty-orders" class="text-muted text-center d-none mt-4">
-          Aún no tienes pedidos.
-        </p>
-      </section>
-    </div>
-  </div>
-
-
-
-
+      
+        <!-- Responsabilidad -->
+        <div class="row align-items-start mb-5">
+          <div class="col">
+            <h3 class="fw-bold subtitulo-con-linea">RESPONSABILIDAD POR RECHAZO DE SOLICITUDES DE COMPRA</h3>
+            <p class="descripcion">
+              Si tu solicitud de compra es rechazada, ya sea debido a datos incorrectos ingresados; imposibilidad de comunicarnos contigo o demora en realizar verificaciones; falta de stock de los productos solicitados; cualquier problema con tu tarjeta de débito/crédito (tarjeta no activa, vencida, sin línea de crédito suficiente, datos erróneos, etc.); entre otros casos, Ecozen no se hace responsable por tales inconvenientes. 
+              <br><br>
+              También se rechazarán compras sospechosas de fraude, mal uso de promociones o alteración de precios. 
+              <br><br>
+              Cuando tu solicitud de compra es rechazada, el Cliente tiene la facultad de conocer el motivo del rechazo. Y puedes solicitar el reembolso si ya ha ocurrido un débito. El tiempo de aprobación de reembolso está determinado por cada institución financiera.
+            </p>
+          </div>
+        </div>
+      </main>
+      
      <!-- PIE DE PÁGINA / FOOTER -->
   <footer class="footer-ecozen mt-5">
     <div class="container">
@@ -345,31 +338,26 @@
   <!-- SCRIPT MENU HEADER -->
   <script src="../js/bootstrap.bundle.min.js"></script>
    <script src="../js/anuncio.js"></script>
-  <!-- SCRIPT MENU HEADER -->
-  <script src="../js/bootstrap.bundle.min.js"></script>
-  <script src="../js/anuncio.js"></script>
   <script>
-      function toggleMenu() {
-          document.querySelector('.nav-menu').classList.toggle('show');
-      }
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    }
   </script>
   <!-- FIN SCRIPT MENU HEADER -->
 
   <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          const select = document.getElementById('navegacion-nosotros');
-          if (select) {
-              select.addEventListener('change', function () {
-                  const url = this.value;
-                  if (url !== '#') {
-                      window.location.href = url;
-                  }
-              });
+    document.addEventListener('DOMContentLoaded', function () {
+      const select = document.getElementById('navegacion-nosotros');
+      if (select) {
+        select.addEventListener('change', function () {
+          const url = this.value;
+          if (url !== '#') {
+            window.location.href = url;
           }
-      });
+        });
+      }
+    });
   </script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/historial.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,164 @@
+/* --- POPUPS: ESTILOS GENERALES --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #e6f2cf;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1d1d1d;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  box-shadow: inset 0 0 0 1px #ccc;
+  transition: box-shadow 0.2s ease;
+}
+
+.modal-content input:focus {
+  box-shadow: inset 0 0 0 2px #8bb54b;
+}
+
+/* --- Password toggle --- */
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* --- Enlaces pequeños --- */
+.small-link {
+  font-size: 0.85rem;
+  text-align: right;
+  margin-top: -0.5rem;
+  margin-bottom: 0.8rem;
+  color: #2e4f18;
+  text-decoration: none;
+}
+
+.small-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Botón principal --- */
+.btn-full {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.btn-full:hover {
+  background-color: #444;
+}
+
+/* --- Google login --- */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #333;
+  padding: 0.6rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #ccc;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.google-btn:hover {
+  box-shadow: 0 0 0 2px #8bb54b;
+}
+
+/* --- Cerrar botón --- */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* --- Pie del modal --- */
+.bottom-text {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.bottom-text a {
+  color: #2e4f18;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* --- Ocultador --- */
+.d-none {
+  display: none !important;
+}

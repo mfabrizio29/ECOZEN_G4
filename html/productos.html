@@ -339,7 +339,7 @@
 
       <!-- Producto 5 -->
       <div class="producto">
-        <a href="producto5.html"><img src="../img/productos/producto5.png" alt="Abono orgánico" /></a>
+        <a href="indivProduct.html"><img src="../img/productos/producto5.png" alt="Abono orgánico" /></a>
         <p>Click & Grow Kit de jardinería para interiores</p>
         <p class="precio">S/ 358.80</p>
         <div class="acciones">
@@ -360,9 +360,9 @@
       </div>
 
       <!-- CAMBIAR PRODUCTOS -->
-      <!-- Producto 1 -->
+      <!-- Producto 7 -->
       <div class="producto">
-        <a href="producto1.html"><img src="../img/productos/producto1.png" alt="Manguera espiral" /></a>
+        <a href="producto7.html"><img src="../img/productos/producto7.png" alt="Manguera espiral" /></a>
         <p>Gardena Manguera espiral para terrazas</p>
         <p class="precio">S/ 141.60</p>
         <div class="acciones">
@@ -371,9 +371,9 @@
         </div>
       </div>
 
-      <!-- Producto 2 -->
+      <!-- Producto 8 -->
       <div class="producto">
-        <a href="producto2.html"><img src="../img/productos/producto2.png" alt="Rainbird Programador" /></a>
+        <a href="producto2.html"><img src="../img/productos/producto8.png" alt="Rainbird Programador" /></a>
         <p>Rainbird Programador de riego ESP-RZXe</p>
         <p class="precio">S/ 480.00</p>
         <div class="acciones">
@@ -382,9 +382,9 @@
         </div>
       </div>
 
-      <!-- Producto 3 -->
+      <!-- Producto 9 -->
       <div class="producto">
-        <a href="producto3.html"><img src="../img/productos/producto3.png" alt="Abono orgánico" /></a>
+        <a href="producto3.html"><img src="../img/productos/producto9.png" alt="Abono orgánico" /></a>
         <p>COMPO BIO Abono orgánico Universal</p>
         <p class="precio">S/ 24.90</p>
         <div class="acciones">
@@ -393,9 +393,9 @@
         </div>
       </div>
 
-      <!-- Producto 4 -->
+      <!-- Producto 10 -->
       <div class="producto">
-        <a href="producto4.html"><img src="../img/productos/producto4.png" alt="Abono orgánico" /></a>
+        <a href="producto4.html"><img src="../img/productos/producto10.png" alt="Abono orgánico" /></a>
         <p>Temporizador de riego automático para grifo</p>
         <p class="precio">S/ 295.00</p>
         <div class="acciones">
@@ -404,9 +404,9 @@
         </div>
       </div>
 
-      <!-- Producto 5 -->
+      <!-- Producto 11 -->
       <div class="producto">
-        <a href="producto5.html"><img src="../img/productos/producto5.png" alt="Abono orgánico" /></a>
+        <a href="producto5.html"><img src="../img/productos/producto11.png" alt="Abono orgánico" /></a>
         <p>Click & Grow Kit de jardinería para interiores</p>
         <p class="precio">S/ 358.80</p>
         <div class="acciones">
@@ -415,9 +415,9 @@
         </div>
       </div>
 
-      <!-- Producto 6 -->
+      <!-- Producto 12 -->
       <div class="producto">
-        <a href="producto6.html"><img src="../img/productos/producto6.png" alt="Abono orgánico" /></a>
+        <a href="producto6.html"><img src="../img/productos/producto12.png" alt="Abono orgánico" /></a>
         <p>Gardena Cortacésped helicoidal 330</p>
         <p class="precio">S/ 533.90</p>
         <div class="acciones">
@@ -429,14 +429,15 @@
   </div>
 
   <div class="paginacion">
-    <button class="paginacion-btn" disabled>
+    <button id="btnAnterior" class="paginacion-btn">
       <img src="../img/productos/flechaIzq.svg" alt="Anterior" />
     </button>
     <span class="paginacion-info">Página 1 de 5</span>
-    <button class="paginacion-btn">
+    <button id="btnSiguiente" class="paginacion-btn">
       <img src="../img/productos/flechaDer.svg" alt="Siguiente" />
     </button>
   </div>
+
 </body>
 
 
@@ -520,6 +521,7 @@
 <!-- FIN PIE DE PAGINA / FOOTER -->
 <!-- SCRIPT MENU HEADER -->
 <script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/productos.js"></script>
 <script>
   function toggleMenu() {
     document.querySelector('.nav-menu').classList.toggle('show');

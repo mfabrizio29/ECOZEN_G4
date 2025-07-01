@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/fuente.css">
     <link rel="stylesheet" href="../css/header&footer.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/indivProduct.css" />
+    <link rel="stylesheet" href="../css/carrito.css" />
     <link rel="icon" href="../img/fooder-header/icono.png">
 </head>
 
@@ -172,7 +172,7 @@
 
 
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="../html/paginacontacto.html">Contáctenos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                         <li class="nav-item">
                             <select class="menu-select" id="navegacion-nosotros">
                                 <option value="sobreNosotros.html">Sobre nosotros</option>
@@ -210,262 +210,44 @@
     <!-- FIN ENCABEZADO / HEADER -->
 
 
-    <main class="container">
-        <section class="product"
-         id="producto"                         
-         data-id="101"                        
-         data-name="Kit de jardinería para interiores"   
-         data-price="358.80"                   
-         data-img="../img/indivProduct/productoMain.png"> 
+    <main class="container my-4">
 
+        <h2 class="h4 text-center mb-4">Mi lista de deseos</h2>
 
-            <div class="gallery-column">
-                <div class="thumbnails">
-                    <img src="../img/indivProduct/miniatura1.png" alt="Miniatura 1">
-                    <img src="../img/indivProduct/miniatura2.png" alt="Miniatura 2">
-                    <img src="../img/indivProduct/miniatura3.png" alt="Miniatura 3">
-                    <img src="../img/indivProduct/miniatura4.png" alt="Miniatura 4">
-                </div>
-            </div>
-
-            <div class="main-image-column">
-                <img class="main-image" src="../img/indivProduct/productoMain.png" alt="Producto principal">
-            </div>
-
-            <div class="details">
-                <div class="rating">★★★★★</div>
-                <h1>Kit de jardinería para interiores</h1>
-                <p class="brand">Click & Grow | Smart Garden 3</p>
-                <p class="price">S/358.80</p>
-                <div class="quantity">
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
-                </div><br>
-                <div class="buttons">
-                    <button class="add-cart">Agregar al carrito</button>
-                    <button class="buy">Comprar</button>
-                </div><br>
-                <div class="colors">
-                    <div class="color white"></div>
-                    <div class="color green"></div>
-                    <div class="color gray"></div>
-                    <div class="color yellow"></div>
-                    <div class="color pink"></div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="description">
-            <h3>Descripción del producto</h3>
-            <p>Cultiva hierbas y verduras frescas en interiores: las luces LED de bajo consumo garantizan que tus
-                plantas prosperen sin importar el clima.
-                Comience de inmediato: simplemente coloque las vainas de plantas incluidas, llene el depósito de agua y
-                conecte la maceta de riego automático: su kit de inicio de jardín de hierbas es bueno para usar.
-                Más de 50 vainas de plantas presembradas para su jardín de hierbas como cilantro, albahaca, lavanda,
-                fresas silvestres, tomillo e incluso ajíes.</p>
-        </section>
-
-        <section class="tech-specs">
-            <h3>Ficha técnica</h3>
-            <ul>
-                <li><span class="label">Capacidad:</span><span>3 pods/cultivos simultáneos</span></li>
-                <li><span class="label">Depósito de agua:</span><span>1,2L (~0,32gal)</span></li>
-                <li><span class="label">Consumo de energía:</span><span>8 W (~3,8kWh al mes)</span>
-                    <!-- Botón que activa el pop-up -->
-                    <button class="btn-secondary inline-btn" onclick="mostrarPopup()">Ver ficha técnica
-                        completa</button>
-                </li>
-                <li><span class="label">Cable de alimentación:</span><span>1.900 mm (~6'3")</span></li>
-                <li><span class="label">Material del chasis:</span><span>Plástico ABS</span></li>
-            </ul>
-        </section>
-
-        <!-- CONTENEDOR DEL POP-UP (OCULTO POR DEFECTO) -->
-        <div class="overlay" id="popup">
-            <div class="popup">
-                <span class="close-btn" onclick="cerrarPopup()">×</span>
-                <h2>Click & Grow Smart Garden 3 - Kit de jardinería para interiores</h2>
-
-                <h3>Contenido del paquete</h3>
-                <ul>
-                    <li>1 unidad Smart Garden 3</li>
-                    <li>3 cápsulas (“pods”) de albahaca</li>
-                    <li>2 brazos de extensión para la luz</li>
-                    <li>3 domos de germinación</li>
-                    <li>3 cubiertas plásticas reutilizables</li>
-                    <li>1 adaptador de corriente (cable de 1,9 m)</li>
-                    <li>Manual de usuario</li>
-                    <li>Garantía limitada de hardware de 1 año</li>
-                </ul>
-
-                <h3>Especificaciones generales</h3>
-                <ul>
-                    <li>Capacidad: 3 pods/cultivos simultáneos</li>
-                    <li>Depósito de agua: 1,2 L (~0,32 gal) (autonomía de hasta 3 semanas)</li>
-                    <li>Consumo de energía: 8 W (~3,8 kWh al mes)</li>
-                    <li>Cable de alimentación: 1.900 mm (~6'3")</li>
-                    <li>Material del chasis: Plástico ABS</li>
-                </ul>
-
-                <h3>Dimensiones y peso</h3>
-                <ul>
-                    <li>Sin brazos: 30 × 12 × 21 cm (L × W × H) (~11.8″ × 4.7″ × 8.3″)</li>
-                    <li>Con un brazo: altura 34 cm (~13.4″)</li>
-                    <li>Con dos brazos: altura máxima 47 cm (~18.5″)</li>
-                    <li>Peso: 1,2 kg sin empaque; peso con empaque: ~1,73 kg</li>
-                </ul>
-
-                <h3>Iluminación</h3>
-                <ul>
-                    <li>Lámpara LED de espectro completo</li>
-                    <li>Ciclo automático de 16 h encendido / 8 h apagado</li>
-                    <li>Brazo(s) extensible(s) para ajustar altura según crecimiento</li>
-                </ul>
-
-                <h3>Tecnología del cultivo</h3>
-                <ul>
-                    <li>Smart Soil: sustrato patentado inspirado en tecnología NASA</li>
-                    <li>Libera agua, oxígeno y nutrientes de forma óptima</li>
-                    <li>Mantiene pH y aireación adecuada</li>
-                    <li>Riego automático por capilaridad (sin bomba, sin botones)</li>
-                    <li>Fácil recarga desde el indicador flotante de agua</li>
-                </ul>
-
-                <h3>Condiciones recomendadas y durabilidad</h3>
-                <ul>
-                    <li>Temperatura ideal: entre 20 °C y 24 °C</li>
-                    <li>Vida útil estimada de los LEDs: ~7 años</li>
-                </ul>
-            </div>
-        </div>
-        <section class="extra-details">
-            <h3>Detalles adicionales</h3>
-            <p>La tecnología Heart of the Click and Grow, patentada Smart Soil proporciona las mejores condiciones
-                para
-                el crecimiento de las plantas, asegurando un riego óptimo, equilibrio de ph, oxígeno y nutrientes
-                durante todo el ciclo de crecimiento, mientras que es totalmente natural, sin OMG ni pesticidas.
-                Como
-                Smart Soil está haciendo todo el trabajo, los Smart Gardens están completamente automatizados y
-                completamente silenciosos
-            </p>
-        </section>
-
-
-
-        <section class="extra-details">
-            <h3>Detalles adicionales</h3>
-            <p>La tecnología Heart of the Click and Grow, patentada Smart Soil proporciona las mejores condiciones para
-                el crecimiento de las plantas, asegurando un riego óptimo, equilibrio de ph, oxígeno y nutrientes
-                durante todo el ciclo de crecimiento, mientras que es totalmente natural, sin OMG ni pesticidas. Como
-                Smart Soil está haciendo todo el trabajo, los Smart Gardens están completamente automatizados y
-                completamente silenciosos
-            </p>
-        </section>
-
-        <section class="reviews">
-            <div class="review-top">
-                <div class="score">
-                    <h2>4.6 / 5</h2>
-                    <div class="stars">★★★★★</div>
-                    <p>2,334 calificaciones</p>
-                </div>
-
-                <div class="ratings-bar">
-                    <div>5 ★ <div class="bar" style="width: 80%"></div> 80%</div>
-                    <div>4 ★ <div class="bar" style="width: 11%"></div> 11%</div>
-                    <div>3 ★ <div class="bar" style="width: 5%"></div> 5%</div>
-                    <div>2 ★ <div class="bar" style="width: 2%"></div> 2%</div>
-                    <div>1 ★ <div class="bar" style="width: 2%"></div> 2%</div>
-                </div>
-
-                <div class="rate-form">
-                    <button class="btn-secondary">Calificar producto</button>
-                    <div class="stars empty">☆ ☆ ☆ ☆ ☆</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reseñas de usuarios debajo -->
-        <div class="user-review">
-            <p><strong>Shanta LM</strong> ★★★★★</p>
-            <p>Me encanta. Las vainas incluidas eran de albahaca y empezaron a crecer en un par de semanas. Sin duda, lo
-                recomiendo como regalo para un amante de las plantas.</p>
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th style="width:40%">Producto</th>
+                        <th style="width:20%">Cantidad</th>
+                        <th style="width:15%">Precio</th>
+                        <th style="width:15%">Subtotal</th>
+                        <th style="width:10%"></th> <!-- acciones -->
+                    </tr>
+                </thead>
+                <tbody id="wish-body"></tbody>
+            </table>
         </div>
 
-        <div class="user-review">
-            <p><strong>María</strong> ★★★★★</p>
-            <p>Lo compré como regalo para mi sobrina y ¡le encantó! Planté albahaca a finales de marzo y ¡sigue
-                creciendo! Calidad increíble, sabor y aroma naturales. Fácil de mantener. Sin duda, la recomiendo para
-                jardinería de interior.</p>
-        </div>
+        <p id="wish-empty" class="text-center text-muted d-none">
+            Tu lista está vacía.
+        </p>
 
-        <div class="reviews-footer">
-            <button class="btn-reviews">Ver todas las reseñas</button>
-        </div>
-
-
-
-        <section class="similar">
-            <h3>Productos similares</h3>
-            <div class="product-list">
-                <!-- Producto 1 -->
-                <div class="producto">
-                    <a href="producto1.html"><img src="../img/productos/producto17.png" alt="Manguera espiral" /></a>
-                    <p>Gardena Manguera espiral para terrazas</p>
-                    <p class="precio">S/ 141.60</p>
-                    <div class="acciones">
-                        <span>★★★★☆</span>
-                        <button onclick="agregarAlCarrito(1)"><img src="../img/productos/carrito.svg" alt="🛒"></button>
-                    </div>
-                </div>
-
-                <!-- Producto 2 -->
-                <div class="producto">
-                    <a href="producto2.html"><img src="../img/productos/producto20.png" alt="Rainbird Programador" /></a>
-                    <p>Rainbird Programador de riego ESP-RZXe</p>
-                    <p class="precio">S/ 480.00</p>
-                    <div class="acciones">
-                        <span>★★★★★</span>
-                        <button onclick="agregarAlCarrito(2)"><img src="../img/productos/carrito.svg" alt="🛒"></button>
-                    </div>
-                </div>
-
-                <!-- Producto 3 -->
-                <div class="producto">
-                    <a href="producto3.html"><img src="../img/productos/producto19.png" alt="Abono orgánico" /></a>
-                    <p>COMPO BIO Abono orgánico Universal</p>
-                    <p class="precio">S/ 24.90</p>
-                    <div class="acciones">
-                        <span>★★★★☆</span>
-                        <button onclick="agregarAlCarrito(3)"><img src="../img/productos/carrito.svg" alt="🛒"></button>
-                    </div>
-                </div>
-
-                <!-- Producto 4 -->
-                <div class="producto">
-                    <a href="producto4.html"><img src="../img/productos/producto23.png" alt="Abono orgánico" /></a>
-                    <p>Temporizador de riego automático para grifo</p>
-                    <p class="precio">S/ 295.00</p>
-                    <div class="acciones">
-                        <span>★★★★☆</span>
-                        <button onclick="agregarAlCarrito(4)"><img src="../img/productos/carrito.svg" alt="🛒"></button>
-                    </div>
-                </div>
-
-                <!-- Producto 6 -->
-                <div class="producto">
-                    <a href="producto4.html"><img src="../img/productos/producto24.png" alt="Abono orgánico" /></a>
-                    <p>Temporizador de riego automático para grifo</p>
-                    <p class="precio">S/ 295.00</p>
-                    <div class="acciones">
-                        <span>★★★★☆</span>
-                        <button onclick="agregarAlCarrito(4)"><img src="../img/productos/carrito.svg" alt="🛒"></button>
-                    </div>
+        <!-- Totales -->
+        <div class="d-flex justify-content-end mt-3">
+            <div>
+                <div class="d-flex justify-content-between">
+                    <strong>Total estimado:&nbsp;</strong>
+                    <span id="wish-total">S/0.00</span>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="text-end mt-4">
+            <a href="../html/productos.html" class="btn btn-outline-secondary">
+                Seguir comprando
+            </a>
+        </div>
     </main>
 
     <!-- PIE DE PÁGINA / FOOTER -->
@@ -503,7 +285,7 @@
                     <p>Chatea con nosotros 24h</p>
                     <p>Email: servicio@ecozen.pe</p>
                     <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
-                    <p>Tiendas y Horarios</p>
+                    <p><a href="../html/tiendas.html">Tiendas y Horarios</a></p>
                 </div>
 
                 <div class="col-md-2">
@@ -512,7 +294,7 @@
                         <li><a href="../html/contacto.html">Contacto</a></li>
                         <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
                         <li><a href="../html/tyc.html">Términos y condiciones</a></li>
-                        <li><a href="../politica.html">Política de privacidad</a></li>
+                        <li><a href="../html/politica.html">Política de privacidad</a></li>
                         <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
                     </ul>
                 </div>
@@ -546,36 +328,29 @@
     </footer>
     <!-- FIN PIE DE PAGINA / FOOTER -->
     <!-- SCRIPT MENU HEADER -->
-     <script src="../js/indivProduct.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('show');
-        }
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/anuncio.js"></script>
+  <script>
+      function toggleMenu() {
+          document.querySelector('.nav-menu').classList.toggle('show');
+      }
+  </script>
+  <!-- FIN SCRIPT MENU HEADER -->
 
-        function mostrarPopup() {
-            document.getElementById('popup').style.display = 'flex';
-        }
-
-        function cerrarPopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    </script>
-    <!-- FIN SCRIPT MENU HEADER -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
           const select = document.getElementById('navegacion-nosotros');
           if (select) {
-            select.addEventListener('change', function () {
-              const url = this.value;
-              if (url !== '#') {
-                window.location.href = url;
-              }
-            });
+              select.addEventListener('change', function () {
+                  const url = this.value;
+                  if (url !== '#') {
+                      window.location.href = url;
+                  }
+              });
           }
-        });
-      </script>
+      });
+  </script>
+    <script src="../js/deseado.js"></script>
 </body>
 
 </html>
