@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctenos - EcoZen</title>
+  <link rel="stylesheet" href="../css/header&footer.css" />
+  <link rel="stylesheet" href="../css/contacto-mockup.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="icon" href="../img/fooder-header/icono.png">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <!-- ENCABEZADO / HEADER -->
+    <header class="header-container py-2 d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-wrap gap-3 text-center align-items-center">
+        <div class="select-wrapper">
+          <select class="delicate-select text-center">
+            <option value="es">Es</option>
+            <option value="en">En</option>
+            <option value="fr">Fr</option>
+          </select>
+          <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="select-wrapper">
+          <select class="delicate-select text-center">
+            <option value="pen">PEN</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+          </select>
+          <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="vertical-separator mx-2"></div>
+        <div class="custom-text">Nos visitas desde: PE</div>
+      </div>
+    </header>
+
+    <section class="header-central px-4 py-1">
+      <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+        <div class="logo-container me-4">
+          <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
+        </div>
+
+        <div class="search-group mx-4">
+          <div class="search-wrapper">
+            <span class="search-icon">
+              <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+              <span class="search-text">Search</span>
+            </span>
+            <input type="text" class="search-input" placeholder="Buscar..." />
+            <button class="search-button">Buscar</button>
+          </div>
+        </div>
+
+        <div class="icon-group d-flex align-items-center gap-3 ms-4">
+          <button class="icon-btn" title="Favoritos">
+            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+          </button>
+
+          <div class="vertical-separator"></div>
+
+          <button class="icon-btn" title="Carrito">
+            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+          </button>
+
+          <div class="vertical-separator"></div>
+
+          <div class="select-wrapper d-flex align-items-center select-container gap-1">
+            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+            <select class="delicate-select">
+              <option>Perfil</option>
+              <option>Salir</option>
+            </select>
+            <div class="dropdown-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar-principal navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
+          <img src="../img/fooder-header/menu.png" alt="Menú" class="toggler-icon" />
+        </button>
+
+        <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
+          <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
+            <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Categorías</a>
+              <div class="dropdown-menu-custom">
+                <div class="category-block">
+                  <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Fertilizantes líquidos</a></li>
+                      <li><a href="#">Fertilizantes sólidos o granulados</a></li>
+                      <li><a href="#">Compost orgánico</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Humus de lombriz</a></li>
+                      <li><a href="#">Abonos granulados</a></li>
+                      <li><a href="#">Abonos líquidos</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Palas y palines</a></li>
+                      <li><a href="#">Rastrillos</a></li>
+                      <li><a href="#">Tijeras de podar</a></li>
+                      <li><a href="#">Pulverizadores manuales</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Cortasetos</a></li>
+                      <li><a href="#">Azadas y escardillas</a></li>
+                      <li><a href="#">Regaderas</a></li>
+                      <li><a href="#">Guantes y protección</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Mangueras</a></li>
+                      <li><a href="#">Aspersores</a></li>
+                      <li><a href="#">Riego por goteo</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Temporizadores / controladores</a></li>
+                      <li><a href="#">Accesorios</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categKits.html" class="category-title">Kits</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Jardines de interior automatizados</a></li>
+                      <li><a href="#">Jardines verticales de pared</a></li>
+                      <li><a href="#">Kits de cultivo básico</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Kits para niños o principiantes</a></li>
+                      <li><a href="#">Jardines hidropónicos</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="#">Contáctenos</a></li>
+            <li class="nav-item">
+              <select class="menu-select">
+                <option selected>Sobre nosotros</option>
+                <option>Sostenibilidad</option>
+                <option>Trabaja con Nosotros</option>
+              </select>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+          </ul>
+
+          <!-- Iconos en mobile -->
+          <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
+            <button class="icon-btn" title="Favoritos">
+              <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+            </button>
+            <div class="vertical-separator"></div>
+            <button class="icon-btn" title="Carrito">
+              <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+            </button>
+            <div class="vertical-separator"></div>
+            <div class="d-flex align-items-center select-container gap-1">
+              <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+              <select class="delicate-select">
+                <option>Perfil</option>
+                <option>Salir</option>
+              </select>
+              <div class="dropdown-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN ENCABEZADO / HEADER -->
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- Hero Section con título -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-image-container">
+              <img src="../img/contacto/hero-contacto.jpg" alt="Contacto EcoZen" class="hero-image" />
+            </div>
+            <h1 class="hero-title">CONTÁCTENOS</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario de Contacto -->
+      <section class="contact-form-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+              <div class="contact-form-card">
+                <form class="contact-form" id="contactForm">
+                  <div class="form-group">
+                    <label for="nombres" class="form-label">Nombres:</label>
+                    <input type="text" class="form-control" id="nombres" name="nombres" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="apellidos" class="form-label">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="documento" class="form-label">D. Identidad:</label>
+                    <input type="text" class="form-control" id="documento" name="documento" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="celular" class="form-label">N° celular:</label>
+                    <input type="tel" class="form-control" id="celular" name="celular" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                  </div>
+
+                  <div class="form-group file-upload-group">
+                    <label class="form-label">Adjuntar archivo:</label>
+                    <div class="file-upload-area" id="fileUploadArea">
+                      <div class="file-upload-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M7 10L12 15L17 10" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 15V3" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                      <div class="file-upload-text">
+                        <span class="upload-main-text">Select a file or drag and drop here</span>
+                        <span class="upload-sub-text">JPG, PNG or PDF, file size no more than 10MB</span>
+                      </div>
+                      <button type="button" class="select-file-btn">SELECT FILE</button>
+                      <input type="file" class="file-input" id="fileInput" accept=".jpg,.jpeg,.png,.pdf" style="display: none;">
+                    </div>
+                  </div>
+
+                  <div class="form-group submit-group">
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de iconos informativos en el footer -->
+      <section class="info-bottom">
+        <div class="container">
+          <div class="info-icons-row">
+            <div class="info-icon-item">
+              <img src="../img/contacto/envio-gratis.svg" alt="Envío gratis" />
+              <span>Envío gratis en pedidos de S/99 o más</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/entrega.svg" alt="Entrega rápida" />
+              <span>Entrega de 1 día laborable al pedir antes de las 12pm</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/devolucion.svg" alt="Devolución" />
+              <span>Garantía de devolución de dinero</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/telefono.svg" alt="Teléfono" />
+              <span>Asesoramiento telefónico gratuito disponible</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/pago-seguro.svg" alt="Pago seguro" />
+              <span>Pagos seguros a través de nuestro sitio web encriptado</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA / FOOTER -->
+    <footer class="footer-ecozen mt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <h5>SOBRE ECOZEN</h5>
+            <p>(01) 999-0900 - ecozen@gmail.com</p>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Mi cuenta</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Sobre mi cuenta</a></li>
+              <li><a href="#">Carrito</a></li>
+              <li><a href="#">Historial de pedidos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Contáctanos</h5>
+            <p>Chatea con nosotros 24h</p>
+            <p>Preguntas frecuentes</p>
+            <p>Términos y condiciones</p>
+            <p>Política de privacidad</p>
+            <p>Servicio al cliente</p>
+            <p>Libreto y Horarios</p>
+            <p>Términos para aquellos servicios</p>
+            <p>Política de devoluciones</p>
+            <p>Mon-Sat: 8AM - 10:30PM</p>
+            <p>Sundays: 9AM - 10PM</p>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Atención al cliente</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Libro of reclamaciones</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Redes sociales</h5>
+            <div class="d-flex gap-2">
+              <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+              <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+              <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+              <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+          <p class="mb-0">copyright ecozen 2025</p>
+          <div class="d-flex gap-3 align-items-center">
+            <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+            <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+            <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+            <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+            <div class="d-flex align-items-center gap-1">
+              <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+              <span>Pago Seguro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    }
+
+    // File upload functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const fileUploadArea = document.getElementById('fileUploadArea');
+      const fileInput = document.getElementById('fileInput');
+      const selectFileBtn = document.querySelector('.select-file-btn');
+
+      selectFileBtn.addEventListener('click', function() {
+        fileInput.click();
+      });
+
+      fileInput.addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+          const uploadText = fileUploadArea.querySelector('.upload-main-text');
+          uploadText.textContent = file.name;
+        }
+      });
+
+      // Drag and drop functionality
+      fileUploadArea.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        fileUploadArea.classList.add('drag-over');
+      });
+
+      fileUploadArea.addEventListener('dragleave', function(e) {
+        e.preventDefault();
+        fileUploadArea.classList.remove('drag-over');
+      });
+
+      fileUploadArea.addEventListener('drop', function(e) {
+        e.preventDefault();
+        fileUploadArea.classList.remove('drag-over');
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+          fileInput.files = files;
+          const uploadText = fileUploadArea.querySelector('.upload-main-text');
+          uploadText.textContent = files[0].name;
+        }
+      });
+
+      // Form submission
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Formulario enviado correctamente!');
+      });
+    });
+  </script>
+</body>
+
+</html>

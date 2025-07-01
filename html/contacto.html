@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - EcoZenShop</title>
+  <link rel="stylesheet" href="../css/header&footer.css" />
+  <link rel="stylesheet" href="../css/contacto.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="icon" href="../img/fooder-header/icono.png">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <!-- ENCABEZADO / HEADER -->
+    <header class="header-container py-2 d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-wrap gap-3 text-center align-items-center">
+        <div class="select-wrapper">
+          <select class="delicate-select text-center">
+            <option value="es">Es</option>
+            <option value="en">En</option>
+            <option value="fr">Fr</option>
+          </select>
+          <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="select-wrapper">
+          <select class="delicate-select text-center">
+            <option value="pen">PEN</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+          </select>
+          <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="vertical-separator mx-2"></div>
+        <div class="custom-text">Nos visitas desde: PE</div>
+      </div>
+    </header>
+
+    <section class="header-central px-4 py-1">
+      <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+        <div class="logo-container me-4">
+          <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
+        </div>
+
+        <div class="search-group mx-4">
+          <div class="search-wrapper">
+            <span class="search-icon">
+              <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+              <span class="search-text">Search</span>
+            </span>
+            <input type="text" class="search-input" placeholder="Buscar..." />
+            <button class="search-button">Buscar</button>
+          </div>
+        </div>
+
+        <div class="icon-group d-flex align-items-center gap-3 ms-4">
+          <button class="icon-btn" title="Favoritos">
+            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+          </button>
+
+          <div class="vertical-separator"></div>
+
+          <button class="icon-btn" title="Carrito">
+            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+          </button>
+
+          <div class="vertical-separator"></div>
+
+          <div class="select-wrapper d-flex align-items-center select-container gap-1">
+            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+            <select class="delicate-select">
+              <option>Perfil</option>
+              <option>Salir</option>
+            </select>
+            <div class="dropdown-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar-principal navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
+          <img src="../img/fooder-header/menu.png" alt="Menú" class="toggler-icon" />
+        </button>
+
+        <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
+          <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
+            <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Categorías</a>
+              <div class="dropdown-menu-custom">
+                <div class="category-block">
+                  <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Fertilizantes líquidos</a></li>
+                      <li><a href="#">Fertilizantes sólidos o granulados</a></li>
+                      <li><a href="#">Compost orgánico</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Humus de lombriz</a></li>
+                      <li><a href="#">Abonos granulados</a></li>
+                      <li><a href="#">Abonos líquidos</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Palas y palines</a></li>
+                      <li><a href="#">Rastrillos</a></li>
+                      <li><a href="#">Tijeras de podar</a></li>
+                      <li><a href="#">Pulverizadores manuales</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Cortasetos</a></li>
+                      <li><a href="#">Azadas y escardillas</a></li>
+                      <li><a href="#">Regaderas</a></li>
+                      <li><a href="#">Guantes y protección</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Mangueras</a></li>
+                      <li><a href="#">Aspersores</a></li>
+                      <li><a href="#">Riego por goteo</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Temporizadores / controladores</a></li>
+                      <li><a href="#">Accesorios</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categKits.html" class="category-title">Kits</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Jardines de interior automatizados</a></li>
+                      <li><a href="#">Jardines verticales de pared</a></li>
+                      <li><a href="#">Kits de cultivo básico</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Kits para niños o principiantes</a></li>
+                      <li><a href="#">Jardines hidropónicos</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="#">Contáctenos</a></li>
+            <li class="nav-item">
+              <select class="menu-select">
+                <option selected>Sobre nosotros</option>
+                <option>Sostenibilidad</option>
+                <option>Trabaja con Nosotros</option>
+              </select>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+          </ul>
+
+          <!-- Iconos en mobile -->
+          <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
+            <button class="icon-btn" title="Favoritos">
+              <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+            </button>
+            <div class="vertical-separator"></div>
+            <button class="icon-btn" title="Carrito">
+              <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+            </button>
+            <div class="vertical-separator"></div>
+            <div class="d-flex align-items-center select-container gap-1">
+              <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+              <select class="delicate-select">
+                <option>Perfil</option>
+                <option>Salir</option>
+              </select>
+              <div class="dropdown-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN ENCABEZADO / HEADER -->
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-contact py-5">
+        <div class="container text-center">
+          <div class="hero-content">
+            <img src="../img/contacto/hero-contact.jpg" alt="Contacto EcoZen" class="hero-image mb-4" />
+            <h1 class="hero-title">CONTACTO</h1>
+            <p class="hero-subtitle">Puedes contactarnos a través de nuestros canales de venta y de atención.<br>
+              Nuestros asistentes te atenderán con gusto.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Primera sección - Canales de Venta -->
+      <section class="canales-venta py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="canales-card">
+                <h2 class="canales-title">NUESTROS CANALES DE VENTA</h2>
+                <div class="row text-center">
+                  <div class="col-md-4 mb-4">
+                    <div class="canal-item">
+                      <div class="canal-icon">
+                        <img src="../img/contacto/web-icon.svg" alt="Página Web" />
+                      </div>
+                      <h4>Compra por nuestra web</h4>
+                      <p>www.ecozen.pe</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="canal-item">
+                      <div class="canal-icon">
+                        <img src="../img/contacto/whatsapp-icon.svg" alt="WhatsApp" />
+                      </div>
+                      <h4>Compra por Whatsapp</h4>
+                      <p>+51 999 777</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="canal-item">
+                      <div class="canal-icon">
+                        <img src="../img/contacto/telefono-icon.svg" alt="Teléfono" />
+                      </div>
+                      <h4>Compra por teléfono</h4>
+                      <p>T & F: (01) 999 - 0900<br>(01) 999 - 0901</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Segunda sección - Canales de Atención -->
+      <section class="canales-atencion py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="canales-card canales-atencion-card">
+                <h2 class="canales-title">NUESTROS CANALES DE VENTA</h2>
+                <div class="row text-center">
+                  <div class="col-md-4 mb-4">
+                    <div class="canal-item">
+                      <div class="canal-icon">
+                        <img src="../img/contacto/messenger-icon.svg" alt="Chat" />
+                      </div>
+                      <h4>Chatea con nosotros</h4>
+                      <p>Facebook messenger todos los días<br>de 9am a 9pm</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="canal-item">
+                      <div class="canal-icon">
+                        <img src="../img/contacto/email-icon.svg" alt="Email" />
+                      </div>
+                      <h4>Escríbenos</h4>
+                      <p>A nuestro correo electrónico<br>servicio@ecozen.pe</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="canal-item">
+                      <div class="canal-icon">
+                        <img src="../img/contacto/telefono-icon.svg" alt="Teléfono" />
+                      </div>
+                      <h4>Llámanos</h4>
+                      <p>T & F: (01) 999 - 0900<br>(01) 999 - 0901</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección inferior con iconos informativos -->
+      <section class="info-bottom py-4">
+        <div class="container">
+          <div class="info-icons-row">
+            <div class="info-icon-item">
+              <img src="../img/contacto/envio-gratis.svg" alt="Envío gratis" />
+              <span>Envío gratis a partir de S/100 soles</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/garantia.svg" alt="Garantía" />
+              <span>Garantía de 30 días en todos los productos</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/compra-segura.svg" alt="Compra segura" />
+              <span>Compra 100% segura</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/atencion.svg" alt="Atención" />
+              <span>Atención personalizada con especialistas en jardinería</span>
+            </div>
+            <div class="info-icon-item">
+              <img src="../img/contacto/sostenible.svg" alt="Sostenible" />
+              <span>Productos eco-amigables y sostenibles para el medio ambiente</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA / FOOTER -->
+    <footer class="footer-ecozen mt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <h5>Sobre ecozen</h5>
+            <p>(219) 555-0114 - ecozen@gmail.com</p>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Mi cuenta</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Sobre mi cuenta</a></li>
+              <li><a href="#">Carrito</a></li>
+              <li><a href="#">Historial de pedidos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Contactanos</h5>
+            <p>Chatea con nosotros 24h</p>
+            <p>Email: servicio@ecozen.pe</p>
+            <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+            <p>Tiendas y Horarios</p>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Atención al cliente</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Libro de reclamaciones</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Redes sociales</h5>
+            <div class="d-flex gap-2">
+              <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+              <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+              <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+              <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+          <p class="mb-0">copyright ecozen 2025</p>
+          <div class="d-flex gap-3 align-items-center">
+            <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+            <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+            <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+            <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+            <div class="d-flex align-items-center gap-1">
+              <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+              <span>Pago Seguro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>

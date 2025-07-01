@@ -1,0 +1,399 @@
+/* === Estilos específicos para la página de Tiendas y Horarios === */
+
+/* Hero Section */
+.hero-tiendas {
+  background-color: #F9F8F4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2C5F2D;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Pestañas */
+.tabs-container {
+  background-color: #fff;
+  padding: 0;
+}
+
+.nav-tabs-custom {
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.nav-tabs-custom .nav-item {
+  margin: 0;
+}
+
+.nav-tabs-custom .nav-link {
+  background-color: #7E9F5C;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+.nav-tabs-custom .nav-link:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.nav-tabs-custom .nav-link:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nav-tabs-custom .nav-link.active {
+  background-color: #2C5F2D;
+  color: white;
+}
+
+.nav-tabs-custom .nav-link:hover:not(.active) {
+  background-color: #6B8A4F;
+  color: white;
+}
+
+.nav-tabs-custom .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Contenido principal */
+.tiendas-content {
+  background-color: #fff;
+  padding: 0;
+}
+
+.tab-pane {
+  min-height: 500px;
+}
+
+/* Sección del mapa */
+.map-section {
+  position: relative;
+  height: 500px;
+  background-color: #f8f9fa;
+  padding: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=-12.0464,-77.0428&zoom=12&size=800x500&maptype=roadmap&markers=color:green%7Clabel:A%7C-12.0464,-77.0428&markers=color:green%7Clabel:B%7C-12.0732,-76.9426&key=YOUR_API_KEY');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  overflow: hidden;
+  border: none;
+  display: block;
+}
+
+.search-box {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-box .search-input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 15px;
+  width: 250px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.search-box .search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(126, 159, 92, 0.25);
+  border-color: #2C5F2D;
+}
+
+.search-box .search-input::placeholder {
+  color: #999;
+}
+
+/* Lista de tiendas */
+.tiendas-list {
+  background-color: #B8D4A0;
+  padding: 20px;
+  min-height: 500px;
+  overflow-y: auto;
+}
+
+.tienda-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.tienda-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.tienda-card:last-child {
+  margin-bottom: 0;
+}
+
+.tienda-nombre {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2C5F2D;
+  margin-bottom: 8px;
+}
+
+.tienda-direccion {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.tienda-horario {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tienda-horario strong {
+  color: #2C5F2D;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.tienda-horario span {
+  color: #555;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 2px;
+}
+
+.horario-especial {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 12px;
+  border-left: none;
+}
+
+.horario-especial strong {
+  color: #2C5F2D;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+.ver-mapa-btn {
+  color: #7E9F5C;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.ver-mapa-btn:hover {
+  color: #2C5F2D;
+  border-bottom-color: #2C5F2D;
+  text-decoration: none;
+}
+
+/* Información adicional */
+.info-adicional {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  border-top: 1px solid #e9ecef;
+}
+
+.info-icons-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.info-icon-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #666;
+  font-size: 0.85rem;
+  text-align: left;
+  max-width: 220px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.info-icon-item::before {
+  content: "📍";
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.info-icon-item:nth-child(2)::before {
+  content: "🕒";
+}
+
+.info-icon-item:nth-child(3)::before {
+  content: "🚚";
+}
+
+.info-icon-item:nth-child(4)::before {
+  content: "👥";
+}
+
+.info-icon-item:nth-child(5)::before {
+  content: "🌱";
+}
+
+/* Estilos para el tab de provincia */
+#provincia .map-container::before {
+  content: "🗺️ Mapa Interactivo de Provincias";
+}
+
+/* Mejoras visuales adicionales */
+.tab-content {
+  border-top: none;
+}
+
+.row.g-0 > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .info-icons-row {
+    gap: 25px;
+  }
+  
+  .info-icon-item {
+    max-width: 200px;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .map-section {
+    height: 400px;
+  }
+  
+  .tiendas-list {
+    padding: 15px;
+    min-height: auto;
+  }
+  
+  .info-icons-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .info-icon-item {
+    max-width: 300px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    padding: 0 20px;
+  }
+
+  .nav-tabs-custom .nav-link {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+
+  .map-section {
+    height: 350px;
+  }
+  
+  .search-box .search-input {
+    width: 200px;
+  }
+  
+  .tiendas-list {
+    padding: 15px;
+  }
+  
+  .tienda-card {
+    padding: 15px;
+  }
+  
+  .tienda-nombre {
+    font-size: 1rem;
+  }
+  
+  .info-icon-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .nav-tabs-custom .nav-link {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+  
+  .search-box .search-input {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .map-section {
+    height: 300px;
+  }
+  
+  .tienda-card {
+    padding: 12px;
+  }
+}
