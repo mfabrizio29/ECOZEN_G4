@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto - EcoZenShop</title>
+  <title>Preguntas Frecuentes - EcoZenShop</title>
   <link rel="stylesheet" href="../css/header&footer.css" />
-  <link rel="stylesheet" href="../css/contacto.css" />
+  <link rel="stylesheet" href="../css/preguntasfrecuentes.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="icon" href="../img/fooder-header/icono.png">
 </head>
@@ -156,7 +156,7 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item"><a class="nav-link active" href="#">Contáctenos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/contacto.html">Contáctenos</a></li>
             <li class="nav-item">
               <select class="menu-select">
                 <option selected>Sobre nosotros</option>
@@ -193,129 +193,235 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main-content">
-      <!-- Hero Section -->
-      <section class="hero-contact py-5">
-        <div class="container text-center">
-          <div class="hero-content">
-            <img src="../img/contacto/hero-contact.jpg" alt="Contacto EcoZen" class="hero-image mb-4" />
-            <h1 class="hero-title">CONTACTO</h1>
-            <p class="hero-subtitle">Puedes contactarnos a través de nuestros canales de venta y de atención.<br>
-              Nuestros asistentes te atenderán con gusto.</p>
-          </div>
+      <!-- Título principal -->
+      <section class="faq-header py-4">
+        <div class="container">
+          <h1 class="faq-main-title">PREGUNTAS FRECUENTES</h1>
         </div>
       </section>
 
-      <!-- Primera sección - Canales de Venta -->
-      <section class="canales-venta py-5">
+      <!-- Sección de FAQ -->
+      <section class="faq-section py-4">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10">
-              <div class="canales-card">
-                <h2 class="canales-title">NUESTROS CANALES DE VENTA</h2>
-                <div class="row text-center">
-                  <div class="col-md-4 mb-4">
-                    <div class="canal-item">
-                      <div class="canal-icon">
-                        <img src="../img/contacto/web-icon.svg" alt="Página Web" />
-                      </div>
-                      <h4>Compra por nuestra web</h4>
-                      <p>www.ecozen.pe</p>
+              
+              <!-- Primer acordeón -->
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(1)">
+                  <h3 class="faq-title">SOBRE COMPRAR EN ECOZEN.PE</h3>
+                  <span class="faq-arrow" id="arrow-1">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-1">
+                  <div class="faq-body">
+                    <div class="faq-question">
+                      <strong>¿Puedo comprar en EcoZen.pe sin pasaporte?</strong>
+                      <p>Sí, puedes comprar productos que tengan la etiqueta CE, pasaporte o carnet de extranjería. 
+                      Para ello necesitas presentar la ficha de carnet de extranjería o pasaporte válido.</p>
                     </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="canal-item">
-                      <div class="canal-icon">
-                        <img src="../img/contacto/whatsapp-icon.svg" alt="WhatsApp" />
-                      </div>
-                      <h4>Compra por Whatsapp</h4>
-                      <p>+51 999 777</p>
+                    
+                    <div class="faq-question">
+                      <strong>¿Qué tipos de productos puedo encontrar?</strong>
+                      <p>Puedes encontrar productos por marcas de acuerdo a los siguientes:</p>
                     </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="canal-item">
-                      <div class="canal-icon">
-                        <img src="../img/contacto/telefono-icon.svg" alt="Teléfono" />
+
+                    <div class="faq-question">
+                      <strong>¿Cómo uso mis vales de compra?</strong>
+                      <p>Puedes usar tus vales de compra en cualquier compra en línea. 
+                      Simplemente ingresa el código del vale en el checkout.</p>
+                    </div>
+
+                    <div class="faq-question">
+                      <strong>¿Qué significa la disponibilidad de los productos?</strong>
+                      <p>En Ecozen trabajamos con una gran variedad de productos de diferentes marcas. 
+                      Puedes consultar la disponibilidad en tiempo real en nuestro sitio web.</p>
+                    </div>
+
+                    <!-- Imágenes de categorías -->
+                    <div class="categories-images">
+                      <div class="category-item">
+                        <img src="../img/faq/sistemas-riego.jpg" alt="Sistemas de Riego" />
+                        <div class="category-overlay">
+                          <span>SISTEMAS DE RIEGO</span>
+                        </div>
                       </div>
-                      <h4>Compra por teléfono</h4>
-                      <p>T & F: (01) 999 - 0900<br>(01) 999 - 0901</p>
+                      <div class="category-item">
+                        <img src="../img/faq/herramientas.jpg" alt="Herramientas de Jardinería" />
+                        <div class="category-overlay">
+                          <span>HERRAMIENTAS DE JARDINERÍA</span>
+                        </div>
+                      </div>
+                      <div class="category-item">
+                        <img src="../img/faq/kits.jpg" alt="Kits de Jardinería" />
+                        <div class="category-overlay">
+                          <span>KITS DE JARDINERÍA</span>
+                        </div>
+                      </div>
+                      <div class="category-item">
+                        <img src="../img/faq/abonos.jpg" alt="Abonos" />
+                        <div class="category-overlay">
+                          <span>ABONOS</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Segunda sección - Canales de Atención -->
-      <section class="canales-atencion py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="canales-card canales-atencion-card">
-                <h2 class="canales-title">NUESTROS CANALES DE VENTA</h2>
-                <div class="row text-center">
-                  <div class="col-md-4 mb-4">
-                    <div class="canal-item">
-                      <div class="canal-icon">
-                        <img src="../img/contacto/messenger-icon.svg" alt="Chat" />
-                      </div>
-                      <h4>Chatea con nosotros</h4>
-                      <p>Facebook messenger todos los días<br>de 9am a 9pm</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="canal-item">
-                      <div class="canal-icon">
-                        <img src="../img/contacto/email-icon.svg" alt="Email" />
-                      </div>
-                      <h4>Escríbenos</h4>
-                      <p>A nuestro correo electrónico<br>servicio@ecozen.pe</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="canal-item">
-                      <div class="canal-icon">
-                        <img src="../img/contacto/telefono-icon.svg" alt="Teléfono" />
-                      </div>
-                      <h4>Llámanos</h4>
-                      <p>T & F: (01) 999 - 0900<br>(01) 999 - 0901</p>
-                    </div>
+              <!-- Resto de acordeones -->
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(2)">
+                  <h3 class="faq-title">SOBRE NUESTROS MEDIOS DE PAGO</h3>
+                  <span class="faq-arrow" id="arrow-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-2">
+                  <div class="faq-body">
+                    <p>Información sobre medios de pago disponibles en EcoZen.</p>
                   </div>
                 </div>
               </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(3)">
+                  <h3 class="faq-title">SOBRE NUESTROS PRECIOS Y PROMOCIONES</h3>
+                  <span class="faq-arrow" id="arrow-3">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-3">
+                  <div class="faq-body">
+                    <p>Información sobre precios y promociones de EcoZen.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(4)">
+                  <h3 class="faq-title">SOBRE EL DESPACHO</h3>
+                  <span class="faq-arrow" id="arrow-4">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-4">
+                  <div class="faq-body">
+                    <p>Información sobre el despacho y envío de productos.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(5)">
+                  <h3 class="faq-title">SOBRE EL SERVICIO DE ARMADO O INSTALACIÓN</h3>
+                  <span class="faq-arrow" id="arrow-5">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-5">
+                  <div class="faq-body">
+                    <p>Información sobre servicios de armado e instalación.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(6)">
+                  <h3 class="faq-title">SOBRE NUESTRO SERVICIO</h3>
+                  <span class="faq-arrow" id="arrow-6">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-6">
+                  <div class="faq-body">
+                    <p>Información sobre nuestro servicio al cliente.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(7)">
+                  <h3 class="faq-title">FORMAS DE PAGO Y FACTURACIÓN</h3>
+                  <span class="faq-arrow" id="arrow-7">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-7">
+                  <div class="faq-body">
+                    <p>Información sobre formas de pago y facturación.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(8)">
+                  <h3 class="faq-title">SOBRE LA SEGURIDAD DE TUS DATOS PERSONALES</h3>
+                  <span class="faq-arrow" id="arrow-8">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-8">
+                  <div class="faq-body">
+                    <p>Información sobre la seguridad de datos personales.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(9)">
+                  <h3 class="faq-title">SOBRE NUESTROS CATÁLOGOS</h3>
+                  <span class="faq-arrow" id="arrow-9">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-9">
+                  <div class="faq-body">
+                    <p>Información sobre nuestros catálogos de productos.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item mb-3">
+                <div class="faq-header-section" onclick="toggleFaq(10)">
+                  <h3 class="faq-title">PARA CAMBIOS Y DEVOLUCIONES</h3>
+                  <span class="faq-arrow" id="arrow-10">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faq-content" id="content-10">
+                  <div class="faq-body">
+                    <p>Información sobre cambios y devoluciones de productos.</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Sección inferior con iconos informativos -->
-      <section class="info-bottom py-4">
-        <div class="container">
-          <div class="info-icons-row">
-            <div class="info-icon-item">
-              <img src="../img/contacto/envio-gratis.svg" alt="Envío gratis" />
-              <span>Envío gratis a partir de S/100 soles</span>
-            </div>
-            <div class="info-icon-item">
-              <img src="../img/contacto/garantia.svg" alt="Garantía" />
-              <span>Garantía de 30 días en todos los productos</span>
-            </div>
-            <div class="info-icon-item">
-              <img src="../img/contacto/compra-segura.svg" alt="Compra segura" />
-              <span>Compra 100% segura</span>
-            </div>
-            <div class="info-icon-item">
-              <img src="../img/contacto/atencion.svg" alt="Atención" />
-              <span>Atención personalizada con especialistas en jardinería</span>
-            </div>
-            <div class="info-icon-item">
-              <img src="../img/contacto/sostenible.svg" alt="Sostenible" />
-              <span>Productos eco-amigables y sostenibles para el medio ambiente</span>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <!-- PIE DE PÁGINA / FOOTER -->
@@ -394,14 +500,40 @@
         </div>
     </footer>
     <!-- FIN PIE DE PAGINA / FOOTER -->
-    <!-- SCRIPT MENU HEADER -->
+
+    <!-- SCRIPTS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleMenu() {
             document.querySelector('.nav-menu').classList.toggle('show');
         }
+
+        function toggleFaq(id) {
+            const content = document.getElementById(`content-${id}`);
+            const arrow = document.getElementById(`arrow-${id}`);
+            
+            // Cerrar todos los otros acordeones
+            for (let i = 1; i <= 10; i++) {
+                if (i !== id) {
+                    const otherContent = document.getElementById(`content-${i}`);
+                    const otherArrow = document.getElementById(`arrow-${i}`);
+                    if (otherContent && otherArrow) {
+                        otherContent.classList.remove('show');
+                        otherArrow.classList.remove('rotate');
+                    }
+                }
+            }
+            
+            // Toggle el acordeón clickeado
+            content.classList.toggle('show');
+            arrow.classList.toggle('rotate');
+        }
+
+        // Abrir el primer acordeón por defecto
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleFaq(1);
+        });
     </script>
-    <!-- FIN SCRIPT MENU HEADER -->
 </body>
 
 </html>

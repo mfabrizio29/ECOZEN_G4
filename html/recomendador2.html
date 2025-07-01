@@ -207,14 +207,21 @@
         <main class="recomendador-main">
             <h1 id="titulo-recomendador">RECOMENDACIONES ADICIONALES</h1>
 
-            <div class="galeria-productos" id="galeria">
-                <!-- Las tarjetas se insertan dinámicamente con JS -->
+            <div class="galeria-wrapper">
+                <div class="galeria-productos" id="galeria">
+                    <!-- Las tarjetas se insertan dinámicamente aquí -->
+                </div>
             </div>
 
             <div class="navegacion">
-                <button class="btn btn-outline-success mx-2" onclick="moverIzquierda()">⬅</button>
-                <button class="btn btn-outline-success mx-2" onclick="moverDerecha()">➡</button>
-                <p class="mt-3">Página 1 de 8</p>
+                <button class="btn btn-outline-success mx-2" onclick="moverIzquierda()"></button>
+                <button class="btn btn-outline-success mx-2" onclick="moverDerecha()"></button>
+                <p class="mt-3" id="contador-pagina">Página 1 de 5</p>
+
+                <!-- Indicadores de puntos -->
+                <div class="indicadores" id="indicadores">
+                    <!-- Se generan dinámicamente -->
+                </div>
             </div>
 
             <div class="contacto-rapido">
@@ -223,71 +230,32 @@
             </div>
         </main>
 
-        <script>
-            const productos = [
-                { img: "producto1.jpg", titulo: "Producto 1", descripcion: "Descripción del producto 1" },
-                { img: "producto2.jpg", titulo: "Producto 2", descripcion: "Descripción del producto 2" },
-                { img: "producto3.jpg", titulo: "Producto 3", descripcion: "Descripción del producto 3" },
-                { img: "producto4.jpg", titulo: "Producto 4", descripcion: "Descripción del producto 4" },
-                { img: "producto5.jpg", titulo: "Producto 5", descripcion: "Descripción del producto 5" }
-            ];
-
-            let indice = 0;
-
-            function renderTarjetas() {
-                const galeria = document.getElementById("galeria");
-                galeria.innerHTML = "";
-
-                const total = productos.length;
-                const izquierda = (indice + total - 1) % total;
-                const centro = indice;
-                const derecha = (indice + 1) % total;
-
-                [izquierda, centro, derecha].forEach((i, idx) => {
-                    const prod = productos[i];
-                    const div = document.createElement("div");
-                    div.className = "tarjeta-producto card text-center p-3" + (idx === 1 ? " activa" : "");
-                    div.innerHTML = `
-        <img src="${prod.img}" class="card-img-top" alt="${prod.titulo}">
-        <div class="card-body">
-          <h5 class="card-title">${prod.titulo}</h5>
-          <p class="card-text">${prod.descripcion}</p>
-          <button class="btn btn-success mb-2">Ir al producto</button><br>
-          <a href="#">Ver productos similares</a>
-        </div>
-      `;
-                    galeria.appendChild(div);
-                });
-            }
-
-            function moverIzquierda() {
-                indice = (indice + productos.length - 1) % productos.length;
-                renderTarjetas();
-            }
-
-            function moverDerecha() {
-                indice = (indice + 1) % productos.length;
-                renderTarjetas();
-            }
-
-            renderTarjetas();
-        </script>
-
-
         <!-- PIE DE PÁGINA / FOOTER -->
         <footer class="footer-ecozen mt-5">
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-md-3">
-                        <h5>SOBRE ECOZEN</h5>
-                        <p>(01) 999-0900 - ecozen@gmail.com</p>
+                        <h5>Sobre Ecozen</h5>
+                        <p>Tel: (219) 555-0114</p>
+                        <p>Email: ecozen@gmail.com</p>
+                        <p>Desarrollado por:</p>
+                        <ul>
+                            <li>Seclén López, Lucia</li>
+                            <li>contacto: luciaseclop05@gmail.com</li><br>
+                            <li>Uchofen Alejos, Juanpablo</li>
+                            <li>contacto: uchofenalejosjp@gmail.com</li><br>
+                            <li>Vallejos Barbadillo, Sebastián</li>
+                            <li>contacto: svallejosb1@gmail.com</li><br>
+                            <li>Vásquez Centurión, Miguel</li>
+                            <li>contacto: mfabrizio29@gmail.com</li>
+                        </ul>
                     </div>
 
                     <div class="col-md-2">
                         <h5>Mi cuenta</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Sobre mi cuenta</a></li>
-                            <li><a href="#">Carrito</a></li>
+                            <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
+                            <li><a href="../html/carrito.html">Carrito</a></li>
                             <li><a href="#">Historial de pedidos</a></li>
                         </ul>
                     </div>
@@ -295,30 +263,24 @@
                     <div class="col-md-3">
                         <h5>Contáctanos</h5>
                         <p>Chatea con nosotros 24h</p>
-                        <p>Preguntas frecuentes</p>
-                        <p>Términos y condiciones</p>
-                        <p>Política de privacidad</p>
-                        <p>Servicio al cliente</p>
-                        <p>Libreto y Horarios</p>
-                        <p>Términos para aquellos servicios</p>
-                        <p>Política de devoluciones</p>
-                        <p>Mon-Sat: 8AM - 10:30PM</p>
-                        <p>Sundays: 9AM - 10PM</p>
+                        <p>Email: servicio@ecozen.pe</p>
+                        <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+                        <p>Tiendas y Horarios</p>
                     </div>
 
                     <div class="col-md-2">
                         <h5>Atención al cliente</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">Preguntas frecuentes</a></li>
-                            <li><a href="#">Términos y condiciones</a></li>
-                            <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Libro of reclamaciones</a></li>
+                            <li><a href="../html/contacto.html">Contacto</a></li>
+                            <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                            <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+                            <li><a href="../politica.html">Política de privacidad</a></li>
+                            <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
                         </ul>
                     </div>
 
                     <div class="col-md-2">
-                        <h5>Redes sociales</h5>
+                        <h5>Redes Sociales</h5>
                         <div class="d-flex gap-2">
                             <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
                             <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
@@ -329,7 +291,8 @@
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
-                    <p class="mb-0">copyright ecozen 2025</p>
+                    <p class="mb-0">&copy; Ecozen 2025</p>
+                    <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
                     <div class="d-flex gap-3 align-items-center">
                         <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
                         <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
@@ -343,8 +306,17 @@
                 </div>
             </div>
         </footer>
-    </div>
-
+        <!-- FIN PIE DE PAGINA / FOOTER -->
+        <!-- SCRIPT MENU HEADER -->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.nav-menu').classList.toggle('show');
+            }
+        </script>
+        <!-- FIN SCRIPT MENU HEADER -->
 </body>
+<!-- Carga el archivo JS externo -->
+<script src="/js/recomendador.js"></script>
 
 </html>

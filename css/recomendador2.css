@@ -12,32 +12,70 @@
   margin-bottom: 2rem;
 }
 
-.galeria-productos {
+.galeria-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Altura fija para el contenedor */
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
+  align-items: center;
   overflow: hidden;
 }
 
-.tarjeta-producto {
-  width: 250px;
-  opacity: 0.5;
-  pointer-events: none;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transform: scale(0.9);
+.galeria-productos {
+  position: relative;
+  width: 300px; /* Ancho fijo para la "ventana" central */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.tarjeta-producto {
+  position: absolute;
+  width: 280px;
+  opacity: 0;
+  transform: scale(0.8) translateX(0);
+  transition: all 0.5s ease;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  pointer-events: none;
+}
+
+/* Tarjeta activa (centro) */
 .tarjeta-producto.activa {
-  transform: scale(1.1);
   opacity: 1;
+  transform: scale(1) translateX(0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid #2e7d32;
   pointer-events: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Tarjetas laterales para dar contexto visual */
+.tarjeta-producto.izquierda {
+  opacity: 0.3;
+  transform: scale(0.7) translateX(-150px);
+  z-index: 1;
+}
+
+.tarjeta-producto.derecha {
+  opacity: 0.3;
+  transform: scale(0.7) translateX(150px);
+  z-index: 1;
 }
 
 .tarjeta-producto img {
   height: 200px;
+  width: 100%;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tarjeta-producto .card-body {
+  padding: 1rem;
 }
 
 .navegacion {
@@ -48,9 +86,82 @@
 .navegacion button {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #2e7d32;
+  background: white;
+  color: #2e7d32;
+  transition: all 0.3s ease;
+}
+
+.navegacion button:hover {
+  background: #2e7d32;
+  color: white;
+  transform: scale(1.1);
 }
 
 .contacto-rapido {
   text-align: center;
   margin-top: 3rem;
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicador.activo {
+  background: #2e7d32;
+  transform: scale(1.2);
+}
+
+.navegacion button {
+  position: relative !important;
+  font-size: 0 !important;
+}
+
+/* Triángulo izquierdo */
+.navegacion button:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 12px solid #1b5e20;
+}
+
+/* Triángulo derecho */
+.navegacion button:last-of-type::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #1b5e20;
+}
+
+/* Cambiar color de triángulos en hover */
+.navegacion button:hover::before {
+  border-right-color: white;
+  border-left-color: white;
 }
