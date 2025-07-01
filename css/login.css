@@ -1,0 +1,29 @@
+.modal-user {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-user .modal-header {
+  background-color: #7E9F5C;
+  color: #fff;
+}
+
+.modal-user .modal-title {
+  font-weight: bold;
+}
+
+.modal-user .btn-close {
+  background-color: #fff;
+}
+
+.modal-user .modal-body {
+  padding: 20px;
+}
+
+.modal-user form .form-control {
+  border-radius: 6px;
+}
+
+.modal-user form button {
+  border-radius: 6px;
+}

@@ -113,6 +113,19 @@ document.addEventListener('DOMContentLoaded',()=>{
       imgs.insertAdjacentHTML('beforeend',`<img src="${p.img||'../img/productos/placeholder.png'}" width="70" alt="">`);
     });
 
+const order = {
+  id: qs('#order-code').textContent,     // generado más abajo
+  date: new Date().toISOString(),
+  status: 'entregado',                   // o 'procesando' si vas a cambiarlo luego
+  total,                                 // número – ya lo calculamos arriba
+  items: cart                            // productos del carrito
+};
+
+const orders = JSON.parse(localStorage.getItem('orders') || '[]');
+orders.push(order);
+localStorage.setItem('orders', JSON.stringify(orders));
+
+    
     enableNav(1); showStep(2);
     // localStorage.removeItem(CART_KEY); // <- descomenta si deseas vaciar carrito al finalizar
   });
