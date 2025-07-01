@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoZenShop | Términos y Condiciones </title>
+    <title>EcoZenShop | Libro de Reclamaciones </title>
     <link rel="stylesheet" href="../css/fuente.css">
     <link rel="stylesheet" href="../css/header&footer.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../img/fooder-header/icono.png">
-    <link rel="stylesheet" href="../css/libroReclamaciones.css">
+    <link rel="stylesheet" href="../css/libroreclamaciones.css">
 
 </head>
 
@@ -208,136 +208,149 @@
         </nav>
     </div>
     <!-- FIN ENCABEZADO / HEADER -->
-
     <main class="container py-5" id="libro-reclamaciones">
         <h2 class="text-center fw-bold mb-5 titulo-seccion">LIBRO DE RECLAMACIONES</h2>
-
-        <div class="formulario-box p-5 rounded-4 shadow-sm">
+      
+        <form>
             <form>
                 <div class="row g-4">
-                    <!-- Columna izquierda -->
-                    <div class="col-md-6">
-                        <h5 class="fw-bold mb-4">1) Datos de la persona que presenta el reclamo</h5>
-
-                        <div class="mb-3">
-                            <label class="form-label">Tipo de Documento</label>
-                            <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Nº de Documento</label>
-                            <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Nombres y Apellidos</label>
-                            <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Tipo de Respuesta</label>
-                            <select class="form-select">
-                                <option value="">Seleccionar</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Departamento</label>
-                            <select class="form-select">
-                                <option value="">Seleccionar</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Provincia</label>
-                            <select class="form-select">
-                                <option value="">Seleccionar</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Distrito</label>
-                            <select class="form-select">
-                                <option value="">Seleccionar</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" />
-                        </div>
+                  <!-- Columna izquierda -->
+                  <div class="col-md-6">
+                    <div class="formulario-box p-4">
+                      <h5 class="fw-bold mb-4">1) Datos de la persona que presenta el reclamo</h5>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Tipo de Documento</label>
+                        <input type="text" placeholder="Escribir acá" class="form-control" />
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Nº de Documento</label>
+                        <input type="text" placeholder="Escribir acá" class="form-control" />
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Nombres y Apellidos</label>
+                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="400" />
+                        <small class="text-muted limite-derecha">Límite: 400 palabras</small>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Tipo de Respuesta</label>
+                        <select class="form-select">
+                          <option value="">Seleccione</option>
+                        </select>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Dirección</label>
+                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="200" />
+                        <small class="text-muted limite-derecha">Límite: 200 palabras</small>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Departamento</label>
+                        <select class="form-select">
+                          <option value="">Seleccione</option>
+                        </select>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Provincia</label>
+                        <select class="form-select">
+                          <option value="">Seleccione</option>
+                        </select>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Distrito</label>
+                        <select class="form-select">
+                          <option value="">Seleccione</option>
+                        </select>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Teléfono</label>
+                        <input type="tel" placeholder="Escribir acá" class="form-control" maxlength="9" />
+                        <small class="text-muted limite-derecha">Límite: 9 números</small>
+                      </div>
                     </div>
-
-                    <!-- Columna derecha -->
-                    <div class="col-md-6">
-                        <h5 class="fw-bold mb-4">2) Información general</h5>
-
-                        <div class="mb-3">
-                            <label class="form-label">N° de Orden</label>
-                            <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Identificación del Bien Contratado</label>
-                            <select class="form-select">
-                                <option value="">Seleccionar</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Monto Reclamado</label>
-                            <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Dirección</label>
-                            <input type="text" class="form-control" />
-                        </div>
-
-                        <!-- Sección 3 -->
-                        <h5 class="fw-bold mt-5 mb-4">3) Detalles de su reclamo</h5>
-
-                        <div class="mb-3">
-                            <label class="form-label">Tipo</label>
-                            <select class="form-select">
-                                <option value="">Seleccionar</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Detalle</label>
-                            <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Detalle del Reclamo</label>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
+                  </div>
+              
+                  <!-- Columna derecha -->
+                  <div class="col-md-6">
+                    <div class="formulario-box p-4">
+                      <h5 class="fw-bold mb-4">2) Información general</h5>
+              
+                      <div class="mb-3">
+                        <label class="form-label">N° de Orden</label>
+                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="20" />
+                        <small class="text-muted limite-derecha">Límite: 20 números</small>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Identificación del Bien Contratado</label>
+                        <select class="form-select">
+                          <option value="">Seleccione</option>
+                        </select>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Monto Reclamado</label>
+                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="100" />
+                        <small class="text-muted limite-derecha">Límite: 100 palabras</small>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Descripción</label>
+                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="400" />
+                        <small class="text-muted limite-derecha">Límite: 400 palabras</small>
+                      </div>
+              
+                      <h5 class="fw-bold mt-5 mb-4">3) Detalles de su reclamo</h5>
+              
+                      <div class="mb-3">
+                        <select class="form-select">
+                          <option value="">Seleccione</option>
+                        </select>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label class="form-label">Detalles del reclamo</label>
+                        <textarea rows="3" placeholder="Escribir acá" class="form-control" maxlength="400"></textarea>
+                        <small class="text-muted limite-derecha">Límite: 400 palabras</small>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </form>
+              
+ 
+      
+          <div class="upload-row">
+            <div class="upload-box mb-4">
+              <div class="upload-content d-flex align-items-center justify-content-between flex-wrap">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-cloud-arrow-up fs-3 text-muted"></i>
+                  <div>
+                    <p class="mb-1">Select a file or drag and drop here</p>
+                    <small class="text-muted">JPG, PNG or PDF, file size no more than 10MB</small>
+                  </div>
+                </div>
+                <label for="archivo" class="custom-file-upload">SELECT FILE</label>
+                <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf">
+              </div>
+            </div>
+          
+            <div class="d-grid align-self-start">
+              <button type="submit" class="btn btn-enviar">enviar</button>
+            </div>
+          </div>
+    </form>
+</div>
+      </main>
+      
 
-                <!-- Sección archivo -->
-                <div class="upload-box my-4">
-                    <div class="upload-content d-flex align-items-center justify-content-between flex-wrap">
-                        <div class="d-flex align-items-center gap-3">
-                            <i class="bi bi-cloud-arrow-up fs-3 text-muted"></i>
-                            <div>
-                                <p class="mb-1 fw">Select a file or drag and drop here</p>
-                                <small class="text-muted">JPG, PNG or PDF, file size no more than 10MB</small>
-                            </div>
-                        </div>
-                        <label for="archivo" class="custom-file-upload">SELECT FILE</label>
-                        <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf" />
-                    </div>
-                </div>
-
-                <!-- Botón enviar -->
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-enviar">enviar</button>
-                </div>
-            </form>
-        </div>
-    </main>
 
     <footer class="footer-ecozen mt-5">
         <div class="container">
@@ -406,22 +419,12 @@
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+
     <script>
         function toggleMenu() {
             document.querySelector('.nav-menu').classList.toggle('show');
         }
     </script>
-
-    <script>
-        const archivoInput = document.getElementById("archivo");
-        const archivoNombre = document.getElementById("archivo-nombre");
-
-        archivoInput.addEventListener("change", function () {
-            archivoNombre.textContent = this.files.length > 0 ? this.files[0].name : "Ningún archivo seleccionado";
-        });
-    </script>
-
-    <script src="../js/trabajaConNosotros.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -439,3 +442,5 @@
 </body>
 
 </html>
+
+
