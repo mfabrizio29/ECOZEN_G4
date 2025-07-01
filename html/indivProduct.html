@@ -51,7 +51,7 @@
                             <img src="../img/fooder-header/buscar.png" alt="Buscar" />
                             <span class="search-text">Search</span>
                         </span>
-                        <input type="text" class="search-input" />
+                        <input type="text" class="search-input" placeholder="Buscar..." />
                         <button class="search-button">Buscar</button>
                     </div>
                 </div>
@@ -61,40 +61,24 @@
                         <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
                     </button>
 
-                    <div class="search-group mx-4">
-                        <div class="search-wrapper">
-                            <span class="search-icon">
-                                <img src="../img/fooder-header/buscar.png" alt="Buscar" />
-                                <span class="search-text">Search</span>
-                            </span>
-                            <input type="text" class="search-input" placeholder="Buscar..." />
-                            <button class="search-button">Buscar</button>
-                        </div>
-                    </div>
+                    <div class="vertical-separator"></div>
 
-                    <div class="icon-group d-flex align-items-center gap-3 ms-4">
-                        <button class="icon-btn" title="Favoritos">
-                            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
-                        </button>
+                    <button class="icon-btn" title="Carrito">
+                        <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+                    </button>
 
-                        <div class="vertical-separator"></div>
+                    <div class="vertical-separator"></div>
 
-                        <button class="icon-btn" title="Carrito">
-                            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
-                        </button>
-
-                        <div class="vertical-separator"></div>
-
-                        <div class="select-wrapper d-flex align-items-center select-container gap-1">
-                            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
-                            <select class="delicate-select">
-                                <option>Perfil</option>
-                                <option>Salir</option>
-                            </select>
-                            <div class="dropdown-arrow"></div>
-                        </div>
+                    <div class="select-wrapper d-flex align-items-center select-container gap-1">
+                        <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+                        <select class="delicate-select">
+                            <option>Perfil</option>
+                            <option>Salir</option>
+                        </select>
+                        <div class="dropdown-arrow"></div>
                     </div>
                 </div>
+            </div>
         </section>
 
 
@@ -224,19 +208,22 @@
 
     <main class="container">
         <section class="product">
-            <div class="gallery">
+            <div class="gallery-column">
                 <div class="thumbnails">
                     <img src="../img/indivProduct/miniatura1.png" alt="Miniatura 1">
                     <img src="../img/indivProduct/miniatura2.png" alt="Miniatura 2">
                     <img src="../img/indivProduct/miniatura3.png" alt="Miniatura 3">
                     <img src="../img/indivProduct/miniatura4.png" alt="Miniatura 4">
                 </div>
+            </div>
+
+            <div class="main-image-column">
                 <img class="main-image" src="../img/indivProduct/productoMain.png" alt="Producto principal">
             </div>
 
             <div class="details">
-                <div class="rating">★★★★★ <h1>Kit de jardinería para interiores</h1>
-                </div>
+                <div class="rating">★★★★★</div>
+                <h1>Kit de jardinería para interiores</h1>
                 <p class="brand">Click & Grow | Smart Garden 3</p>
                 <p class="price">S/358.80</p>
                 <div class="quantity">
@@ -258,6 +245,7 @@
             </div>
         </section>
 
+
         <section class="description">
             <h3>Descripción del producto</h3>
             <p>Cultiva hierbas y verduras frescas en interiores: las luces LED de bajo consumo garantizan que tus
@@ -272,19 +260,24 @@
             <h3>Ficha técnica</h3>
             <ul>
                 <li>&emsp;Capacidad:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>3 pods/cultivos simultáneos</span></li>
+                    <span>3 pods/cultivos simultáneos</span>
+                </li>
                 <li>&emsp;Depósito de
                     agua:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>1,2L (~0,32gal)</span></li>
+                    <span>1,2L (~0,32gal)</span>
+                </li>
                 <li>&emsp;Consumo de
                     energía:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>8 W (~3,8kWh al mes)</span></li>
+                    <span>8 W (~3,8kWh al mes)</span>
+                </li>
                 <li>&emsp;Cable de
                     alimentación:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>1.900 mm (~6'3")</span></li>
+                    <span>1.900 mm (~6'3")</span>
+                </li>
                 <li>&emsp;Material del
                     chasis:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>Plástico ABS</span></li>
+                    <span>Plástico ABS</span>
+                </li>
             </ul>
             <button class="btn-secondary">Ver ficha técnica completa</button>
         </section>
@@ -300,40 +293,42 @@
         </section>
 
         <section class="reviews">
-            <div class="score">
-                <h2>4.6 / 5</h2>
-                <div class="stars">★★★★★</div>
-                <p>2,334 calificaciones</p>
-            </div>
+            <div class="review-top">
+                <div class="score">
+                    <h2>4.6 / 5</h2>
+                    <div class="stars">★★★★★</div>
+                    <p>2,334 calificaciones</p>
+                </div>
 
-            <div class="ratings-bar">
-                <div>5 ★ <div class="bar" style="width: 80%"></div> 80%</div>
-                <div>4 ★ <div class="bar" style="width: 11%"></div> 11%</div>
-                <div>3 ★ <div class="bar" style="width: 5%"></div> 5%</div>
-                <div>2 ★ <div class="bar" style="width: 2%"></div> 2%</div>
-                <div>1 ★ <div class="bar" style="width: 2%"></div> 2%</div>
-            </div>
+                <div class="ratings-bar">
+                    <div>5 ★ <div class="bar" style="width: 80%"></div> 80%</div>
+                    <div>4 ★ <div class="bar" style="width: 11%"></div> 11%</div>
+                    <div>3 ★ <div class="bar" style="width: 5%"></div> 5%</div>
+                    <div>2 ★ <div class="bar" style="width: 2%"></div> 2%</div>
+                    <div>1 ★ <div class="bar" style="width: 2%"></div> 2%</div>
+                </div>
 
-            <div class="rate-form">
-                <p>Calificar producto</p>
-                <div class="stars empty">☆ ☆ ☆ ☆ ☆</div>
+                <div class="rate-form">
+                    <button class="btn-secondary">Calificar producto</button>
+                    <div class="stars empty">☆ ☆ ☆ ☆ ☆</div>
+                </div>
             </div>
-
-            <div class="user-review">
-                <p><strong>Shanta LM</strong> ★★★★★</p>
-                <p>Me encanta. Las vainas incluidas eran de albahaca y empezaron a crecer en un par de semanas. Sin
-                    duda, lo recomiendo como regalo para un amante de las plantas.</p>
-            </div>
-
-            <div class="user-review">
-                <p><strong>María</strong> ★★★★★</p>
-                <p>Lo compré como regalo para mi sobrina y ¡le encantó! Planté albahaca a finales de marzo y ¡sigue
-                    creciendo! Calidad increíble, sabor y aroma naturales. Fácil de mantener. Sin duda, la recomiendo
-                    para jardinería de interior.</p>
-            </div>
-
-            <button class="btn-secondary">Ver todas las reseñas</button>
         </section>
+
+        <!-- Reseñas de usuarios debajo -->
+        <div class="user-review">
+            <p><strong>Shanta LM</strong> ★★★★★</p>
+            <p>Me encanta. Las vainas incluidas eran de albahaca...</p>
+        </div>
+
+        <div class="user-review">
+            <p><strong>María</strong> ★★★★★</p>
+            <p>Lo compré como regalo para mi sobrina...</p>
+        </div>
+
+        <button class="btn-secondary">Ver todas las reseñas</button>
+
+
 
         <section class="similar">
             <h3>Productos similares</h3>
