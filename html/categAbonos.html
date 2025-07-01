@@ -490,7 +490,7 @@
         <p>Chatea con nosotros 24h</p>
         <p>Email: servicio@ecozen.pe</p>
         <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
-        <p>Tiendas y Horarios</p>
+        <p><a href="../html/tiendas.html">Tiendas y Horarios</a></p>
       </div>
 
       <div class="col-md-2">
@@ -534,12 +534,27 @@
 <!-- FIN PIE DE PAGINA / FOOTER -->
 <!-- SCRIPT MENU HEADER -->
 <script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/anuncio.js"></script>
 <script>
-  function toggleMenu() {
-    document.querySelector('.nav-menu').classList.toggle('show');
-  }
+    function toggleMenu() {
+        document.querySelector('.nav-menu').classList.toggle('show');
+    }
 </script>
 <!-- FIN SCRIPT MENU HEADER -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const select = document.getElementById('navegacion-nosotros');
+        if (select) {
+            select.addEventListener('change', function () {
+                const url = this.value;
+                if (url !== '#') {
+                    window.location.href = url;
+                }
+            });
+        }
+    });
+</script>
 </body>
 
 </html>
