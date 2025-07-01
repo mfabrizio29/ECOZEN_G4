@@ -1,0 +1,56 @@
+.recomendador-main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+#titulo-recomendador {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.galeria-productos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.tarjeta-producto {
+  width: 250px;
+  opacity: 0.5;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.9);
+}
+
+.tarjeta-producto.activa {
+  transform: scale(1.1);
+  opacity: 1;
+  pointer-events: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-producto img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.navegacion {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.navegacion button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.contacto-rapido {
+  text-align: center;
+  margin-top: 3rem;
+}
