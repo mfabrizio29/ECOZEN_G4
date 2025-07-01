@@ -529,3 +529,8 @@ footer.footer-ecozen {
     display: none !important;
   }
 }
+
+a.icon-btn {
+  text-decoration: none;
+  color: #333;
+}

@@ -63,9 +63,10 @@
 
                     <div class="vertical-separator"></div>
 
-                    <button class="icon-btn" title="Carrito">
+                    <a href="carrito.html" class="icon-btn" title="Carrito">
                         <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
-                    </button>
+                    </a>
+
 
                     <div class="vertical-separator"></div>
 
@@ -179,7 +180,7 @@
                             </select>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="cuidadoPlantas">Cuidado de Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cuidadoplantas.html">Cuidado de Plantas</a></li>
                     </ul>
 
                     <!-- Iconos en mobile -->
@@ -242,7 +243,7 @@
                     <p>Chatea con nosotros 24h</p>
                     <p>Email: servicio@ecozen.pe</p>
                     <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
-                    <p>Tiendas y Horarios</p>
+                    <a href="tiendas.html"><p>Tiendas y Horarios</p></a>
                 </div>
 
                 <div class="col-md-2">
@@ -250,7 +251,7 @@
                     <ul class="list-unstyled">
                         <li><a href="../html/contacto.html">Contacto</a></li>
                         <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+                        <li><a href="../html/terminosCondiciones.html">Términos y condiciones</a></li>
                         <li><a href="../politica.html">Política de privacidad</a></li>
                         <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
                     </ul>
@@ -295,17 +296,17 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-          const select = document.getElementById('navegacion-nosotros');
-          if (select) {
-            select.addEventListener('change', function () {
-              const url = this.value;
-              if (url !== '#') {
-                window.location.href = url;
-              }
-            });
-          }
+            const select = document.getElementById('navegacion-nosotros');
+            if (select) {
+                select.addEventListener('change', function () {
+                    const url = this.value;
+                    if (url !== '#') {
+                        window.location.href = url;
+                    }
+                });
+            }
         });
-      </script>
+    </script>
 </body>
 
 </html>
