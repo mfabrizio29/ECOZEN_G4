@@ -207,14 +207,21 @@
         <main class="recomendador-main">
             <h1 id="titulo-recomendador">RECOMENDACIONES ADICIONALES</h1>
 
-            <div class="galeria-productos" id="galeria">
-                <!-- Las tarjetas se insertan dinámicamente con JS -->
+            <div class="galeria-wrapper">
+                <div class="galeria-productos" id="galeria">
+                    <!-- Las tarjetas se insertan dinámicamente aquí -->
+                </div>
             </div>
 
             <div class="navegacion">
-                <button class="btn btn-outline-success mx-2" onclick="moverIzquierda()">⬅</button>
-                <button class="btn btn-outline-success mx-2" onclick="moverDerecha()">➡</button>
-                <p class="mt-3">Página 1 de 8</p>
+                <button class="btn btn-outline-success mx-2" onclick="moverIzquierda()"></button>
+                <button class="btn btn-outline-success mx-2" onclick="moverDerecha()"></button>
+                <p class="mt-3" id="contador-pagina">Página 1 de 5</p>
+
+                <!-- Indicadores de puntos -->
+                <div class="indicadores" id="indicadores">
+                    <!-- Se generan dinámicamente -->
+                </div>
             </div>
 
             <div class="contacto-rapido">
@@ -222,57 +229,6 @@
                 <a href="contacto.html" class="btn btn-success mt-2">Contáctenos</a>
             </div>
         </main>
-
-        <script>
-            const productos = [
-                { img: "producto1.jpg", titulo: "Producto 1", descripcion: "Descripción del producto 1" },
-                { img: "producto2.jpg", titulo: "Producto 2", descripcion: "Descripción del producto 2" },
-                { img: "producto3.jpg", titulo: "Producto 3", descripcion: "Descripción del producto 3" },
-                { img: "producto4.jpg", titulo: "Producto 4", descripcion: "Descripción del producto 4" },
-                { img: "producto5.jpg", titulo: "Producto 5", descripcion: "Descripción del producto 5" }
-            ];
-
-            let indice = 0;
-
-            function renderTarjetas() {
-                const galeria = document.getElementById("galeria");
-                galeria.innerHTML = "";
-
-                const total = productos.length;
-                const izquierda = (indice + total - 1) % total;
-                const centro = indice;
-                const derecha = (indice + 1) % total;
-
-                [izquierda, centro, derecha].forEach((i, idx) => {
-                    const prod = productos[i];
-                    const div = document.createElement("div");
-                    div.className = "tarjeta-producto card text-center p-3" + (idx === 1 ? " activa" : "");
-                    div.innerHTML = `
-        <img src="${prod.img}" class="card-img-top" alt="${prod.titulo}">
-        <div class="card-body">
-          <h5 class="card-title">${prod.titulo}</h5>
-          <p class="card-text">${prod.descripcion}</p>
-          <button class="btn btn-success mb-2">Ir al producto</button><br>
-          <a href="#">Ver productos similares</a>
-        </div>
-      `;
-                    galeria.appendChild(div);
-                });
-            }
-
-            function moverIzquierda() {
-                indice = (indice + productos.length - 1) % productos.length;
-                renderTarjetas();
-            }
-
-            function moverDerecha() {
-                indice = (indice + 1) % productos.length;
-                renderTarjetas();
-            }
-
-            renderTarjetas();
-        </script>
-
 
         <!-- PIE DE PÁGINA / FOOTER -->
         <footer class="footer-ecozen mt-5">
@@ -346,5 +302,7 @@
     </div>
 
 </body>
+<!-- Carga el archivo JS externo -->
+<script src="/js/recomendador.js"></script>
 
 </html>

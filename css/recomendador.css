@@ -1,108 +1,62 @@
-/* Banner con título */
-.banner {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.recomendador-main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
 }
 
-.banner h1 {
-    margin: 0;
-    color: #2e7d32;
-    font-size: 28px;
+#titulo-recomendador {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-/* Contenedor del formulario y recomendación */
-.contenedor-formulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto 40px auto;
+.galeria-wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-/* Formulario de filtros */
-.formulario-filtros {
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
+.galeria-productos {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease-in-out;
 }
 
-.formulario-filtros label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
+.tarjeta-producto {
+  width: 250px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  transform: scale(0.9);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.formulario-filtros select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+.tarjeta-producto.activa {
+  transform: scale(1.1);
+  opacity: 1;
+  pointer-events: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.formulario-filtros button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
+.tarjeta-producto img {
+  height: 200px;
+  object-fit: cover;
 }
 
-/* Recomendación de producto */
-.recomendacion {
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    text-align: center;
+.navegacion {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.recomendacion img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 12px;
-    margin-top: 10px;
+.navegacion button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
 }
 
-.recomendacion button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #388e3c;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.recomendacion a {
-    display: block;
-    margin-top: 10px;
-    color: #2e7d32;
-    text-decoration: underline;
-}
-
-.hero-title {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #2C5F2D;
-    margin: 20px 0 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.contacto-rapido {
+  text-align: center;
+  margin-top: 3rem;
 }
