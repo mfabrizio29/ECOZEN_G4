@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiendas y Horarios - EcoZenShop</title>
+  <link rel="stylesheet" href="../css/header&footer.css" />
+  <link rel="stylesheet" href="../css/tiendas.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="icon" href="../img/fooder-header/icono.png">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <!-- ENCABEZADO / HEADER -->
+    <header class="header-container py-2 d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-wrap gap-3 text-center align-items-center">
+        <div class="select-wrapper">
+          <select class="delicate-select text-center">
+            <option value="es">Es</option>
+            <option value="en">En</option>
+            <option value="fr">Fr</option>
+          </select>
+          <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="select-wrapper">
+          <select class="delicate-select text-center">
+            <option value="pen">PEN</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+          </select>
+          <div class="dropdown-arrow"></div>
+        </div>
+
+        <div class="vertical-separator mx-2"></div>
+        <div class="custom-text">Nos visitas desde: PE</div>
+      </div>
+    </header>
+
+    <section class="header-central px-4 py-1">
+      <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+        <div class="logo-container me-4">
+          <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
+        </div>
+
+        <div class="search-group mx-4">
+          <div class="search-wrapper">
+            <span class="search-icon">
+              <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+              <span class="search-text">Search</span>
+            </span>
+            <input type="text" class="search-input" placeholder="Buscar..." />
+            <button class="search-button">Buscar</button>
+          </div>
+        </div>
+
+        <div class="icon-group d-flex align-items-center gap-3 ms-4">
+          <button class="icon-btn" title="Favoritos">
+            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+          </button>
+
+          <div class="vertical-separator"></div>
+
+          <button class="icon-btn" title="Carrito">
+            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+          </button>
+
+          <div class="vertical-separator"></div>
+
+          <div class="select-wrapper d-flex align-items-center select-container gap-1">
+            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+            <select class="delicate-select">
+              <option>Perfil</option>
+              <option>Salir</option>
+            </select>
+            <div class="dropdown-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar-principal navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
+          <img src="../img/fooder-header/menu.png" alt="Menú" class="toggler-icon" />
+        </button>
+
+        <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
+          <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
+            <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Categorías</a>
+              <div class="dropdown-menu-custom">
+                <div class="category-block">
+                  <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Fertilizantes líquidos</a></li>
+                      <li><a href="#">Fertilizantes sólidos o granulados</a></li>
+                      <li><a href="#">Compost orgánico</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Humus de lombriz</a></li>
+                      <li><a href="#">Abonos granulados</a></li>
+                      <li><a href="#">Abonos líquidos</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Palas y palines</a></li>
+                      <li><a href="#">Rastrillos</a></li>
+                      <li><a href="#">Tijeras de podar</a></li>
+                      <li><a href="#">Pulverizadores manuales</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Cortasetos</a></li>
+                      <li><a href="#">Azadas y escardillas</a></li>
+                      <li><a href="#">Regaderas</a></li>
+                      <li><a href="#">Guantes y protección</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Mangueras</a></li>
+                      <li><a href="#">Aspersores</a></li>
+                      <li><a href="#">Riego por goteo</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Temporizadores / controladores</a></li>
+                      <li><a href="#">Accesorios</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-block">
+                  <a href="../html/categKits.html" class="category-title">Kits</a>
+                  <div class="subcategory-columns">
+                    <ul>
+                      <li><a href="#">Jardines de interior automatizados</a></li>
+                      <li><a href="#">Jardines verticales de pared</a></li>
+                      <li><a href="#">Kits de cultivo básico</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Kits para niños o principiantes</a></li>
+                      <li><a href="#">Jardines hidropónicos</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/contacto.html">Contáctenos</a></li>
+            <li class="nav-item">
+              <select class="menu-select">
+                <option selected>Sobre nosotros</option>
+                <option>Sostenibilidad</option>
+                <option>Trabaja con Nosotros</option>
+              </select>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+          </ul>
+
+          <!-- Iconos en mobile -->
+          <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
+            <button class="icon-btn" title="Favoritos">
+              <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+            </button>
+            <div class="vertical-separator"></div>
+            <button class="icon-btn" title="Carrito">
+              <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+            </button>
+            <div class="vertical-separator"></div>
+            <div class="d-flex align-items-center select-container gap-1">
+              <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+              <select class="delicate-select">
+                <option>Perfil</option>
+                <option>Salir</option>
+              </select>
+              <div class="dropdown-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN ENCABEZADO / HEADER -->
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-tiendas py-5">
+        <div class="container text-center">
+          <h1 class="hero-title">TIENDAS Y HORARIOS</h1>
+          <p class="hero-subtitle">Consulta aquí la ubicación de nuestras tiendas en Lima y Provincias, horarios de
+            atención y horarios para el recojo de pedidos.</p>
+        </div>
+      </section>
+
+      <!-- Pestañas y Contenido -->
+      <section class="tabs-container">
+        <div class="container-fluid p-0">
+          <!-- Pestañas -->
+          <ul class="nav nav-tabs nav-tabs-custom justify-content-center" id="tiendasTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="lima-tab" data-bs-toggle="tab" data-bs-target="#lima" type="button"
+                role="tab">
+                TIENDAS EN LIMA
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="provincia-tab" data-bs-toggle="tab" data-bs-target="#provincia" type="button"
+                role="tab">
+                TIENDAS EN PROVINCIA
+              </button>
+            </li>
+          </ul>
+
+          <!-- Contenido de las pestañas -->
+          <div class="tab-content tiendas-content" id="tiendasTabsContent">
+            <!-- Tab Lima -->
+            <div class="tab-pane fade show active" id="lima" role="tabpanel">
+              <div class="row g-0">
+                <!-- Mapa -->
+                <div class="col-lg-8">
+                  <div class="map-section">
+                    <div class="search-box">
+                      <input type="text" class="search-input" placeholder="Buscar por dirección o tienda..." />
+                    </div>
+                    <div class="map-container">
+                      <!-- Aquí iría el mapa real, por ahora simulamos con un placeholder -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lista de tiendas -->
+                <div class="col-lg-4">
+                  <div class="tiendas-list">
+                    <!-- Tienda 1 -->
+                    <div class="tienda-card">
+                      <h3 class="tienda-nombre">Ecozen - Ate</h3>
+                      <p class="tienda-direccion">Av. La Molina Cdra. 3, Ate</p>
+
+                      <div class="tienda-horario">
+                        <strong>Horario:</strong>
+                        <span>Lun a Sáb, 7am-9:30pm, Dom 8:30am-9pm</span>
+                      </div>
+
+                      <div class="horario-especial">
+                        <strong>Horarios Especiales:</strong> Retiro en tienda de Lun a Dom, 9am-8pm
+                      </div>
+
+                      <a href="#" class="ver-mapa-btn">Ver en el mapa</a>
+                    </div>
+
+                    <!-- Tienda 2 -->
+                    <div class="tienda-card">
+                      <h3 class="tienda-nombre">Ecozen - La Molina</h3>
+                      <p class="tienda-direccion">Av. La Molina Mz. Lote I Urb. Rinconada Alta I Etapa, Cruce de Av. La
+                        Molina con Av. Raúl Ferrero, La Molina</p>
+
+                      <div class="tienda-horario">
+                        <strong>Horario:</strong>
+                        <span>Lun a Sáb, 7:30am-9pm, Dom 8am-9pm</span>
+                      </div>
+
+                      <div class="horario-especial">
+                        <strong>Horarios Especiales:</strong> Retiro en tienda de Lun a Dom, 9am-8pm
+                      </div>
+
+                      <a href="#" class="ver-mapa-btn">Ver en el mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Provincia -->
+            <div class="tab-pane fade" id="provincia" role="tabpanel">
+              <div class="row g-0">
+                <!-- Mapa -->
+                <div class="col-lg-8">
+                  <div class="map-section">
+                    <div class="search-box">
+                      <input type="text" class="search-input" placeholder="Buscar por dirección o tienda..." />
+                    </div>
+                    <div class="map-container">
+                      <!-- Aquí iría el mapa real para provincias -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lista de tiendas -->
+                <div class="col-lg-4">
+                  <div class="tiendas-list">
+                    <!-- Tienda Provincia 1 -->
+                    <div class="tienda-card">
+                      <h3 class="tienda-nombre">Ecozen - Arequipa</h3>
+                      <p class="tienda-direccion">Av. Ejército Cdra. 8, Cercado de Arequipa</p>
+
+                      <div class="tienda-horario">
+                        <strong>Horario:</strong>
+                        <span>Lun a Sáb, 8am-8pm, Dom 9am-6pm</span>
+                      </div>
+
+                      <div class="horario-especial">
+                        <strong>Horarios Especiales:</strong> Retiro en tienda de Lun a Dom, 9am-7pm
+                      </div>
+
+                      <a href="#" class="ver-mapa-btn">Ver en el mapa</a>
+                    </div>
+
+                    <!-- Tienda Provincia 2 -->
+                    <div class="tienda-card">
+                      <h3 class="tienda-nombre">Ecozen - Trujillo</h3>
+                      <p class="tienda-direccion">Av. España 1245, Trujillo Centro</p>
+
+                      <div class="tienda-horario">
+                        <strong>Horario:</strong>
+                        <span>Lun a Sáb, 8am-8:30pm, Dom 9am-7pm</span>
+                      </div>
+
+                      <div class="horario-especial">
+                        <strong>Horarios Especiales:</strong> Retiro en tienda de Lun a Dom, 9am-7pm
+                      </div>
+
+                      <a href="#" class="ver-mapa-btn">Ver en el mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Información adicional -->
+      <section class="info-adicional py-4">
+        <div class="container">
+          <div class="info-icons-row">
+            <div class="info-icon-item">
+              <span>Todas nuestras tiendas cuentan con estacionamiento gratuito</span>
+            </div>
+            <div class="info-icon-item">
+              <span>Horarios especiales en días festivos - consulta en tienda</span>
+            </div>
+            <div class="info-icon-item">
+              <span>Servicio de delivery disponible en todas las ubicaciones</span>
+            </div>
+            <div class="info-icon-item">
+              <span>Asesoría especializada sin costo adicional</span>
+            </div>
+            <div class="info-icon-item">
+              <span>Productos orgánicos certificados en todas nuestras tiendas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA / FOOTER -->
+    <footer class="footer-ecozen mt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <h5>Sobre Ecozen</h5>
+            <p>Tel: (219) 555-0114</p>
+            <p>Email: ecozen@gmail.com</p>
+            <p>Desarrollado por:</p>
+            <ul>
+              <li>Seclén López, Lucia</li>
+              <li>contacto: luciaseclop05@gmail.com</li><br>
+              <li>Uchofen Alejos, Juanpablo</li>
+              <li>contacto: uchofenalejosjp@gmail.com</li><br>
+              <li>Vallejos Barbadillo, Sebastián</li>
+              <li>contacto: svallejosb1@gmail.com</li><br>
+              <li>Vásquez Centurión, Miguel</li>
+              <li>contacto: mfabrizio29@gmail.com</li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Mi cuenta</h5>
+            <ul class="list-unstyled">
+              <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
+              <li><a href="../html/carrito.html">Carrito</a></li>
+              <li><a href="#">Historial de pedidos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Contáctanos</h5>
+            <p>Chatea con nosotros 24h</p>
+            <p>Email: servicio@ecozen.pe</p>
+            <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+            <p>Tiendas y Horarios</p>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Atención al cliente</h5>
+            <ul class="list-unstyled">
+              <li><a href="../html/contacto.html">Contacto</a></li>
+              <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+              <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+              <li><a href="../politica.html">Política de privacidad</a></li>
+              <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h5>Redes Sociales</h5>
+            <div class="d-flex gap-2">
+              <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+              <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+              <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+              <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+          <p class="mb-0">&copy; Ecozen 2025</p>
+          <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
+          <div class="d-flex gap-3 align-items-center">
+            <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+            <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+            <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+            <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+            <div class="d-flex align-items-center gap-1">
+              <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+              <span>Pago Seguro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN PIE DE PAGINA / FOOTER -->
+    <!-- SCRIPT MENU HEADER -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector('.nav-menu').classList.toggle('show');
+      }
+    </script>
+    <!-- FIN SCRIPT MENU HEADER -->
+</body>
+
+</html>

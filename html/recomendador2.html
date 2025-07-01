@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoZenShop | Sostenibilidad</title>
-    <link rel="stylesheet" href="../css/fuente.css">
-    <link rel="stylesheet" href="../css/header&footer.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="icon" href="../img/fooder-header/icono.png">
-    <link rel="stylesheet" href="../css/sostenibilidad.css">
-    <link rel="stylesheet" href="../css/fuente.css">
+    <meta charset="utf-8" />
+    <title>Recomendaciones Adicionales</title>
+    <link href="../css/header&footer.css" rel="stylesheet" />
+    <link href="../css/recomendador.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../img/fooder-header/icono.png" rel="icon" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/recomendador2.css" rel="stylesheet" />
+    <style>
+        .carousel-item {
+            transition: transform 0.5s ease;
+            display: flex;
+            justify-content: center;
+        }
 
+        .carousel-item.active {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+    </style>
 </head>
 
 <body>
@@ -84,7 +95,6 @@
             </div>
         </section>
 
-
         <nav class="navbar-principal navbar navbar-expand-lg">
             <div class="container">
                 <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
@@ -95,12 +105,9 @@
                     <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
                         <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
-                        <li class="nav-item">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#">Categorías</a>
                             <div class="dropdown-menu-custom">
-
-                                <!-- Abonos y fertilizantes -->
                                 <div class="category-block">
                                     <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
                                     <div class="subcategory-columns">
@@ -116,8 +123,6 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Herramientas -->
                                 <div class="category-block">
                                     <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
                                     <div class="subcategory-columns">
@@ -135,8 +140,6 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Sistema de riego -->
                                 <div class="category-block">
                                     <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
                                     <div class="subcategory-columns">
@@ -151,8 +154,6 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Kits -->
                                 <div class="category-block">
                                     <a href="../html/categKits.html" class="category-title">Kits</a>
                                     <div class="subcategory-columns">
@@ -167,22 +168,17 @@
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
                         </li>
-
-
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Contáctenos</a></li>
                         <li class="nav-item">
-                            <select class="menu-select" id="navegacion-nosotros">
-                                <option value="sobreNosotros.html">Sobre nosotros</option>
-                                <option value="sostenibilidad.html">Sostenibilidad</option>
-                                <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
+                            <select class="menu-select">
+                                <option selected>Sobre nosotros</option>
+                                <option>Sostenibilidad</option>
+                                <option>Trabaja con Nosotros</option>
                             </select>
                         </li>
-
-                        <li class="nav-item"><a class="nav-link" href="cuidadoPlantas">Cuidado de Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
                     </ul>
 
                     <!-- Iconos en mobile -->
@@ -207,163 +203,120 @@
                 </div>
             </div>
         </nav>
-    </div>
-    <!-- FIN ENCABEZADO / HEADER -->
+        <!-- FIN ENCABEZADO / HEADER -->
+        <main class="recomendador-main">
+            <h1 id="titulo-recomendador">RECOMENDACIONES ADICIONALES</h1>
 
-    <main class="container py-5" id="sobre-nosotros">
-        <h2 class="text-center fw-bold mb-5 titulo-seccion">SOSTENIBILIDAD</h2>
-      
-        <!-- Compromiso con el Medio Ambiente -->
-        <div class="row align-items-center mb-5 bloque-sostenibilidad">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <img src="../img/nosotros/compromiso.jpg" alt="Persona con plantas"
-              class="img-fluid rounded shadow-sm" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="fw-bold subtitulo">Compromiso con el Medio Ambiente</h3>
-            <p class="descripcion">
-              En EcoZen creemos que cada acción cuenta. Por eso, todos nuestros productos están
-              seleccionados por su bajo impacto ambiental, desde herramientas reutilizables hasta
-              insumos biodegradables. Promovemos el uso consciente de recursos naturales y buscamos
-              minimizar la huella ecológica en cada venta.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Empaque Responsable -->
-        <div class="row align-items-center mb-5 flex-md-row-reverse bloque-sostenibilidad">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <img src="../img/nosotros/empaque.jpg" alt="Equipo reunido"
-              class="img-fluid rounded shadow-sm" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="fw-bold subtitulo">Empaque Responsable</h3>
-            <p class="descripcion">
-              Nuestros envíos se realizan con empaques reciclables y materiales sostenibles.
-              Reducimos el uso de plásticos al mínimo y apostamos por opciones compostables o
-              reutilizables, porque entendemos que cuidar del planeta también empieza por cómo
-              entregamos nuestros productos.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Educación y Comunidad Verde -->
-        <div class="row align-items-center mb-5 bloque-sostenibilidad">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <img src="../img/nosotros/plantandooo.jpg" alt="Equipo creativo"
-              class="img-fluid rounded shadow-sm" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="fw-bold subtitulo">Educación y Comunidad Verde</h3>
-            <p class="descripcion">
-              Queremos inspirar a más personas a adoptar hábitos sostenibles. Por eso, compartimos
-              consejos, tutoriales y buenas prácticas en nuestro blog y redes sociales, para que
-              transformar tus espacios verdes también signifique cuidar del entorno que todos
-              compartimos.
-            </p>
-          </div>
-        </div>
-      </main>
-      
-    <!-- PIE DE PÁGINA / FOOTER -->
-    <footer class="footer-ecozen mt-5">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-md-3">
-                    <h5>Sobre Ecozen</h5>
-                    <p>Tel: (219) 555-0114</p>
-                    <p>Email: ecozen@gmail.com</p>
-                    <p>Desarrollado por:</p>
-                    <ul>
-                        <li>Seclén López, Lucia</li>
-                        <li>contacto: luciaseclop05@gmail.com</li><br>
-                        <li>Uchofen Alejos, Juanpablo</li>
-                        <li>contacto: uchofenalejosjp@gmail.com</li><br>
-                        <li>Vallejos Barbadillo, Sebastián</li>
-                        <li>contacto: svallejosb1@gmail.com</li><br>
-                        <li>Vásquez Centurión, Miguel</li>
-                        <li>contacto: mfabrizio29@gmail.com</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Mi cuenta</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
-                        <li><a href="../html/carrito.html">Carrito</a></li>
-                        <li><a href="#">Historial de pedidos</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <h5>Contáctanos</h5>
-                    <p>Chatea con nosotros 24h</p>
-                    <p>Email: servicio@ecozen.pe</p>
-                    <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
-                    <p>Tiendas y Horarios</p>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Atención al cliente</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../html/contacto.html">Contacto</a></li>
-                        <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a href="../html/tyc.html">Términos y condiciones</a></li>
-                        <li><a href="../politica.html">Política de privacidad</a></li>
-                        <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Redes Sociales</h5>
-                    <div class="d-flex gap-2">
-                        <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
-                        <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
-                        <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
-                        <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
-                    </div>
+            <div class="galeria-wrapper">
+                <div class="galeria-productos" id="galeria">
+                    <!-- Las tarjetas se insertan dinámicamente aquí -->
                 </div>
             </div>
 
-            <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
-                <p class="mb-0">&copy; Ecozen 2025</p>
-                <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
-                <div class="d-flex gap-3 align-items-center">
-                    <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
-                    <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
-                    <img src="../img/fooder-header/discover0.svg" alt="Discover" />
-                    <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
-                    <div class="d-flex align-items-center gap-1">
-                        <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
-                        <span>Pago Seguro</span>
+            <div class="navegacion">
+                <button class="btn btn-outline-success mx-2" onclick="moverIzquierda()"></button>
+                <button class="btn btn-outline-success mx-2" onclick="moverDerecha()"></button>
+                <p class="mt-3" id="contador-pagina">Página 1 de 5</p>
+
+                <!-- Indicadores de puntos -->
+                <div class="indicadores" id="indicadores">
+                    <!-- Se generan dinámicamente -->
+                </div>
+            </div>
+
+            <div class="contacto-rapido">
+                <h5>¿Necesitas ayuda?</h5>
+                <a href="contacto.html" class="btn btn-success mt-2">Contáctenos</a>
+            </div>
+        </main>
+
+        <!-- PIE DE PÁGINA / FOOTER -->
+        <footer class="footer-ecozen mt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-3">
+                        <h5>Sobre Ecozen</h5>
+                        <p>Tel: (219) 555-0114</p>
+                        <p>Email: ecozen@gmail.com</p>
+                        <p>Desarrollado por:</p>
+                        <ul>
+                            <li>Seclén López, Lucia</li>
+                            <li>contacto: luciaseclop05@gmail.com</li><br>
+                            <li>Uchofen Alejos, Juanpablo</li>
+                            <li>contacto: uchofenalejosjp@gmail.com</li><br>
+                            <li>Vallejos Barbadillo, Sebastián</li>
+                            <li>contacto: svallejosb1@gmail.com</li><br>
+                            <li>Vásquez Centurión, Miguel</li>
+                            <li>contacto: mfabrizio29@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h5>Mi cuenta</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
+                            <li><a href="../html/carrito.html">Carrito</a></li>
+                            <li><a href="#">Historial de pedidos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h5>Contáctanos</h5>
+                        <p>Chatea con nosotros 24h</p>
+                        <p>Email: servicio@ecozen.pe</p>
+                        <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+                        <p>Tiendas y Horarios</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h5>Atención al cliente</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="../html/contacto.html">Contacto</a></li>
+                            <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                            <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+                            <li><a href="../politica.html">Política de privacidad</a></li>
+                            <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h5>Redes Sociales</h5>
+                        <div class="d-flex gap-2">
+                            <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+                            <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+                            <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+                            <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+                    <p class="mb-0">&copy; Ecozen 2025</p>
+                    <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
+                    <div class="d-flex gap-3 align-items-center">
+                        <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+                        <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+                        <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+                        <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+                            <span>Pago Seguro</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- FIN PIE DE PAGINA / FOOTER -->
-    <!-- SCRIPT MENU HEADER -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('show');
-        }
-    </script>
-    <!-- FIN SCRIPT MENU HEADER -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const select = document.getElementById('navegacion-nosotros');
-          if (select) {
-            select.addEventListener('change', function () {
-              const url = this.value;
-              if (url !== '#') {
-                window.location.href = url;
-              }
-            });
-          }
-        });
-      </script>
+        </footer>
+        <!-- FIN PIE DE PAGINA / FOOTER -->
+        <!-- SCRIPT MENU HEADER -->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.nav-menu').classList.toggle('show');
+            }
+        </script>
+        <!-- FIN SCRIPT MENU HEADER -->
 </body>
+<!-- Carga el archivo JS externo -->
+<script src="/js/recomendador.js"></script>
 
 </html>
