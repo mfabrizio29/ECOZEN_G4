@@ -264,12 +264,24 @@
                 <li><span class="label">Capacidad:</span><span>3 pods/cultivos simultáneos</span></li>
                 <li><span class="label">Depósito de agua:</span><span>1,2L (~0,32gal)</span></li>
                 <li><span class="label">Consumo de energía:</span><span>8 W (~3,8kWh al mes)</span>
-                    <button class="btn-secondary inline-btn">Ver ficha técnica completa</button>
+                    <!-- Botón que activa el pop-up -->
+                    <button class="btn-secondary inline-btn" onclick="mostrarPopup()">Ver ficha técnica
+                        completa</button>
                 </li>
                 <li><span class="label">Cable de alimentación:</span><span>1.900 mm (~6'3")</span></li>
                 <li><span class="label">Material del chasis:</span><span>Plástico ABS</span></li>
             </ul>
         </section>
+
+        <!-- Contenedor del pop-up -->
+        <div class="overlay" id="popup">
+            <div class="popup">
+                <span class="close-btn" onclick="cerrarPopup()">×</span>
+                <h2>Ficha técnica</h2>
+                <p>Aquí puedes colocar toda la información técnica del producto, Cepty.</p>
+            </div>
+        </div>
+
 
 
         <section class="extra-details">
@@ -447,7 +459,8 @@
             </div>
 
             <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
-                <p class="mb-0">&copy; Ecozen 2025</p><p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
+                <p class="mb-0">&copy; Ecozen 2025</p>
+                <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
                 <div class="d-flex gap-3 align-items-center">
                     <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
                     <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
@@ -467,6 +480,14 @@
     <script>
         function toggleMenu() {
             document.querySelector('.nav-menu').classList.toggle('show');
+        }
+
+        function mostrarPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function cerrarPopup() {
+            document.getElementById('popup').style.display = 'none';
         }
     </script>
     <!-- FIN SCRIPT MENU HEADER -->
