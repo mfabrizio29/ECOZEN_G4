@@ -230,11 +230,11 @@
                     <button>-</button>
                     <span>1</span>
                     <button>+</button>
-                </div>
+                </div><br>
                 <div class="buttons">
                     <button class="add-cart">Agregar al carrito</button>
                     <button class="buy">Comprar</button>
-                </div>
+                </div><br>
                 <div class="colors">
                     <div class="color white"></div>
                     <div class="color green"></div>
@@ -259,28 +259,16 @@
         <section class="tech-specs">
             <h3>Ficha técnica</h3>
             <ul>
-                <li>&emsp;Capacidad:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>3 pods/cultivos simultáneos</span>
+                <li><span class="label">Capacidad:</span><span>3 pods/cultivos simultáneos</span></li>
+                <li><span class="label">Depósito de agua:</span><span>1,2L (~0,32gal)</span></li>
+                <li><span class="label">Consumo de energía:</span><span>8 W (~3,8kWh al mes)</span>
+                    <button class="btn-secondary inline-btn">Ver ficha técnica completa</button>
                 </li>
-                <li>&emsp;Depósito de
-                    agua:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>1,2L (~0,32gal)</span>
-                </li>
-                <li>&emsp;Consumo de
-                    energía:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>8 W (~3,8kWh al mes)</span>
-                </li>
-                <li>&emsp;Cable de
-                    alimentación:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>1.900 mm (~6'3")</span>
-                </li>
-                <li>&emsp;Material del
-                    chasis:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <span>Plástico ABS</span>
-                </li>
+                <li><span class="label">Cable de alimentación:</span><span>1.900 mm (~6'3")</span></li>
+                <li><span class="label">Material del chasis:</span><span>Plástico ABS</span></li>
             </ul>
-            <button class="btn-secondary">Ver ficha técnica completa</button>
         </section>
+
 
         <section class="extra-details">
             <h3>Detalles adicionales</h3>
@@ -318,15 +306,20 @@
         <!-- Reseñas de usuarios debajo -->
         <div class="user-review">
             <p><strong>Shanta LM</strong> ★★★★★</p>
-            <p>Me encanta. Las vainas incluidas eran de albahaca...</p>
+            <p>Me encanta. Las vainas incluidas eran de albahaca y empezaron a crecer en un par de semanas. Sin duda, lo
+                recomiendo como regalo para un amante de las plantas.</p>
         </div>
 
         <div class="user-review">
             <p><strong>María</strong> ★★★★★</p>
-            <p>Lo compré como regalo para mi sobrina...</p>
+            <p>Lo compré como regalo para mi sobrina y ¡le encantó! Planté albahaca a finales de marzo y ¡sigue
+                creciendo! Calidad increíble, sabor y aroma naturales. Fácil de mantener. Sin duda, la recomiendo para
+                jardinería de interior.</p>
         </div>
 
-        <button class="btn-secondary">Ver todas las reseñas</button>
+        <div class="reviews-footer">
+            <button class="btn-reviews">Ver todas las reseñas</button>
+        </div>
 
 
 
@@ -367,6 +360,17 @@
                 </div>
 
                 <!-- Producto 4 -->
+                <div class="producto">
+                    <a href="producto4.html"><img src="../img/productos/producto4.png" alt="Abono orgánico" /></a>
+                    <p>Temporizador de riego automático para grifo</p>
+                    <p class="precio">S/ 295.00</p>
+                    <div class="acciones">
+                        <span>★★★★☆</span>
+                        <button onclick="agregarAlCarrito(4)"><img src="../img/productos/carrito.svg" alt="🛒"></button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
                 <div class="producto">
                     <a href="producto4.html"><img src="../img/productos/producto4.png" alt="Abono orgánico" /></a>
                     <p>Temporizador de riego automático para grifo</p>
