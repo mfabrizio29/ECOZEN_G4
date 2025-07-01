@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoZenShop</title>
+  <link rel="stylesheet" href="../css/header&footer.css" />
+  <link rel="stylesheet" href="../css/homepage.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+ <link rel="stylesheet" href="../css/anuncio.css" />
+ <link rel="stylesheet" href="../css/registrarse.css" />
+
+  <link rel="icon" href="../img/fooder-header/icono.png">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- ENCABEZADO / HEADER -->
+        <header class="header-container py-2 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-wrap gap-3 text-center align-items-center">
+                <div class="select-wrapper">
+                    <select class="delicate-select text-center">
+                        <option value="es">Es</option>
+                        <option value="en">En</option>
+                        <option value="fr">Fr</option>
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+
+                <div class="select-wrapper">
+                    <select class="delicate-select text-center">
+                        <option value="pen">PEN</option>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+
+                <div class="vertical-separator mx-2"></div>
+                <div class="custom-text">Nos visitas desde: PE</div>
+            </div>
+        </header>
+
+        <section class="header-central px-4 py-1">
+            <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+                <div class="logo-container me-4">
+                    <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
+                </div>
+
+                <div class="search-group mx-4">
+                    <div class="search-wrapper">
+                        <span class="search-icon">
+                            <img src="../img/fooder-header/buscar.png" alt="Buscar" />
+                            <span class="search-text">Search</span>
+                        </span>
+                        <input type="text" class="search-input" placeholder="Buscar..." />
+                        <button class="search-button">Buscar</button>
+                    </div>
+                </div>
+
+                <div class="icon-group d-flex align-items-center gap-3 ms-4">
+                       <a href="../html/deseados.html " class="icon-btn" title="Favoritos">
+                        <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+                    </button>
+
+                      
+                    <div class="vertical-separator"></div>
+
+                    <a href="carrito.html" class="icon-btn" title="Carrito">
+                        <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+                    </a>
+
+
+                    <div class="vertical-separator"></div>
+
+                    <div class="select-wrapper d-flex align-items-center select-container gap-1">
+                        <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+                        <select class="delicate-select">
+                            <option>Perfil</option>
+                            <option>Salir</option>
+                        </select>
+                        <div class="dropdown-arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <nav class="navbar-principal navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
+                    <img src="../img/fooder-header/menu.png" alt="Menú" class="toggler-icon" />
+                </button>
+
+                <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
+                    <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Categorías</a>
+                            <div class="dropdown-menu-custom">
+
+                                <!-- Abonos y fertilizantes -->
+                                <div class="category-block">
+                                    <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
+                                    <div class="subcategory-columns">
+                                        <ul>
+                                            <li><a href="#">Fertilizantes líquidos</a></li>
+                                            <li><a href="#">Fertilizantes sólidos o granulados</a></li>
+                                            <li><a href="#">Compost orgánico</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Humus de lombriz</a></li>
+                                            <li><a href="#">Abonos granulados</a></li>
+                                            <li><a href="#">Abonos líquidos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Herramientas -->
+                                <div class="category-block">
+                                    <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
+                                    <div class="subcategory-columns">
+                                        <ul>
+                                            <li><a href="#">Palas y palines</a></li>
+                                            <li><a href="#">Rastrillos</a></li>
+                                            <li><a href="#">Tijeras de podar</a></li>
+                                            <li><a href="#">Pulverizadores manuales</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Cortasetos</a></li>
+                                            <li><a href="#">Azadas y escardillas</a></li>
+                                            <li><a href="#">Regaderas</a></li>
+                                            <li><a href="#">Guantes y protección</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Sistema de riego -->
+                                <div class="category-block">
+                                    <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
+                                    <div class="subcategory-columns">
+                                        <ul>
+                                            <li><a href="#">Mangueras</a></li>
+                                            <li><a href="#">Aspersores</a></li>
+                                            <li><a href="#">Riego por goteo</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Temporizadores / controladores</a></li>
+                                            <li><a href="#">Accesorios</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Kits -->
+                                <div class="category-block">
+                                    <a href="../html/categKits.html" class="category-title">Kits</a>
+                                    <div class="subcategory-columns">
+                                        <ul>
+                                            <li><a href="#">Jardines de interior automatizados</a></li>
+                                            <li><a href="#">Jardines verticales de pared</a></li>
+                                            <li><a href="#">Kits de cultivo básico</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Kits para niños o principiantes</a></li>
+                                            <li><a href="#">Jardines hidropónicos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+                        <li class="nav-item">
+                            <select class="menu-select" id="navegacion-nosotros">
+                                <option value="sobreNosotros.html">Sobre nosotros</option>
+                                <option value="sostenibilidad.html">Sostenibilidad</option>
+                                <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
+                            </select>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="cuidadoplantas.html">Cuidado de Plantas</a></li>
+                    </ul>
+
+                    <!-- Iconos en mobile -->
+                    <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
+                        <button class="icon-btn" title="Favoritos">
+                            <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
+                        </button>
+                        <div class="vertical-separator"></div>
+                        <button class="icon-btn" title="Carrito">
+                            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+                        </button>
+                        <div class="vertical-separator"></div>
+                        <div class="d-flex align-items-center select-container gap-1">
+                            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+                            <select class="delicate-select">
+                                <option>Perfil</option>
+                                <option>Salir</option>
+                            </select>
+                            <div class="dropdown-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- FIN ENCABEZADO / HEADER -->
+
+
+
+  <!-- Carrusel de Imágenes -->
+  <section id="carousel" class="mt-4">
+    <div id="ecozenCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner"
+        style="height: 308px; max-width: 1432px; margin: 0 auto; overflow: hidden; border-radius: 8px;">
+        <div class="carousel-item active">
+          <img src="../img/imghomepage/primeraimagenCarusel.svg" class="d-block w-100 h-100 object-fit-cover"
+            alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src=" ../img/imghomepage/primeraimagenCarusel.svg" class="d-block w-100 h-100 object-fit-cover"
+            alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src=" ../img/imghomepage/primeraimagenCarusel.svg" d-block w-100 h-100 object-fit-cover" alt="Slide 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#ecozenCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#ecozenCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Sección de anuncios y ofertas -->
+  <section class="anuncios my-5">
+    <div class="container" style="max-width: 1384px;">
+      <div class="mb-4">
+        <img src=" ../img/imghomepage/anuncio1.jpg" class="img-fluid rounded shadow-sm w-100" alt="Anuncio Principal"
+          style="height: 102px; object-fit: cover;">
+      </div>
+      <div class="row g-4 justify-content-between">
+        <div class="col-md-6">
+          <a href="../html/indivProduct.html">
+            <img src=" ../img/imghomepage/anuncio2.jpg" class=" class=" img-fluid rounded shadow-sm" alt="Oferta 1"
+              style="width: 591px; height: 319px; object-fit: cover;">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <img src=" ../img/imghomepage/anuncio3.jpg" class="img-fluid rounded shadow-sm" alt="Oferta 2"
+            style="width: 591px; height: 319px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorías Populares -->
+  <section class="categorias-populares py-5 bg-light">
+    <div class="container text-center" style="max-width: 1384px;">
+      <h2 class="mb-5 text-uppercase" style="color:#7E9F5C">Categorías Populares</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <a href="../html/categSistemas.html" class="text-decoration-none">
+            <div class="card categoria-card">
+              <img src="../img/imghomepage/dispersadorpng.jpg" class="card-img-top" alt="Sistemas de Riego">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                <div class="categoria-texto">
+                  <div>Sistemas</div>
+                  <div>de</div>
+                  <div>Riego</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="../html/categHerramientas.html" class="text-decoration-none">
+            <div class="card categoria-card">
+              <img src=" ../img/imghomepage/cherramienta.jpg" class="card-img-top" alt="Herramientas de Jardinería">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                <div class="categoria-texto">
+                  <div>Herramientas</div>
+                  <div>de</div>
+                  <div>Jardinería</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="../html/categKits.html" class="text-decoration-none">
+            <div class="card categoria-card">
+              <img src=" ../img/imghomepage/ckit.jpg" class="card-img-top" alt="Kits de Jardinería">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                <div class="categoria-texto">
+                  <div>Kits</div>
+                  <div>de</div>
+                  <div>Jardinería</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="../html/categAbonos.html" class="text-decoration-none">
+            <div class="card categoria-card">
+              <img src=" ../img/imghomepage/cabono.jpg" class="card-img-top" alt="Fertilizante y Abonos">
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                <div class="categoria-texto">
+                  <div>Fertilizante</div>
+                  <div>y</div>
+                  <div>Abonos</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PIE DE PÁGINA / FOOTER -->
+  <footer class="footer-ecozen mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <h5>Sobre Ecozen</h5>
+          <p>Tel: (219) 555-0114</p>
+          <p>Email: ecozen@gmail.com</p>
+          <p>Desarrollado por:</p>
+          <ul>
+            <li>Seclén López, Lucia</li>
+            <li>contacto: luciaseclop05@gmail.com</li><br>
+            <li>Uchofen Alejos, Juanpablo</li>
+            <li>contacto: uchofenalejosjp@gmail.com</li><br>
+            <li>Vallejos Barbadillo, Sebastián</li>
+            <li>contacto: svallejosb1@gmail.com</li><br>
+            <li>Vásquez Centurión, Miguel</li>
+            <li>contacto: mfabrizio29@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Mi cuenta</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
+            <li><a href="../html/carrito.html">Carrito</a></li>
+            <li><a href="#">Historial de pedidos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Contáctanos</h5>
+          <p>Chatea con nosotros 24h</p>
+          <p>Email: servicio@ecozen.pe</p>
+          <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+          <p>Tiendas y Horarios</p>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Atención al cliente</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/contacto.html">Contacto</a></li>
+            <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+            <li><a href="../html/politica.html">Política de privacidad</a></li>
+            <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Redes Sociales</h5>
+          <div class="d-flex gap-2">
+            <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+            <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+            <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+            <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+        <p class="mb-0">&copy; Ecozen 2025</p>
+        <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
+        <div class="d-flex gap-3 align-items-center">
+          <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+          <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+          <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+          <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+          <div class="d-flex align-items-center gap-1">
+            <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+            <span>Pago Seguro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN PIE DE PAGINA / FOOTER -->
+  <!-- SCRIPT MENU HEADER -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/anuncio.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    }
+  </script>
+  <!-- FIN SCRIPT MENU HEADER -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const select = document.getElementById('navegacion-nosotros');
+      if (select) {
+        select.addEventListener('change', function () {
+          const url = this.value;
+          if (url !== '#') {
+            window.location.href = url;
+          }
+        });
+      }
+    });
+  </script>
+
+
+
+<!-- BLOQUE DEL POP‑UP -->
+<div id="promoPopup" class="promo-overlay d-none">
+  <div class="promo-box">
+    <button id="promoClose" class="promo-close" aria-label="Cerrar">×</button>
+    <img src="../img/imghomepage/cta1.png" class="promo-img" alt="25 % de descuento">
+    <a id="promoCta" href="../html/indivProduct.html?id=101" class="promo-btn">¡CLICK AQUÍ!</a>
+  </div>
+</div>
+
+
+<!-- MODAL INICIAR SESIÓN -->
+<div id="modalLogin" class="modal-overlay d-none">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('modalLogin', false)">×</button>
+    <h2>INICIAR SESIÓN</h2>
+    <form id="loginForm">
+      <input type="text" placeholder="Correo electrónico o usuario" required>
+      <div class="password-wrapper">
+        <input type="password" placeholder="Contraseña" id="loginPassword" required>
+        <span class="toggle-password" onclick="togglePassword('loginPassword')">👁️</span>
+      </div>
+      <a href="#" class="small-link">Olvidé mi contraseña</a>
+      <button type="submit" class="btn-full">Iniciar Sesión</button>
+      <div class="google-btn" onclick="authWithGoogle()">Continuar con Google</div>
+    </form>
+    <p class="bottom-text">
+      ¿No tienes cuenta?
+      <a href="#" onclick="switchModals('modalLogin','modalRegister')">Crear una cuenta</a>
+    </p>
+  </div>
+</div>
+
+<!-- MODAL REGISTRARSE -->
+<div id="modalRegister" class="modal-overlay d-none">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('modalRegister', false)">×</button>
+    <h2>CREAR CUENTA</h2>
+    <form id="registerForm">
+      <input type="text" placeholder="Nombre" required>
+      <input type="text" placeholder="Apellido" required>
+      <input type="text" placeholder="Usuario" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <div class="password-wrapper">
+        <input type="password" placeholder="Contraseña" id="regPass" required>
+        <span class="toggle-password" onclick="togglePassword('regPass')">👁️</span>
+      </div>
+      <div class="password-wrapper">
+        <input type="password" placeholder="Confirmar contraseña" id="regPass2" required>
+        <span class="toggle-password" onclick="togglePassword('regPass2')">👁️</span>
+      </div>
+      <div class="google-btn" onclick="authWithGoogle()">Continuar con Google</div>
+      <button type="submit" class="btn-full">Crear Cuenta</button>
+    </form>
+    <p class="bottom-text">
+      ¿Ya tienes cuenta?
+      <a href="#" onclick="switchModals('modalRegister','modalLogin')">Iniciar sesión</a>
+    </p>
+  </div>
+</div>
+
+
+
+<!-- scripts (después del pop‑up) -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/anuncio.js"></script>   <!-- aquí está tu IIFE -->
+<script src="../js/registrarse.js"></script>   <!-- aquí está tu IIFE -->
+
+
+
+
+</body>
+
+</html>
