@@ -64,9 +64,10 @@
 
                     <div class="vertical-separator"></div>
 
-                    <button class="icon-btn" title="Carrito">
+                    <a href="carrito.html" class="icon-btn" title="Carrito">
                         <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
-                    </button>
+                    </a>
+
 
                     <div class="vertical-separator"></div>
 
@@ -171,7 +172,7 @@
 
 
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/paginacontacto.html">Contáctenos</a></li>
                         <li class="nav-item">
                             <select class="menu-select" id="navegacion-nosotros">
                                 <option value="sobreNosotros.html">Sobre nosotros</option>
@@ -180,7 +181,7 @@
                             </select>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="cuidadoPlantas">Cuidado de Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cuidadoplantas.html">Cuidado de Plantas</a></li>
                     </ul>
 
                     <!-- Iconos en mobile -->
@@ -208,8 +209,16 @@
     </div>
     <!-- FIN ENCABEZADO / HEADER -->
 
+
     <main class="container">
-        <section class="product">
+        <section class="product"
+         id="producto"                         
+         data-id="101"                        
+         data-name="Kit de jardinería para interiores"   
+         data-price="358.80"                   
+         data-img="../img/indivProduct/productoMain.png"> 
+
+
             <div class="gallery-column">
                 <div class="thumbnails">
                     <img src="../img/indivProduct/miniatura1.png" alt="Miniatura 1">
@@ -476,6 +485,7 @@
     </footer>
     <!-- FIN PIE DE PAGINA / FOOTER -->
     <!-- SCRIPT MENU HEADER -->
+     <script src="../js/indivProduct.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleMenu() {
