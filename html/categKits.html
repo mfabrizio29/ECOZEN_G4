@@ -50,10 +50,6 @@
         <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
       </div>
 
-      <button class="navbar-toggle-btn d-lg-none" onclick="toggleMenu()">
-        <img src="../img/fooder-header/menu-icon.png" alt="Menú" class="toggler-icon" />
-      </button>
-
       <div class="search-group mx-4">
         <div class="search-wrapper">
           <span class="search-icon">
@@ -78,7 +74,7 @@
 
         <div class="vertical-separator"></div>
 
-        <div class="d-flex align-items-center select-container gap-1">
+        <div class="select-wrapper d-flex align-items-center select-container gap-1">
           <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
           <select class="delicate-select">
             <option>Perfil</option>
@@ -98,7 +94,7 @@
       </button>
 
       <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
-        <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
+        <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
           <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
           <li class="nav-item">
@@ -212,6 +208,7 @@
       </div>
     </div>
   </nav>
+  </div>
   <!-- FIN ENCABEZADO / HEADER -->
 
   <!-- Carrusel de Imágenes -->
@@ -252,32 +249,60 @@
 
   <div class="contenedor">
     <aside class="filtro">
-      <h2>Filtrar Productos</h2>
+      <h2>Categoría: Kits de jardinería</h2>
       <div class="filtro-precio">
         <label>Precio</label><br>
         <label>S/ <input type="text" placeholder="..." /> - S/ <input type="text" placeholder="..." /></label>
       </div>
       <div class="filtro-categorias">
-        <a href="#">Abonos y fertilizantes</a>
-        <ul>
-          <li><a href="#">Abonos orgánicos</a></li>
-          <li><a href="#">Fertilizantes orgánicos</a></li>
-        </ul>
-        <a href="#">Herramientas</a>
-        <ul>
-          <li><a href="#">Palas</a></li>
-          <li><a href="#">Rastrillos</a></li>
-          <li><a href="#">Tijeras de podar</a></li>
-        </ul>
-        <a href="#">Sistema de riego</a>
-        <ul>
-          <li><a href="#">Aspersores</a></li>
-          <li><a href="#">Mangueras</a></li>
-          <li><a href="#">Temporizadores</a></li>
-        </ul>
         <a href="#">Kits</a>
+        <ul>
+          <li><a href="#">Jardines de interior automatizados</a></li>
+          <li><a href="#">Jardines verticales de pared </a></li>
+          <li><a href="#">Kits de cultivo básico </a></li>
+          <li><a href="#">Kits para niños o principiantes</a></li>
+          <li><a href="#">Jardines hidropónicos</a></li>
+        </ul>
+        <a href="#">Marca</a>
+        <ul>
+          <select class="ordenar">
+            <option selected>Todas</option>
+            <option>Click & Grow</option>
+            <option>AeroGarden</option>
+            <option>iDOO</option>
+            <option>Veritable</option>
+            <option>Gardyn</option>
+            <option>Vertiflor</option>
+            <option>Naturpots</option>
+            <option>Gardena NatureUp</option>
+          </select>
+        </ul>
+        <a href="#">Tipo de jardín</a>
+        <ul>
+          <select class="ordenar">
+            <option selected>Todas</option>
+            <option>Urbano de interior</option>
+            <option>Vertical modular</option>
+            <option>Exterior en balcones</option>
+            <option>Inteligente con cápsulas</option>
+            <option>Hidropónico</option>
+            <option>Infantil / educativo</option>
+          </select>
+        </ul>
+        <a href="#">Capacidad</a>
+        <ul>
+          <select class="ordenar">
+            <option selected>Todas</option>
+            <option>1–3 plantas</option>
+            <option>4–6 plantas</option>
+            <option>7–10 plantas</option>
+            <option>11–15 plantas</option>
+            <option>Más de 15 plantas</option>
+          </select>
+        </ul>
       </div>
     </aside>
+
 
     <main class="productos">
       <!-- Producto 1 -->

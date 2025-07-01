@@ -50,10 +50,6 @@
         <img src="../img/fooder-header/logo.png" alt="Ecozen" class="logo-img" />
       </div>
 
-      <button class="navbar-toggle-btn d-lg-none" onclick="toggleMenu()">
-        <img src="../img/fooder-header/menu-icon.png" alt="Menú" class="toggler-icon" />
-      </button>
-
       <div class="search-group mx-4">
         <div class="search-wrapper">
           <span class="search-icon">
@@ -78,7 +74,7 @@
 
         <div class="vertical-separator"></div>
 
-        <div class="d-flex align-items-center select-container gap-1">
+        <div class="select-wrapper d-flex align-items-center select-container gap-1">
           <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
           <select class="delicate-select">
             <option>Perfil</option>
@@ -98,7 +94,7 @@
       </button>
 
       <div class="nav-menu w-100 justify-content-center" id="menuPrincipal">
-        <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center gap-4">
+        <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
           <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
           <li class="nav-item">
@@ -212,6 +208,7 @@
       </div>
     </div>
   </nav>
+  </div>
   <!-- FIN ENCABEZADO / HEADER -->
 
   <!-- Carrusel de Imágenes -->
@@ -250,30 +247,48 @@
 
   <div class="contenedor">
     <aside class="filtro">
-      <h2>Filtrar Productos</h2>
+      <h2>Categoría: Herramientas</h2>
       <div class="filtro-precio">
         <label>Precio</label><br>
         <label>S/ <input type="text" placeholder="..." /> - S/ <input type="text" placeholder="..." /></label>
       </div>
       <div class="filtro-categorias">
-        <a href="#">Abonos y fertilizantes</a>
-        <ul>
-          <li><a href="#">Abonos orgánicos</a></li>
-          <li><a href="#">Fertilizantes orgánicos</a></li>
-        </ul>
         <a href="#">Herramientas</a>
         <ul>
-          <li><a href="#">Palas</a></li>
+          <li><a href="#">Palas y palines</a></li>
           <li><a href="#">Rastrillos</a></li>
           <li><a href="#">Tijeras de podar</a></li>
+          <li><a href="#">Cortasetos</a></li>
+          <li><a href="#">Azadas y escardillas</a></li>
+          <li><a href="#">Regaderas</a></li>
+          <li><a href="#">Pulverizadores manuales</a></li>
+          <li><a href="#">Guantes y protección</a></li>
         </ul>
-        <a href="#">Sistema de riego</a>
+        <a href="#">Marca</a>
         <ul>
-          <li><a href="#">Aspersores</a></li>
-          <li><a href="#">Mangueras</a></li>
-          <li><a href="#">Temporizadores</a></li>
+          <select class="ordenar">
+            <option selected>Todas</option>
+            <option>Fiskars</option>
+            <option>Tramontina</option>
+            <option>Gardena</option>
+            <option>Corona Tools</option>
+            <option>Bellota</option>
+            <option>Wolf-Garten</option>
+            <option>Greenworks</option>
+          </select>
         </ul>
-        <a href="#">Kits</a>
+        <a href="#">Tipo de material</a>
+        <ul>
+          <select class="ordenar">
+            <option selected>Todas</option>
+            <option>Acero inoxidable</option>
+            <option>Aluminio</option>
+            <option>Madera natural</option>
+            <option>Plástico reciclado</option>
+            <option>Fibra de vidrio</option>
+            <option>Combinado</option>
+          </select>
+        </ul>
       </div>
     </aside>
 
