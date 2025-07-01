@@ -57,29 +57,32 @@
         </div>
 
         <div class="icon-group d-flex align-items-center gap-3 ms-4">
-          <button class="icon-btn" title="Favoritos">
+          <a href="../html/deseados.html " class="icon-btn" title="Favoritos">
             <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
-          </button>
+            </button>
 
-          <div class="vertical-separator"></div>
 
-          <button class="icon-btn" title="Carrito">
-            <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
-          </button>
+            <div class="vertical-separator"></div>
 
-          <div class="vertical-separator"></div>
+            <a href="carrito.html" class="icon-btn" title="Carrito">
+              <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
+            </a>
 
-          <div class="select-wrapper d-flex align-items-center select-container gap-1">
-            <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
-            <select class="delicate-select">
-              <option>Perfil</option>
-              <option>Salir</option>
-            </select>
-            <div class="dropdown-arrow"></div>
-          </div>
+
+            <div class="vertical-separator"></div>
+
+            <div class="select-wrapper d-flex align-items-center select-container gap-1">
+              <img src="../img/fooder-header/usuario.png" class="icon-img" alt="Perfil" />
+              <select class="delicate-select">
+                <option>Perfil</option>
+                <option>Salir</option>
+              </select>
+              <div class="dropdown-arrow"></div>
+            </div>
         </div>
       </div>
     </section>
+
 
     <nav class="navbar-principal navbar navbar-expand-lg">
       <div class="container">
@@ -91,9 +94,12 @@
           <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
             <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
+            <li class="nav-item">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#">Categorías</a>
               <div class="dropdown-menu-custom">
+
+                <!-- Abonos y fertilizantes -->
                 <div class="category-block">
                   <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
                   <div class="subcategory-columns">
@@ -109,6 +115,8 @@
                     </ul>
                   </div>
                 </div>
+
+                <!-- Herramientas -->
                 <div class="category-block">
                   <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
                   <div class="subcategory-columns">
@@ -126,6 +134,8 @@
                     </ul>
                   </div>
                 </div>
+
+                <!-- Sistema de riego -->
                 <div class="category-block">
                   <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
                   <div class="subcategory-columns">
@@ -140,6 +150,8 @@
                     </ul>
                   </div>
                 </div>
+
+                <!-- Kits -->
                 <div class="category-block">
                   <a href="../html/categKits.html" class="category-title">Kits</a>
                   <div class="subcategory-columns">
@@ -154,17 +166,22 @@
                     </ul>
                   </div>
                 </div>
+
               </div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="../html/contacto.html">Contáctenos</a></li>
+
+
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
             <li class="nav-item">
-              <select class="menu-select">
-                <option selected>Sobre nosotros</option>
-                <option>Sostenibilidad</option>
-                <option>Trabaja con Nosotros</option>
+              <select class="menu-select" id="navegacion-nosotros">
+                <option value="sobreNosotros.html">Sobre nosotros</option>
+                <option value="sostenibilidad.html">Sostenibilidad</option>
+                <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
               </select>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="cuidadoplantas.html">Cuidado de Plantas</a></li>
           </ul>
 
           <!-- Iconos en mobile -->
@@ -189,17 +206,19 @@
         </div>
       </div>
     </nav>
-    <!-- FIN ENCABEZADO / HEADER -->
+  </div>
+  <!-- FIN ENCABEZADO / HEADER -->
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="main-content">
-      <!-- Título principal -->
-      <section class="faq-header py-4">
-        <div class="container">
-          <h1 class="faq-main-title">PREGUNTAS FRECUENTES</h1>
-        </div>
-      </section>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-content">
+    <!-- Título principal -->
+    <section class="faq-header py-4">
+      <div class="container">
+        <h1 class="faq-main-title">PREGUNTAS FRECUENTES</h1>
+      </div>
+    </section>
 
+<<<<<<< HEAD
       <!-- Sección de FAQ -->
       <section class="faq-section py-4">
         <div class="container">
@@ -240,190 +259,233 @@
                       <p>En Ecozen trabajamos con una gran variedad de productos de diferentes marcas.
                         Puedes consultar la disponibilidad en tiempo real en nuestro sitio web.</p>
                     </div>
+=======
+    <!-- Sección de FAQ -->
+    <section class="faq-section py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
 
-                    <!-- Imágenes de categorías -->
-                    <div class="categories-images">
-                      <div class="category-item">
-                        <img src="../img/faq/sistemas-riego.jpg" alt="Sistemas de Riego" />
-                        <div class="category-overlay">
-                          <span>SISTEMAS DE RIEGO</span>
-                        </div>
+            <!-- Primer acordeón -->
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(1)">
+                <h3 class="faq-title">SOBRE COMPRAR EN ECOZEN.PE</h3>
+                <span class="faq-arrow" id="arrow-1">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-1">
+                <div class="faq-body">
+                  <div class="faq-question">
+                    <strong>¿Puedo comprar en EcoZen.pe sin pasaporte?</strong>
+                    <p>Sí, puedes comprar productos que tengan la etiqueta CE, pasaporte o carnet de extranjería.
+                      Para ello necesitas presentar la ficha de carnet de extranjería o pasaporte válido.</p>
+                  </div>
+
+                  <div class="faq-question">
+                    <strong>¿Qué tipos de productos puedo encontrar?</strong>
+                    <p>Puedes encontrar productos por marcas de acuerdo a los siguientes:</p>
+                  </div>
+
+                  <div class="faq-question">
+                    <strong>¿Cómo uso mis vales de compra?</strong>
+                    <p>Puedes usar tus vales de compra en cualquier compra en línea.
+                      Simplemente ingresa el código del vale en el checkout.</p>
+                  </div>
+
+                  <div class="faq-question">
+                    <strong>¿Qué significa la disponibilidad de los productos?</strong>
+                    <p>En Ecozen trabajamos con una gran variedad de productos de diferentes marcas.
+                      Puedes consultar la disponibilidad en tiempo real en nuestro sitio web.</p>
+                  </div>
+>>>>>>> 73c480b9f2d822327bcd85c0e3ae7895b158f878
+
+                  <!-- Imágenes de categorías -->
+                  <div class="categories-images">
+                    <div class="category-item">
+                      <img src="../img/faq/sistemas-riego.jpg" alt="Sistemas de Riego" />
+                      <div class="category-overlay">
+                        <span>SISTEMAS DE RIEGO</span>
                       </div>
-                      <div class="category-item">
-                        <img src="../img/faq/herramientas.jpg" alt="Herramientas de Jardinería" />
-                        <div class="category-overlay">
-                          <span>HERRAMIENTAS DE JARDINERÍA</span>
-                        </div>
+                    </div>
+                    <div class="category-item">
+                      <img src="../img/faq/herramientas.jpg" alt="Herramientas de Jardinería" />
+                      <div class="category-overlay">
+                        <span>HERRAMIENTAS DE JARDINERÍA</span>
                       </div>
-                      <div class="category-item">
-                        <img src="../img/faq/kits.jpg" alt="Kits de Jardinería" />
-                        <div class="category-overlay">
-                          <span>KITS DE JARDINERÍA</span>
-                        </div>
+                    </div>
+                    <div class="category-item">
+                      <img src="../img/faq/kits.jpg" alt="Kits de Jardinería" />
+                      <div class="category-overlay">
+                        <span>KITS DE JARDINERÍA</span>
                       </div>
-                      <div class="category-item">
-                        <img src="../img/faq/abonos.jpg" alt="Abonos" />
-                        <div class="category-overlay">
-                          <span>ABONOS</span>
-                        </div>
+                    </div>
+                    <div class="category-item">
+                      <img src="../img/faq/abonos.jpg" alt="Abonos" />
+                      <div class="category-overlay">
+                        <span>ABONOS</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Resto de acordeones -->
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(2)">
-                  <h3 class="faq-title">SOBRE NUESTROS MEDIOS DE PAGO</h3>
-                  <span class="faq-arrow" id="arrow-2">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-2">
-                  <div class="faq-body">
-                    <p>Información sobre medios de pago disponibles en EcoZen.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(3)">
-                  <h3 class="faq-title">SOBRE NUESTROS PRECIOS Y PROMOCIONES</h3>
-                  <span class="faq-arrow" id="arrow-3">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-3">
-                  <div class="faq-body">
-                    <p>Información sobre precios y promociones de EcoZen.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(4)">
-                  <h3 class="faq-title">SOBRE EL DESPACHO</h3>
-                  <span class="faq-arrow" id="arrow-4">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-4">
-                  <div class="faq-body">
-                    <p>Información sobre el despacho y envío de productos.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(5)">
-                  <h3 class="faq-title">SOBRE EL SERVICIO DE ARMADO O INSTALACIÓN</h3>
-                  <span class="faq-arrow" id="arrow-5">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-5">
-                  <div class="faq-body">
-                    <p>Información sobre servicios de armado e instalación.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(6)">
-                  <h3 class="faq-title">SOBRE NUESTRO SERVICIO</h3>
-                  <span class="faq-arrow" id="arrow-6">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-6">
-                  <div class="faq-body">
-                    <p>Información sobre nuestro servicio al cliente.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(7)">
-                  <h3 class="faq-title">FORMAS DE PAGO Y FACTURACIÓN</h3>
-                  <span class="faq-arrow" id="arrow-7">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-7">
-                  <div class="faq-body">
-                    <p>Información sobre formas de pago y facturación.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(8)">
-                  <h3 class="faq-title">SOBRE LA SEGURIDAD DE TUS DATOS PERSONALES</h3>
-                  <span class="faq-arrow" id="arrow-8">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-8">
-                  <div class="faq-body">
-                    <p>Información sobre la seguridad de datos personales.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(9)">
-                  <h3 class="faq-title">SOBRE NUESTROS CATÁLOGOS</h3>
-                  <span class="faq-arrow" id="arrow-9">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-9">
-                  <div class="faq-body">
-                    <p>Información sobre nuestros catálogos de productos.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item mb-3">
-                <div class="faq-header-section" onclick="toggleFaq(10)">
-                  <h3 class="faq-title">PARA CAMBIOS Y DEVOLUCIONES</h3>
-                  <span class="faq-arrow" id="arrow-10">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </span>
-                </div>
-                <div class="faq-content" id="content-10">
-                  <div class="faq-body">
-                    <p>Información sobre cambios y devoluciones de productos.</p>
-                  </div>
-                </div>
-              </div>
-
             </div>
+
+            <!-- Resto de acordeones -->
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(2)">
+                <h3 class="faq-title">SOBRE NUESTROS MEDIOS DE PAGO</h3>
+                <span class="faq-arrow" id="arrow-2">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-2">
+                <div class="faq-body">
+                  <p>Información sobre medios de pago disponibles en EcoZen.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(3)">
+                <h3 class="faq-title">SOBRE NUESTROS PRECIOS Y PROMOCIONES</h3>
+                <span class="faq-arrow" id="arrow-3">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-3">
+                <div class="faq-body">
+                  <p>Información sobre precios y promociones de EcoZen.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(4)">
+                <h3 class="faq-title">SOBRE EL DESPACHO</h3>
+                <span class="faq-arrow" id="arrow-4">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-4">
+                <div class="faq-body">
+                  <p>Información sobre el despacho y envío de productos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(5)">
+                <h3 class="faq-title">SOBRE EL SERVICIO DE ARMADO O INSTALACIÓN</h3>
+                <span class="faq-arrow" id="arrow-5">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-5">
+                <div class="faq-body">
+                  <p>Información sobre servicios de armado e instalación.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(6)">
+                <h3 class="faq-title">SOBRE NUESTRO SERVICIO</h3>
+                <span class="faq-arrow" id="arrow-6">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-6">
+                <div class="faq-body">
+                  <p>Información sobre nuestro servicio al cliente.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(7)">
+                <h3 class="faq-title">FORMAS DE PAGO Y FACTURACIÓN</h3>
+                <span class="faq-arrow" id="arrow-7">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-7">
+                <div class="faq-body">
+                  <p>Información sobre formas de pago y facturación.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(8)">
+                <h3 class="faq-title">SOBRE LA SEGURIDAD DE TUS DATOS PERSONALES</h3>
+                <span class="faq-arrow" id="arrow-8">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-8">
+                <div class="faq-body">
+                  <p>Información sobre la seguridad de datos personales.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(9)">
+                <h3 class="faq-title">SOBRE NUESTROS CATÁLOGOS</h3>
+                <span class="faq-arrow" id="arrow-9">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-9">
+                <div class="faq-body">
+                  <p>Información sobre nuestros catálogos de productos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item mb-3">
+              <div class="faq-header-section" onclick="toggleFaq(10)">
+                <h3 class="faq-title">PARA CAMBIOS Y DEVOLUCIONES</h3>
+                <span class="faq-arrow" id="arrow-10">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-content" id="content-10">
+                <div class="faq-body">
+                  <p>Información sobre cambios y devoluciones de productos.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
+<<<<<<< HEAD
     <!-- PIE DE PÁGINA / FOOTER -->
     <footer class="footer-ecozen mt-5">
       <div class="container">
@@ -551,6 +613,119 @@
         toggleFaq(1);
       });
     </script>
+=======
+  <!-- PIE DE PÁGINA / FOOTER -->
+  <footer class="footer-ecozen mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <h5>Sobre Ecozen</h5>
+          <p>Tel: (219) 555-0114</p>
+          <p>Email: ecozen@gmail.com</p>
+          <p>Desarrollado por:</p>
+          <ul>
+            <li>Seclén López, Lucia</li>
+            <li>contacto: luciaseclop05@gmail.com</li><br>
+            <li>Uchofen Alejos, Juanpablo</li>
+            <li>contacto: uchofenalejosjp@gmail.com</li><br>
+            <li>Vallejos Barbadillo, Sebastián</li>
+            <li>contacto: svallejosb1@gmail.com</li><br>
+            <li>Vásquez Centurión, Miguel</li>
+            <li>contacto: mfabrizio29@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Mi cuenta</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
+            <li><a href="../html/carrito.html">Carrito</a></li>
+            <li><a href="#">Historial de pedidos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Contáctanos</h5>
+          <p>Chatea con nosotros 24h</p>
+          <p>Email: servicio@ecozen.pe</p>
+          <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+          <p>Tiendas y Horarios</p>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Atención al cliente</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/contacto.html">Contacto</a></li>
+            <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+            <li><a href="../html/politica.html">Política de privacidad</a></li>
+            <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Redes Sociales</h5>
+          <div class="d-flex gap-2">
+            <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+            <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+            <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+            <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+        <p class="mb-0">&copy; Ecozen 2025</p>
+        <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
+        <div class="d-flex gap-3 align-items-center">
+          <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+          <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+          <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+          <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+          <div class="d-flex align-items-center gap-1">
+            <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+            <span>Pago Seguro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN PIE DE PAGINA / FOOTER -->
+
+  <!-- SCRIPTS -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    }
+
+    function toggleFaq(id) {
+      const content = document.getElementById(`content-${id}`);
+      const arrow = document.getElementById(`arrow-${id}`);
+
+      // Cerrar todos los otros acordeones
+      for (let i = 1; i <= 10; i++) {
+        if (i !== id) {
+          const otherContent = document.getElementById(`content-${i}`);
+          const otherArrow = document.getElementById(`arrow-${i}`);
+          if (otherContent && otherArrow) {
+            otherContent.classList.remove('show');
+            otherArrow.classList.remove('rotate');
+          }
+        }
+      }
+
+      // Toggle el acordeón clickeado
+      content.classList.toggle('show');
+      arrow.classList.toggle('rotate');
+    }
+
+    // Abrir el primer acordeón por defecto
+    document.addEventListener('DOMContentLoaded', function () {
+      toggleFaq(1);
+    });
+  </script>
+>>>>>>> 73c480b9f2d822327bcd85c0e3ae7895b158f878
 </body>
 
 </html>
