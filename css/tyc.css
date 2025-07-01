@@ -1,91 +1,25 @@
-body {
-    background-color: #F9F8F4;
-    font-family: 'Poppins', sans-serif;
-}
-
-.seccion-privacidad {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.titulo-seccion {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #000000;
-}
-
-.titulo-subseccion {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000000;
-}
-
-.caja-grande {
-    background-color: #FAF8EC;
-    padding: 30px;
-    border-radius: 20px;
-    color: #444;
-    font-size: 1rem;
-    text-align: justify;
-}
-
-.caja {
-    background-color: #FAF8EC;
-    padding: 25px;
-    border-radius: 20px;
-    height: 100%;
-    color: #444;
-    font-size: 1rem;
-    text-align: justify;
-}
-
-.caja h5 {
-    font-weight: bold;
-    color: #000000;
+.ruc {
+    font-size: 14px;
+    color: #555;
     margin-bottom: 10px;
-}
-
-.politica-grid {
-    row-gap: 30px;
-}
-
-.politica-grid .col-md-6 {
-    display: flex;
-}
-
-.politica-grid .caja {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-}
-
-.caja p {
-    margin-bottom: 8px;
-    line-height: 1.6;
+    text-align: center;
   }
   
-.politica-grid .caja h5 {
-    text-align: center;
-}
-
-.politica-grid .caja p,
-.caja-grande p {
-    color: #222;
-}
-
-@media (max-width: 768px) {
-    .titulo-seccion {
-        font-size: 1.5rem;
-    }
-
-    .titulo-subseccion {
-        font-size: 1.25rem;
-    }
-
-    .caja,
-    .caja-grande {
-        padding: 20px;
-    }
-}
+  .separador {
+    display: block;
+    height: 6px;
+    background-color: black;
+    border: none;
+    width: 1000px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .subtitulo-con-linea {
+    font-size: 20px;
+    color: #2f2f2f;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 6px; 
+    text-decoration-thickness: 2px; 
+    margin-bottom: 20px;
+  }

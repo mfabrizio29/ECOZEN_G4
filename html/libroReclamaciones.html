@@ -15,7 +15,7 @@
 
 <body>
     <div class="main-wrapper">
-        <!-- ENCABEZADO / HEADER -->
+
         <header class="header-container py-2 d-flex justify-content-center align-items-center">
             <div class="d-flex flex-wrap gap-3 text-center align-items-center">
                 <div class="select-wrapper">
@@ -83,7 +83,6 @@
             </div>
         </section>
 
-
         <nav class="navbar-principal navbar navbar-expand-lg">
             <div class="container">
                 <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
@@ -99,7 +98,6 @@
                             <a class="nav-link dropdown-toggle" href="#">Categorías</a>
                             <div class="dropdown-menu-custom">
 
-                                <!-- Abonos y fertilizantes -->
                                 <div class="category-block">
                                     <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
                                     <div class="subcategory-columns">
@@ -115,8 +113,6 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Herramientas -->
                                 <div class="category-block">
                                     <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
                                     <div class="subcategory-columns">
@@ -135,7 +131,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Sistema de riego -->
                                 <div class="category-block">
                                     <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
                                     <div class="subcategory-columns">
@@ -150,8 +145,6 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Kits -->
                                 <div class="category-block">
                                     <a href="../html/categKits.html" class="category-title">Kits</a>
                                     <div class="subcategory-columns">
@@ -166,11 +159,8 @@
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
                         </li>
-
-
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                         <li class="nav-item">
@@ -180,11 +170,10 @@
                                 <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
                             </select>
                         </li>
-
                         <li class="nav-item"><a class="nav-link" href="cuidadoPlantas">Cuidado de Plantas</a></li>
                     </ul>
 
-                    <!-- Iconos en mobile -->
+                    <!--pantalla pequeña-->
                     <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
                         <button class="icon-btn" title="Favoritos">
                             <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
@@ -207,150 +196,173 @@
             </div>
         </nav>
     </div>
-    <!-- FIN ENCABEZADO / HEADER -->
+
     <main class="container py-5" id="libro-reclamaciones">
         <h2 class="text-center fw-bold mb-5 titulo-seccion">LIBRO DE RECLAMACIONES</h2>
-      
-        <form>
-            <form>
-                <div class="row g-4">
-                  <!-- Columna izquierda -->
-                  <div class="col-md-6">
+        <form id="form-reclamo">
+            <div class="row g-4">
+                <div class="col-md-6">
                     <div class="formulario-box p-4">
-                      <h5 class="fw-bold mb-4">1) Datos de la persona que presenta el reclamo</h5>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Tipo de Documento</label>
-                        <input type="text" placeholder="Escribir acá" class="form-control" />
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Nº de Documento</label>
-                        <input type="text" placeholder="Escribir acá" class="form-control" />
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Nombres y Apellidos</label>
-                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="400" />
-                        <small class="text-muted limite-derecha">Límite: 400 palabras</small>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Tipo de Respuesta</label>
-                        <select class="form-select">
-                          <option value="">Seleccione</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Dirección</label>
-                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="200" />
-                        <small class="text-muted limite-derecha">Límite: 200 palabras</small>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Departamento</label>
-                        <select class="form-select">
-                          <option value="">Seleccione</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Provincia</label>
-                        <select class="form-select">
-                          <option value="">Seleccione</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Distrito</label>
-                        <select class="form-select">
-                          <option value="">Seleccione</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Teléfono</label>
-                        <input type="tel" placeholder="Escribir acá" class="form-control" maxlength="9" />
-                        <small class="text-muted limite-derecha">Límite: 9 números</small>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Columna derecha -->
-                  <div class="col-md-6">
-                    <div class="formulario-box p-4">
-                      <h5 class="fw-bold mb-4">2) Información general</h5>
-              
-                      <div class="mb-3">
-                        <label class="form-label">N° de Orden</label>
-                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="20" />
-                        <small class="text-muted limite-derecha">Límite: 20 números</small>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Identificación del Bien Contratado</label>
-                        <select class="form-select">
-                          <option value="">Seleccione</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Monto Reclamado</label>
-                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="100" />
-                        <small class="text-muted limite-derecha">Límite: 100 palabras</small>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Descripción</label>
-                        <input type="text" placeholder="Escribir acá" class="form-control" maxlength="400" />
-                        <small class="text-muted limite-derecha">Límite: 400 palabras</small>
-                      </div>
-              
-                      <h5 class="fw-bold mt-5 mb-4">3) Detalles de su reclamo</h5>
-              
-                      <div class="mb-3">
-                        <select class="form-select">
-                          <option value="">Seleccione</option>
-                        </select>
-                      </div>
-              
-                      <div class="mb-3">
-                        <label class="form-label">Detalles del reclamo</label>
-                        <textarea rows="3" placeholder="Escribir acá" class="form-control" maxlength="400"></textarea>
-                        <small class="text-muted limite-derecha">Límite: 400 palabras</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-              
- 
-      
-          <div class="upload-row">
-            <div class="upload-box mb-4">
-              <div class="upload-content d-flex align-items-center justify-content-between flex-wrap">
-                <div class="d-flex align-items-center gap-3">
-                  <i class="bi bi-cloud-arrow-up fs-3 text-muted"></i>
-                  <div>
-                    <p class="mb-1">Select a file or drag and drop here</p>
-                    <small class="text-muted">JPG, PNG or PDF, file size no more than 10MB</small>
-                  </div>
-                </div>
-                <label for="archivo" class="custom-file-upload">SELECT FILE</label>
-                <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf">
-              </div>
-            </div>
-          
-            <div class="d-grid align-self-start">
-              <button type="submit" class="btn btn-enviar">enviar</button>
-            </div>
-          </div>
-    </form>
-</div>
-      </main>
-      
+                        <h5 class="fw-bold mb-4">1) Datos de la persona que presenta el reclamo</h5>
 
+                        <div class="mb-3">
+                            <label class="form-label">Tipo de Documento</label>
+                            <input type="text" placeholder="Escribir acá" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Nº de Documento</label>
+                            <input type="text" placeholder="Escribir acá" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Nombres y Apellidos</label>
+                            <input type="text" placeholder="Escribir acá" class="form-control" maxlength="400" />
+                            <small class="text-muted limite-derecha">Límite: 400 palabras</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tipo de Respuesta</label>
+                            <select class="form-select">
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="queja">Queja</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="consulta">Consulta</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Dirección</label>
+                            <input type="text" placeholder="Escribir acá" class="form-control" maxlength="200" />
+                            <small class="text-muted limite-derecha">Límite: 200 palabras</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Departamento</label>
+                            <select class="form-select">
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="">Lambayeque</option>
+                                <option value="">La Libertad</option>
+                                <option value="lima">Lima</option>
+                                <option value="arequipa">Arequipa</option>
+                                <option value="cusco">Cusco</option>
+                                <option value="la-libertad">La Libertad</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Provincia</label>
+                            <select class="form-select">
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="">Chiclayo</option>
+                                <option value="">Piura</option>
+                                <option value="">Trujillp</option>
+                                <option value="lima-prov">Lima</option>
+                                <option value="huarochiri">Tarapoto</option>
+                                <option value="cajatambo">Cajatambo</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Distrito</label>
+                            <select class="form-select">
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="">Chiclayo</option>
+                                <option value="">José Leonardo Ortiz</option>
+                                <option value="">La Victoria</option>
+                                <option value="">Santa Victoria</option>
+                                <option value="miraflores">Miraflores</option>
+                                <option value="san-isidro">San Isidro</option>
+                                <option value="sjl">San Juan de Lurigancho</option>
+                                <option value="smp">San Martín de Porres</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Teléfono</label>
+                            <input type="tel" placeholder="Escribir acá" class="form-control" maxlength="9" />
+                            <small class="text-muted limite-derecha">Límite: 9 números</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="formulario-box p-4">
+                        <h5 class="fw-bold mb-4">2) Información general</h5>
+
+                        <div class="mb-3">
+                            <label class="form-label">N° de Orden</label>
+                            <input type="text" placeholder="Escribir acá" class="form-control" maxlength="20" />
+                            <small class="text-muted limite-derecha">Límite: 20 números</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Identificación del Bien Contratado</label>
+                            <select class="form-select">
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="producto">Producto</option>
+                                <option value="servicio">Servicio</option>
+                                <option value="ambos">Ambos</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Monto Reclamado</label>
+                            <input type="text" placeholder="Escribir acá" class="form-control" maxlength="100" />
+                            <small class="text-muted limite-derecha">Límite: 100 palabras</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Descripción</label>
+                            <input type="text" placeholder="Escribir acá" class="form-control" maxlength="400" />
+                            <small class="text-muted limite-derecha">Límite: 400 palabras</small>
+                        </div>
+
+                        <h5 class="fw-bold mt-5 mb-4">3) Detalles de su reclamo</h5>
+
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="entrega">Retraso en la entrega</option>
+                                <option value="estado">Producto en mal estado</option>
+                                <option value="atencion">Mala atención del personal</option>
+                                <option value="garantia">Problemas con la garantía</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Detalles del reclamo</label>
+                            <textarea rows="3" placeholder="Escribir acá" class="form-control"
+                                maxlength="400"></textarea>
+                            <small class="text-muted limite-derecha">Límite: 400 palabras</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="upload-row">
+            <div class="upload-box mb-4">
+                <div class="upload-content d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-cloud-arrow-up fs-3 text-muted"></i>
+                        <div>
+                            <p class="mb-1">Select a file or drag and drop here</p>
+                            <small class="text-muted">JPG, PNG or PDF, file size no more than 10MB</small>
+                        </div>
+                    </div>
+                    <label for="archivo" class="custom-file-upload ">SELECT FILE</label>
+                    <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf" form="form-reclamo" />
+                </div>
+            </div>
+
+            <div class="d-grid align-self-start">
+                <button type="submit" class="btn btn-enviar" id="btnEnviar" form="form-reclamo">enviar</button>
+            </div>
+        </div>
+        </div>
+    </main>
 
     <footer class="footer-ecozen mt-5">
         <div class="container">
@@ -401,7 +413,6 @@
                 </div>
             </div>
 
-
             <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
                 <p class="mb-0">&copy; Ecozen 2025</p>
                 <div class="d-flex gap-3 align-items-center">
@@ -439,8 +450,8 @@
             }
         });
     </script>
+
+    <script src="../js/libroreclamaciones.js"></script>
 </body>
 
 </html>
-
-
