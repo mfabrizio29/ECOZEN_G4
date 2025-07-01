@@ -1,0 +1,39 @@
+/* ——— Overlay gris semitransparente ——— */
+.promo-overlay{
+  position: fixed; inset: 0;
+  background:#0008;             /* negro 50 % */
+  display:flex; align-items:center; justify-content:center;
+  z-index:1050;                 /* por encima de todo */
+}
+
+/* ——— Caja central ——— */
+.promo-box{
+  position:relative;
+  max-width: 420px;             /* ajusta al tamaño de tu imagen */
+  width: 90vw;
+}
+
+/* Imagen del anuncio */
+.promo-img{
+  width:100%; height:auto; display:block;
+  border-radius:8px;
+}
+
+/* Botón cerrar  (esquina sup. dcha) */
+.promo-close{
+  position:absolute; top:-14px; right:-14px;
+  background:#58a060; color:#fff; font-size:28px;
+  border:none; width:36px; height:36px; border-radius:50%;
+  cursor:pointer; line-height:28px;
+}
+
+/* CTA */
+.promo-btn{
+  position:absolute;
+  left:50%; bottom:28px; transform:translateX(-50%);
+  background:#ffc400; color:#000; font-weight:700;
+  padding:8px 28px; border-radius:8px;
+  text-decoration:none; box-shadow:0 4px 8px #0003;
+  transition:transform .15s;
+}
+.promo-btn:hover{ transform:translateX(-50%) scale(1.05); }

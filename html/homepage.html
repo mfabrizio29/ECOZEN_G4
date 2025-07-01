@@ -2,13 +2,16 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoZenShop</title>
-    <link rel="stylesheet" href="../css/fuente.css">
-    <link rel="stylesheet" href="../css/header&footer.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="icon" href="../img/fooder-header/icono.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoZenShop</title>
+  <link rel="stylesheet" href="../css/header&footer.css" />
+  <link rel="stylesheet" href="../css/homepage.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+ <link rel="stylesheet" href="../css/anuncio.css" />
+ <link rel="stylesheet" href="../css/registrarse.css" />
+
+  <link rel="icon" href="../img/fooder-header/icono.png">
 </head>
 
 <body>
@@ -57,10 +60,11 @@
                 </div>
 
                 <div class="icon-group d-flex align-items-center gap-3 ms-4">
-                    <button class="icon-btn" title="Favoritos">
+                       <a href="../html/deseados.html class" class="icon-btn" title="Favoritos">
                         <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
                     </button>
 
+                      
                     <div class="vertical-separator"></div>
 
                     <a href="carrito.html" class="icon-btn" title="Carrito">
@@ -171,7 +175,7 @@
 
 
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="../html/paginacontacto.html">Contáctenos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                         <li class="nav-item">
                             <select class="menu-select" id="navegacion-nosotros">
                                 <option value="sobreNosotros.html">Sobre nosotros</option>
@@ -207,7 +211,6 @@
         </nav>
     </div>
     <!-- FIN ENCABEZADO / HEADER -->
-
 
 
 
@@ -328,105 +331,179 @@
 
 
 
-    <!-- PIE DE PÁGINA / FOOTER -->
-    <footer class="footer-ecozen mt-5">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-md-3">
-                    <h5>Sobre Ecozen</h5>
-                    <p>Tel: (219) 555-0114</p>
-                    <p>Email: ecozen@gmail.com</p>
-                    <p>Desarrollado por:</p>
-                    <ul>
-                        <li>Seclén López, Lucia</li>
-                        <li>contacto: luciaseclop05@gmail.com</li><br>
-                        <li>Uchofen Alejos, Juanpablo</li>
-                        <li>contacto: uchofenalejosjp@gmail.com</li><br>
-                        <li>Vallejos Barbadillo, Sebastián</li>
-                        <li>contacto: svallejosb1@gmail.com</li><br>
-                        <li>Vásquez Centurión, Miguel</li>
-                        <li>contacto: mfabrizio29@gmail.com</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Mi cuenta</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
-                        <li><a href="../html/carrito.html">Carrito</a></li>
-                        <li><a href="#">Historial de pedidos</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <h5>Contáctanos</h5>
-                    <p>Chatea con nosotros 24h</p>
-                    <p>Email: servicio@ecozen.pe</p>
-                    <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
-                    <a href="tiendas.html"><p>Tiendas y Horarios</p></a>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Atención al cliente</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../html/contacto.html">Contacto</a></li>
-                        <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a href="../html/terminosCondiciones.html">Términos y condiciones</a></li>
-                        <li><a href="../politica.html">Política de privacidad</a></li>
-                        <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Redes Sociales</h5>
-                    <div class="d-flex gap-2">
-                        <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
-                        <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
-                        <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
-                        <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
-                <p class="mb-0">&copy; Ecozen 2025</p>
-                <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
-                <div class="d-flex gap-3 align-items-center">
-                    <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
-                    <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
-                    <img src="../img/fooder-header/discover0.svg" alt="Discover" />
-                    <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
-                    <div class="d-flex align-items-center gap-1">
-                        <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
-                        <span>Pago Seguro</span>
-                    </div>
-                </div>
-            </div>
+  <!-- PIE DE PÁGINA / FOOTER -->
+  <footer class="footer-ecozen mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <h5>Sobre Ecozen</h5>
+          <p>Tel: (219) 555-0114</p>
+          <p>Email: ecozen@gmail.com</p>
+          <p>Desarrollado por:</p>
+          <ul>
+            <li>Seclén López, Lucia</li>
+            <li>contacto: luciaseclop05@gmail.com</li><br>
+            <li>Uchofen Alejos, Juanpablo</li>
+            <li>contacto: uchofenalejosjp@gmail.com</li><br>
+            <li>Vallejos Barbadillo, Sebastián</li>
+            <li>contacto: svallejosb1@gmail.com</li><br>
+            <li>Vásquez Centurión, Miguel</li>
+            <li>contacto: mfabrizio29@gmail.com</li>
+          </ul>
         </div>
-    </footer>
-    <!-- FIN PIE DE PAGINA / FOOTER -->
-    <!-- SCRIPT MENU HEADER -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('show');
-        }
-    </script>
-    <!-- FIN SCRIPT MENU HEADER -->
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const select = document.getElementById('navegacion-nosotros');
-            if (select) {
-                select.addEventListener('change', function () {
-                    const url = this.value;
-                    if (url !== '#') {
-                        window.location.href = url;
-                    }
-                });
-            }
+        <div class="col-md-2">
+          <h5>Mi cuenta</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
+            <li><a href="../html/carrito.html">Carrito</a></li>
+            <li><a href="#">Historial de pedidos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Contáctanos</h5>
+          <p>Chatea con nosotros 24h</p>
+          <p>Email: servicio@ecozen.pe</p>
+          <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+          <p>Tiendas y Horarios</p>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Atención al cliente</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/contacto.html">Contacto</a></li>
+            <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+            <li><a href="../politica.html">Política de privacidad</a></li>
+            <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Redes Sociales</h5>
+          <div class="d-flex gap-2">
+            <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+            <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+            <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+            <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+        <p class="mb-0">&copy; Ecozen 2025</p>
+        <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
+        <div class="d-flex gap-3 align-items-center">
+          <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+          <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+          <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+          <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+          <div class="d-flex align-items-center gap-1">
+            <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+            <span>Pago Seguro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN PIE DE PAGINA / FOOTER -->
+  <!-- SCRIPT MENU HEADER -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/anuncio.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    }
+  </script>
+  <!-- FIN SCRIPT MENU HEADER -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const select = document.getElementById('navegacion-nosotros');
+      if (select) {
+        select.addEventListener('change', function () {
+          const url = this.value;
+          if (url !== '#') {
+            window.location.href = url;
+          }
         });
-    </script>
+      }
+    });
+  </script>
+
+
+
+<!-- BLOQUE DEL POP‑UP -->
+<div id="promoPopup" class="promo-overlay d-none">
+  <div class="promo-box">
+    <button id="promoClose" class="promo-close" aria-label="Cerrar">×</button>
+    <img src="../img/imghomepage/cta1.png" class="promo-img" alt="25 % de descuento">
+    <a id="promoCta" href="../html/indivProduct.html?id=101" class="promo-btn">¡CLICK AQUÍ!</a>
+  </div>
+</div>
+
+
+<!-- MODAL INICIAR SESIÓN -->
+<div id="modalLogin" class="modal-overlay d-none">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('modalLogin', false)">×</button>
+    <h2>INICIAR SESIÓN</h2>
+    <form id="loginForm">
+      <input type="text" placeholder="Correo electrónico o usuario" required>
+      <div class="password-wrapper">
+        <input type="password" placeholder="Contraseña" id="loginPassword" required>
+        <span class="toggle-password" onclick="togglePassword('loginPassword')">👁️</span>
+      </div>
+      <a href="#" class="small-link">Olvidé mi contraseña</a>
+      <button type="submit" class="btn-full">Iniciar Sesión</button>
+      <div class="google-btn" onclick="authWithGoogle()">Continuar con Google</div>
+    </form>
+    <p class="bottom-text">
+      ¿No tienes cuenta?
+      <a href="#" onclick="switchModals('modalLogin','modalRegister')">Crear una cuenta</a>
+    </p>
+  </div>
+</div>
+
+<!-- MODAL REGISTRARSE -->
+<div id="modalRegister" class="modal-overlay d-none">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('modalRegister', false)">×</button>
+    <h2>CREAR CUENTA</h2>
+    <form id="registerForm">
+      <input type="text" placeholder="Nombre" required>
+      <input type="text" placeholder="Apellido" required>
+      <input type="text" placeholder="Usuario" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <div class="password-wrapper">
+        <input type="password" placeholder="Contraseña" id="regPass" required>
+        <span class="toggle-password" onclick="togglePassword('regPass')">👁️</span>
+      </div>
+      <div class="password-wrapper">
+        <input type="password" placeholder="Confirmar contraseña" id="regPass2" required>
+        <span class="toggle-password" onclick="togglePassword('regPass2')">👁️</span>
+      </div>
+      <div class="google-btn" onclick="authWithGoogle()">Continuar con Google</div>
+      <button type="submit" class="btn-full">Crear Cuenta</button>
+    </form>
+    <p class="bottom-text">
+      ¿Ya tienes cuenta?
+      <a href="#" onclick="switchModals('modalRegister','modalLogin')">Iniciar sesión</a>
+    </p>
+  </div>
+</div>
+
+
+
+<!-- scripts (después del pop‑up) -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/anuncio.js"></script>   <!-- aquí está tu IIFE -->
+<script src="../js/registrarse.js"></script>   <!-- aquí está tu IIFE -->
+
+
+
+
 </body>
 
 </html>
