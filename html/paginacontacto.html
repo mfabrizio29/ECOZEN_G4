@@ -63,9 +63,10 @@
 
           <div class="vertical-separator"></div>
 
-          <button class="icon-btn" title="Carrito">
+          <a href="carrito.html" class="icon-btn" title="Carrito">
             <img src="../img/fooder-header/carrito.png" class="icon-img" alt="Carrito" /> Carrito
-          </button>
+          </a>
+
 
           <div class="vertical-separator"></div>
 
@@ -81,6 +82,7 @@
       </div>
     </section>
 
+
     <nav class="navbar-principal navbar navbar-expand-lg">
       <div class="container">
         <button class="navbar-toggle-btn d-lg-none ms-auto mb-2" onclick="toggleMenu()">
@@ -91,9 +93,12 @@
           <ul class="navbar-nav flex-column flex-lg-row justify-content-center align-items-center">
             <li class="nav-item"><a class="nav-link" href="../html/homepage.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
+            <li class="nav-item">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#">Categorías</a>
               <div class="dropdown-menu-custom">
+
+                <!-- Abonos y fertilizantes -->
                 <div class="category-block">
                   <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
                   <div class="subcategory-columns">
@@ -109,6 +114,8 @@
                     </ul>
                   </div>
                 </div>
+
+                <!-- Herramientas -->
                 <div class="category-block">
                   <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
                   <div class="subcategory-columns">
@@ -126,6 +133,8 @@
                     </ul>
                   </div>
                 </div>
+
+                <!-- Sistema de riego -->
                 <div class="category-block">
                   <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
                   <div class="subcategory-columns">
@@ -140,6 +149,8 @@
                     </ul>
                   </div>
                 </div>
+
+                <!-- Kits -->
                 <div class="category-block">
                   <a href="../html/categKits.html" class="category-title">Kits</a>
                   <div class="subcategory-columns">
@@ -154,17 +165,22 @@
                     </ul>
                   </div>
                 </div>
+
               </div>
             </li>
-            <li class="nav-item"><a class="nav-link active" href="#">Contáctenos</a></li>
+
+
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/paginacontacto.html">Contáctenos</a></li>
             <li class="nav-item">
-              <select class="menu-select">
-                <option selected>Sobre nosotros</option>
-                <option>Sostenibilidad</option>
-                <option>Trabaja con Nosotros</option>
+              <select class="menu-select" id="navegacion-nosotros">
+                <option value="sobreNosotros.html">Sobre nosotros</option>
+                <option value="sostenibilidad.html">Sostenibilidad</option>
+                <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
               </select>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="cuidadoplantas.html">Cuidado de Plantas</a></li>
           </ul>
 
           <!-- Iconos en mobile -->
@@ -189,199 +205,202 @@
         </div>
       </div>
     </nav>
-    <!-- FIN ENCABEZADO / HEADER -->
+  </div>
+  <!-- FIN ENCABEZADO / HEADER -->
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="main-content">
-      <!-- Hero Section con título -->
-      <section class="hero-section">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-image-container">
-              <img src="../img/contacto/hero-contacto.jpg" alt="Contacto EcoZen" class="hero-image" />
-            </div>
-            <h1 class="hero-title">CONTÁCTENOS</h1>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-content">
+    <!-- Hero Section con título -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
           </div>
+          <h1 class="hero-title">CONTÁCTENOS</h1>
         </div>
-      </section>
+          <div class="hero-image-container">
+            <img src="../img/ayuda/contactenos.png" alt="Contacto EcoZen" class="hero-image" />
+      </div>
+    </section>
 
-      <!-- Formulario de Contacto -->
-      <section class="contact-form-section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
-              <div class="contact-form-card">
-                <form class="contact-form" id="contactForm">
-                  <div class="form-group">
-                    <label for="nombres" class="form-label">Nombres:</label>
-                    <input type="text" class="form-control" id="nombres" name="nombres" required>
-                  </div>
+    <!-- Formulario de Contacto -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+            <div class="contact-form-card">
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="nombres" class="form-label">Nombres:</label>
+                  <input type="text" class="form-control" id="nombres" name="nombres" required>
+                </div>
 
-                  <div class="form-group">
-                    <label for="apellidos" class="form-label">Apellidos:</label>
-                    <input type="text" class="form-control" id="apellidos" name="apellidos" required>
-                  </div>
+                <div class="form-group">
+                  <label for="apellidos" class="form-label">Apellidos:</label>
+                  <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+                </div>
 
-                  <div class="form-group">
-                    <label for="documento" class="form-label">D. Identidad:</label>
-                    <input type="text" class="form-control" id="documento" name="documento" required>
-                  </div>
+                <div class="form-group">
+                  <label for="documento" class="form-label">D. Identidad:</label>
+                  <input type="text" class="form-control" id="documento" name="documento" required>
+                </div>
 
-                  <div class="form-group">
-                    <label for="celular" class="form-label">N° celular:</label>
-                    <input type="tel" class="form-control" id="celular" name="celular" required>
-                  </div>
+                <div class="form-group">
+                  <label for="celular" class="form-label">N° celular:</label>
+                  <input type="tel" class="form-control" id="celular" name="celular" required>
+                </div>
 
-                  <div class="form-group">
-                    <label for="mensaje" class="form-label">Mensaje:</label>
-                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
-                  </div>
+                <div class="form-group">
+                  <label for="mensaje" class="form-label">Mensaje:</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
 
-                  <div class="form-group file-upload-group">
-                    <label class="form-label">Adjuntar archivo:</label>
-                    <div class="file-upload-area" id="fileUploadArea">
-                      <div class="file-upload-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
-                            stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7 10L12 15L17 10" stroke="#666" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M12 15V3" stroke="#666" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </div>
-                      <div class="file-upload-text">
-                        <span class="upload-main-text">Select a file or drag and drop here</span>
-                        <span class="upload-sub-text">JPG, PNG or PDF, file size no more than 10MB</span>
-                      </div>
-                      <button type="button" class="select-file-btn">SELECT FILE</button>
-                      <input type="file" class="file-input" id="fileInput" accept=".jpg,.jpeg,.png,.pdf"
-                        style="display: none;">
+                <div class="form-group file-upload-group">
+                  <label class="form-label">Adjuntar archivo:</label>
+                  <div class="file-upload-area" id="fileUploadArea">
+                    <div class="file-upload-icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                          stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 10L12 15L17 10" stroke="#666" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M12 15V3" stroke="#666" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
                     </div>
+                    <div class="file-upload-text">
+                      <span class="upload-main-text">Select a file or drag and drop here</span>
+                      <span class="upload-sub-text">JPG, PNG or PDF, file size no more than 10MB</span>
+                    </div>
+                    <button type="button" class="select-file-btn">SELECT FILE</button>
+                    <input type="file" class="file-input" id="fileInput" accept=".jpg,.jpeg,.png,.pdf"
+                      style="display: none;">
                   </div>
+                </div>
 
-                  <div class="form-group submit-group">
-                    <button type="submit" class="btn-enviar">Enviar</button>
-                  </div>
-                </form>
-              </div>
+                <div class="form-group submit-group">
+                  <button type="submit" class="btn-enviar">Enviar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Sección de iconos informativos en el footer -->
-      <section class="info-bottom">
+    <!-- Sección de iconos informativos en el footer -->
+    <!-- Sección inferior con iconos informativos -->
+      <section class="info-bottom py-4">
         <div class="container">
           <div class="info-icons-row">
             <div class="info-icon-item">
-              <img src="../img/contacto/envio-gratis.svg" alt="Envío gratis" />
-              <span>Envío gratis en pedidos de S/99 o más</span>
+              <img src="../img/ayuda/envio.png" alt="Envío gratis" />
+              <span>Envío gratis a partir de S/100 soles</span>
             </div>
             <div class="info-icon-item">
-              <img src="../img/contacto/entrega.svg" alt="Entrega rápida" />
-              <span>Entrega de 1 día laborable al pedir antes de las 12pm</span>
+              <img src="../img/ayuda/garantia.png" alt="Garantía" />
+              <span>Garantía de 30 días en todos los productos</span>
             </div>
             <div class="info-icon-item">
-              <img src="../img/contacto/devolucion.svg" alt="Devolución" />
-              <span>Garantía de devolución de dinero</span>
+              <img src="../img/ayuda/compra-segura.png" alt="Compra segura" />
+              <span>Compra 100% segura</span>
             </div>
             <div class="info-icon-item">
-              <img src="../img/contacto/telefono.svg" alt="Teléfono" />
-              <span>Asesoramiento telefónico gratuito disponible</span>
+              <img src="../img/ayuda/atencion.png" alt="Atención" />
+              <span>Atención personalizada con especialistas en jardinería</span>
             </div>
             <div class="info-icon-item">
-              <img src="../img/contacto/pago-seguro.svg" alt="Pago seguro" />
-              <span>Pagos seguros a través de nuestro sitio web encriptado</span>
+              <img src="../img/ayuda/sostenible.png" alt="Sostenible" />
+              <span>Productos eco-amigables y sostenibles para el medio ambiente</span>
             </div>
           </div>
         </div>
       </section>
-    </main>
+  </main>
 
-    <!-- PIE DE PÁGINA / FOOTER -->
-    <footer class="footer-ecozen mt-5">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-md-3">
-                    <h5>Sobre Ecozen</h5>
-                    <p>Tel: (219) 555-0114</p>
-                    <p>Email: ecozen@gmail.com</p>
-                    <p>Desarrollado por:</p>
-                    <ul>
-                        <li>Seclén López, Lucia</li>
-                        <li>contacto: luciaseclop05@gmail.com</li><br>
-                        <li>Uchofen Alejos, Juanpablo</li>
-                        <li>contacto: uchofenalejosjp@gmail.com</li><br>
-                        <li>Vallejos Barbadillo, Sebastián</li>
-                        <li>contacto: svallejosb1@gmail.com</li><br>
-                        <li>Vásquez Centurión, Miguel</li>
-                        <li>contacto: mfabrizio29@gmail.com</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Mi cuenta</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
-                        <li><a href="../html/carrito.html">Carrito</a></li>
-                        <li><a href="#">Historial de pedidos</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <h5>Contáctanos</h5>
-                    <p>Chatea con nosotros 24h</p>
-                    <p>Email: servicio@ecozen.pe</p>
-                    <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
-                    <p>Tiendas y Horarios</p>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Atención al cliente</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="../html/contacto.html">Contacto</a></li>
-                        <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a href="../html/tyc.html">Términos y condiciones</a></li>
-                        <li><a href="../politica.html">Política de privacidad</a></li>
-                        <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <h5>Redes Sociales</h5>
-                    <div class="d-flex gap-2">
-                        <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
-                        <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
-                        <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
-                        <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
-                <p class="mb-0">&copy; Ecozen 2025</p><p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
-                <div class="d-flex gap-3 align-items-center">
-                    <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
-                    <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
-                    <img src="../img/fooder-header/discover0.svg" alt="Discover" />
-                    <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
-                    <div class="d-flex align-items-center gap-1">
-                        <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
-                        <span>Pago Seguro</span>
-                    </div>
-                </div>
-            </div>
+  <!-- PIE DE PÁGINA / FOOTER -->
+  <footer class="footer-ecozen mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <h5>Sobre Ecozen</h5>
+          <p>Tel: (219) 555-0114</p>
+          <p>Email: ecozen@gmail.com</p>
+          <p>Desarrollado por:</p>
+          <ul>
+            <li>Seclén López, Lucia</li>
+            <li>contacto: luciaseclop05@gmail.com</li><br>
+            <li>Uchofen Alejos, Juanpablo</li>
+            <li>contacto: uchofenalejosjp@gmail.com</li><br>
+            <li>Vallejos Barbadillo, Sebastián</li>
+            <li>contacto: svallejosb1@gmail.com</li><br>
+            <li>Vásquez Centurión, Miguel</li>
+            <li>contacto: mfabrizio29@gmail.com</li>
+          </ul>
         </div>
-    </footer>
-    <!-- FIN PIE DE PAGINA / FOOTER -->
-    <!-- SCRIPT MENU HEADER -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('show');
-        }
+
+        <div class="col-md-2">
+          <h5>Mi cuenta</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
+            <li><a href="../html/carrito.html">Carrito</a></li>
+            <li><a href="#">Historial de pedidos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Contáctanos</h5>
+          <p>Chatea con nosotros 24h</p>
+          <p>Email: servicio@ecozen.pe</p>
+          <p>Tel: 01-999-0900 (Lun-Dom 9am-8pm)</p>
+          <p>Tiendas y Horarios</p>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Atención al cliente</h5>
+          <ul class="list-unstyled">
+            <li><a href="../html/contacto.html">Contacto</a></li>
+            <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="../html/tyc.html">Términos y condiciones</a></li>
+            <li><a href="../politica.html">Política de privacidad</a></li>
+            <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Redes Sociales</h5>
+          <div class="d-flex gap-2">
+            <a href="#"><img src="../img/fooder-header/facebook-10.svg" alt="Facebook" /></a>
+            <a href="#"><img src="../img/fooder-header/twitter-10.svg" alt="Twitter" /></a>
+            <a href="#"><img src="../img/fooder-header/pinterest-10.svg" alt="Pinterest" /></a>
+            <a href="#"><img src="../img/fooder-header/instagram-10.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
+        <p class="mb-0">&copy; Ecozen 2025</p>
+        <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
+        <div class="d-flex gap-3 align-items-center">
+          <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
+          <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
+          <img src="../img/fooder-header/discover0.svg" alt="Discover" />
+          <img src="../img/fooder-header/mastercard0.svg" alt="Mastercard" />
+          <div class="d-flex align-items-center gap-1">
+            <img src="../img/fooder-header/pagoSeguro.svg" alt="Seguro" />
+            <span>Pago Seguro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN PIE DE PAGINA / FOOTER -->
+  <!-- SCRIPT MENU HEADER -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('show');
+    }
 
 
     // File upload functionality

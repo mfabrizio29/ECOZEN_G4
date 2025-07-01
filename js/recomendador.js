@@ -1,9 +1,9 @@
 const productos = [
-  { img: "producto1.jpg", titulo: "Producto 1", descripcion: "Descripción del producto 1" },
-  { img: "producto2.jpg", titulo: "Producto 2", descripcion: "Descripción del producto 2" },
-  { img: "producto3.jpg", titulo: "Producto 3", descripcion: "Descripción del producto 3" },
-  { img: "producto4.jpg", titulo: "Producto 4", descripcion: "Descripción del producto 4" },
-  { img: "producto5.jpg", titulo: "Producto 5", descripcion: "Descripción del producto 5" }
+  { img: "../img/ayuda/recomendado2.png", titulo: "Producto 1", descripcion: "Descripción del producto 1" },
+  { img: "../img/ayuda/recomendado3.png", titulo: "Producto 2", descripcion: "Descripción del producto 2" },
+  { img: "../img/ayuda/recomendado4.png", titulo: "Producto 3", descripcion: "Descripción del producto 3" },
+  { img: "../img/ayuda/recomendado1.png", titulo: "Producto 4", descripcion: "Descripción del producto 4" },
+  { img: "../img/ayuda/recomendado4.png", titulo: "Producto 5", descripcion: "Descripción del producto 5" }
 ];
 
 const galeria = document.getElementById("galeria");

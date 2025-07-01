@@ -101,8 +101,22 @@
     text-align: center;
     font-size: 2.2rem;
     font-weight: bold;
-    color: #2C5F2D;
+    color: #000000;
     margin: 20px 0 15px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1000px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }

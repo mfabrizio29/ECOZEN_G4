@@ -43,8 +43,8 @@
 
 .hero-image {
   width: 100%;
-  max-width: 500px;
-  height: 250px;
+  max-width: 1000px;
+  height: 350px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -53,7 +53,7 @@
 .hero-title {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #2C5F2D;
+  color: #000000;
   margin: 20px 0 15px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -152,7 +152,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 40px;
   max-width: 800px;
   margin: 0 auto;
@@ -163,6 +163,7 @@
   align-items: center;
   gap: 10px;
   color: #666;
+  
   font-size: 0.85rem;
 }
 
