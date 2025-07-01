@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   background: #f9f9f3;
 }
@@ -48,7 +48,6 @@ body {
   flex-grow: 1;
 }
 
-
 .producto {
   background: white;
   border: 1px solid #ddd;
@@ -76,7 +75,6 @@ body {
   text-align: left;
 }
 
-
 .acciones {
   display: flex;
   justify-content: space-between;
@@ -97,13 +95,11 @@ body {
   justify-content: center;
 }
 
-/* Estilos para la imagen dentro del botón */
 .acciones button img {
   width: 20px;
   height: 20px;
   object-fit: contain;
 }
-
 
 .acciones span {
   font-size: 14px;
@@ -115,9 +111,6 @@ body {
   justify-content: space-between;
   padding: 10px 40px 0 40px;
 }
-
-
-
 
 .ordenar {
   padding: 8px;

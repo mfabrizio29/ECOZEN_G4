@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoZenShop | Sostenibilidad</title>
+    <link rel="stylesheet" href="../css/fuente.css">
     <link rel="stylesheet" href="../css/header&footer.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../img/fooder-header/icono.png">
@@ -174,13 +175,14 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                         <li class="nav-item">
-                            <select class="menu-select">
-                                <option selected>Sobre nosotros</option>
-                                <option>Sostenibilidad</option>
-                                <option>Trabaja con Nosotros</option>
+                            <select class="menu-select" id="navegacion-nosotros">
+                                <option value="sobreNosotros.html">Sobre nosotros</option>
+                                <option value="sostenibilidad.html">Sostenibilidad</option>
+                                <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
                             </select>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="cuidadoPlantas">Cuidado de Plantas</a></li>
                     </ul>
 
                     <!-- Iconos en mobile -->
@@ -210,53 +212,59 @@
 
     <main class="container py-5" id="sobre-nosotros">
         <h2 class="text-center fw-bold mb-5 titulo-seccion">SOSTENIBILIDAD</h2>
-
-        <!-- ¿Quiénes somos? -->
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 mb-3 mb-md-0">
-                <img id="imgSostenibilidad" src="../img/nosotros/compromiso.jpg" alt="Persona con plantas"
-                    class="img-fluid rounded shadow-sm">
-            </div>
-            <div class="col-md-6">
-                <h3 class="fw-bold subtitulo">Compromiso con el Medio Ambiente</h3>
-                <p class="descripcion">
-                    En EcoZen creemos que cada acción cuenta. Por eso, todos nuestros productos están seleccionados por
-                    su bajo impacto ambiental, desde herramientas reutilizables hasta insumos biodegradables. Promovemos
-                    el uso consciente de recursos naturales y buscamos minimizar la huella ecológica en cada venta. </p>
-            </div>
+      
+        <!-- Compromiso con el Medio Ambiente -->
+        <div class="row align-items-center mb-5 bloque-sostenibilidad">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="../img/nosotros/compromiso.jpg" alt="Persona con plantas"
+              class="img-fluid rounded shadow-sm" />
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold subtitulo">Compromiso con el Medio Ambiente</h3>
+            <p class="descripcion">
+              En EcoZen creemos que cada acción cuenta. Por eso, todos nuestros productos están
+              seleccionados por su bajo impacto ambiental, desde herramientas reutilizables hasta
+              insumos biodegradables. Promovemos el uso consciente de recursos naturales y buscamos
+              minimizar la huella ecológica en cada venta.
+            </p>
+          </div>
         </div>
-
-        <!-- Misión -->
-        <div class="row align-items-center mb-5 flex-md-row-reverse">
-            <div class="col-md-6 mb-3 mb-md-0">
-                <img id="imgSostenibilidad" src="../img/nosotros/empaque.jpg" alt="Equipo reunido"
-                    class="img-fluid rounded shadow-sm">
-            </div>
-            <div class="col-md-6">
-                <h3 class="fw-bold subtitulo">Empaque Responsable</h3>
-                <p class="descripcion">
-                    Nuestros envíos se realizan con empaques reciclables y materiales sostenibles. Reducimos el uso de
-                    plásticos al mínimo y apostamos por opciones compostables o reutilizables, porque entendemos que
-                    cuidar del planeta también empieza por cómo entregamos nuestros productos </p>
-            </div>
+      
+        <!-- Empaque Responsable -->
+        <div class="row align-items-center mb-5 flex-md-row-reverse bloque-sostenibilidad">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="../img/nosotros/empaque.jpg" alt="Equipo reunido"
+              class="img-fluid rounded shadow-sm" />
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold subtitulo">Empaque Responsable</h3>
+            <p class="descripcion">
+              Nuestros envíos se realizan con empaques reciclables y materiales sostenibles.
+              Reducimos el uso de plásticos al mínimo y apostamos por opciones compostables o
+              reutilizables, porque entendemos que cuidar del planeta también empieza por cómo
+              entregamos nuestros productos.
+            </p>
+          </div>
         </div>
-
-        <!-- Visión -->
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 mb-3 mb-md-0">
-                <img id="imgSostenibilidad" src="../img/nosotros/plantandooo.jpg" alt="Equipo creativo"
-                    class="img-fluid rounded shadow-sm">
-            </div>
-            <div class="col-md-6">
-                <h3 class="fw-bold subtitulo">Educación y Comunidad Verde</h3>
-                <p class="descripcion">
-                    Queremos inspirar a más personas a adoptar hábitos sostenibles. Por eso, compartimos consejos,
-                    tutoriales y buenas prácticas en nuestro blog y redes sociales, para que transformar tus espacios
-                    verdes también signifique cuidar del entorno que todos compartimos. </p>
-            </div>
+      
+        <!-- Educación y Comunidad Verde -->
+        <div class="row align-items-center mb-5 bloque-sostenibilidad">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="../img/nosotros/plantandooo.jpg" alt="Equipo creativo"
+              class="img-fluid rounded shadow-sm" />
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold subtitulo">Educación y Comunidad Verde</h3>
+            <p class="descripcion">
+              Queremos inspirar a más personas a adoptar hábitos sostenibles. Por eso, compartimos
+              consejos, tutoriales y buenas prácticas en nuestro blog y redes sociales, para que
+              transformar tus espacios verdes también signifique cuidar del entorno que todos
+              compartimos.
+            </p>
+          </div>
         </div>
-    </main>
-
+      </main>
+      
     <!-- PIE DE PÁGINA / FOOTER -->
     <footer class="footer-ecozen mt-5">
         <div class="container">
@@ -334,6 +342,20 @@
         }
     </script>
     <!-- FIN SCRIPT MENU HEADER -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const select = document.getElementById('navegacion-nosotros');
+          if (select) {
+            select.addEventListener('change', function () {
+              const url = this.value;
+              if (url !== '#') {
+                window.location.href = url;
+              }
+            });
+          }
+        });
+      </script>
 </body>
 
 </html>

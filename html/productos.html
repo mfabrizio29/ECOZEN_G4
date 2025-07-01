@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fuente.css">
     <link rel="stylesheet" href="../css/vars.css">
     <link rel="stylesheet" href="../css/productos.css">
     <link rel="stylesheet" href="../css/header&footer.css">
@@ -176,13 +177,14 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                     <li class="nav-item">
-                        <select class="menu-select">
-                            <option selected>Sobre nosotros</option>
-                            <option>Sostenibilidad</option>
-                            <option>Trabaja con Nosotros</option>
+                        <select class="menu-select" id="navegacion-nosotros">
+                            <option value="sobreNosotros.html">Sobre nosotros</option>
+                            <option value="sostenibilidad.html">Sostenibilidad</option>
+                            <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
                         </select>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="cuidadoPlantas">Cuidado de Plantas</a></li>
                 </ul>
 
                 <!-- Iconos en mobile -->
@@ -510,6 +512,20 @@
     }
 </script>
 <!-- FIN SCRIPT MENU HEADER -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const select = document.getElementById('navegacion-nosotros');
+      if (select) {
+        select.addEventListener('change', function () {
+          const url = this.value;
+          if (url !== '#') {
+            window.location.href = url;
+          }
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

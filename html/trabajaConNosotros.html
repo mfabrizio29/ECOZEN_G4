@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoZenShop | Trabaja Con Nosotros</title>
+    <link rel="stylesheet" href="../css/fuente.css">
     <link rel="stylesheet" href="../css/header&footer.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../img/fooder-header/icono.png">
@@ -15,7 +16,7 @@
 
 <body>
     <div class="main-wrapper">
-        <!-- ENCABEZADO / HEADER -->
+
         <header class="header-container py-2 d-flex justify-content-center align-items-center">
             <div class="d-flex flex-wrap gap-3 text-center align-items-center">
                 <div class="select-wrapper">
@@ -99,7 +100,6 @@
                             <a class="nav-link dropdown-toggle" href="#">Categorías</a>
                             <div class="dropdown-menu-custom">
 
-                                <!-- Abonos y fertilizantes -->
                                 <div class="category-block">
                                     <a href="../html/categAbonos.html" class="category-title">Abonos y fertilizantes</a>
                                     <div class="subcategory-columns">
@@ -116,7 +116,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Herramientas -->
                                 <div class="category-block">
                                     <a href="../html/categHerramientas.html" class="category-title">Herramientas</a>
                                     <div class="subcategory-columns">
@@ -135,7 +134,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Sistema de riego -->
                                 <div class="category-block">
                                     <a href="../html/categSistemas.html" class="category-title">Sistema de riego</a>
                                     <div class="subcategory-columns">
@@ -151,7 +149,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Kits -->
                                 <div class="category-block">
                                     <a href="../html/categKits.html" class="category-title">Kits</a>
                                     <div class="subcategory-columns">
@@ -174,16 +171,17 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                         <li class="nav-item">
-                            <select class="menu-select">
-                                <option selected>Sobre nosotros</option>
-                                <option>Sostenibilidad</option>
-                                <option>Trabaja con Nosotros</option>
+                            <select class="menu-select" id="navegacion-nosotros">
+                                <option value="sobreNosotros.html">Sobre nosotros</option>
+                                <option value="sostenibilidad.html">Sostenibilidad</option>
+                                <option value="trabajaConNosotros.html">Trabaja con Nosotros</option>
                             </select>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Cuidado de Plantas</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="cuidadoPlantas">Cuidado de Plantas</a></li>
                     </ul>
 
-                    <!-- Iconos en mobile -->
+                    <!--pantalla pequeña-->
                     <div class="mobile-icons d-flex d-lg-none justify-content-center align-items-center gap-3 mt-3">
                         <button class="icon-btn" title="Favoritos">
                             <img src="../img/fooder-header/fav.png" class="icon-img" alt="Favoritos" />
@@ -206,14 +204,13 @@
             </div>
         </nav>
     </div>
-    <!-- FIN ENCABEZADO / HEADER -->
 
     <main class="container py-5" id="sobre-nosotros">
-        <!-- Título Principal -->
+
         <h2 class="text-center fw-bold mb-5 titulo-seccion">TRABAJA CON NOSOTROS</h2>
 
         <div class="row justify-content-between align-items-start">
-            <!-- Columna Izquierda -->
+
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <div class="info-block mb-5">
                     <h6 class="fw-bold">Ambiente saludable</h6>
@@ -250,7 +247,7 @@
 
             <div class="col-lg-6">
                 <div class="formulario-contenedor">
-                    <!-- Título "ÚNETE" centrado y separado -->
+
                     <div class="titulo-formulario text-center">
                         <h4 class="fw-bold">ÚNETE</h4>
                     </div>
@@ -296,7 +293,6 @@
                                 </select>
                             </div>
 
-                            <!-- Archivo -->
                             <div class="upload-box mb-4">
                                 <div class="upload-content d-flex align-items-center justify-content-between flex-wrap">
                                     <div class="d-flex align-items-center gap-3">
@@ -321,7 +317,6 @@
 
     </main>
 
-    <!-- PIE DE PÁGINA / FOOTER -->
     <footer class="footer-ecozen mt-5">
         <div class="container">
             <div class="row gy-4">
@@ -388,16 +383,12 @@
         </div>
     </footer>
 
-    <!-- FIN PIE DE PÁGINA / HEADER -->
-
-    <!-- SCRIPT MENU HEADER -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleMenu() {
             document.querySelector('.nav-menu').classList.toggle('show');
         }
     </script>
-    <!-- FIN SCRIPT MENU HEADER -->
 
     <script>
         const archivoInput = document.getElementById("archivo");
@@ -409,6 +400,20 @@
     </script>
 
     <script src="../js/trabajaConNosotros.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const select = document.getElementById('navegacion-nosotros');
+          if (select) {
+            select.addEventListener('change', function () {
+              const url = this.value;
+              if (url !== '#') {
+                window.location.href = url;
+              }
+            });
+          }
+        });
+      </script>
 </body>
 
 </html>
