@@ -1,12 +1,10 @@
-/* ====== ESTILO GENERAL ====== */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #F9F8F4;
   margin: 0;
   padding: 0;
 }
 
-/* ====== COLUMNA IZQUIERDA ====== */
 .info-block {
   background-color: #FAF8EC;
   padding: 20px;
@@ -27,7 +25,6 @@ body {
   margin: 0;
 }
 
-/* ====== FORMULARIO GENERAL ====== */
 .formulario-box {
   background-color: #DDE8C0;
   border-radius: 60px;
@@ -53,7 +50,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Título centrado */
 .formulario-box h4 {
   font-weight: bold;
   font-size: 1.8rem;
@@ -64,7 +60,6 @@ body {
   width: 100%;
 }
 
-/* ====== GRUPOS DE CAMPOS ====== */
 .formulario-box form {
   width: 100%;
 }
@@ -75,7 +70,6 @@ body {
   margin-bottom: 18px;
 }
 
-/* ====== ETIQUETAS ALINEADAS ====== */
 .form-label {
   font-weight: bold;
   font-size: 0.95rem;
@@ -86,7 +80,6 @@ body {
   box-sizing: border-box;
 }
 
-/* ====== INPUT Y SELECT ====== */
 .form-control,
 .form-select {
   flex: 1;
@@ -104,7 +97,6 @@ body {
   color: #000;
 }
 
-/* ====== CARGA DE ARCHIVO (SEGÚN MOCKUP) ====== */
 .upload-box {
   background-color: #DDE8C0;
   border: 1px dashed #A9B388;
@@ -152,7 +144,6 @@ body {
   display: none;
 }
 
-/* ====== BOTÓN ENVIAR CENTRADO Y SIN BORDES REDONDOS ====== */
 .btn-enviar {
   background-color: #7E9F5C;
   color: white;
@@ -173,7 +164,7 @@ body {
 
 .form-wrapper {
   position: relative;
-  padding-top: 40px; /* Espacio para el título flotante */
+  padding-top: 40px;
 }
 
 .form-title {
@@ -204,7 +195,7 @@ body {
 }
 
 .titulo-formulario {
-  margin-bottom: 25px; /* Espacio entre el título y el formulario */
+  margin-bottom: 25px; 
 }
 
 .titulo-formulario h4 {
@@ -218,7 +209,6 @@ body {
   box-shadow: none;
 }
 
-/** CSS complementario para la interfaz de carga de archivos **/
 .file-upload-panel {
   position: fixed;
   top: 0; left: 0;
@@ -321,7 +311,6 @@ body {
   cursor: pointer;
 }
 
-/* ====== RESPONSIVE ====== */
 @media (max-width: 991px) {
   .mb-3 {
     flex-direction: column;

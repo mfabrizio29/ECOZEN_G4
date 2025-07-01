@@ -1,4 +1,3 @@
-/* === Variables base === */
 html, body {
   height: 100%;
   margin: 0;
@@ -20,7 +19,6 @@ body {
   font-size: 14px;
 }
 
-/* === Comunes === */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -36,7 +34,6 @@ a {
   color: inherit;
 }
 
-/* === Utilidades === */
 .text-white {
   color: #fff;
 }
@@ -98,7 +95,6 @@ a {
   border-radius: 50%;
 }
 
-/* === Header === */
 .header-container,
 .header-central {
   background: #F9F8F4;
@@ -184,7 +180,6 @@ a {
   pointer-events: none;
 }
 
-/* === Menú principal === */
 .navbar-principal {
   background-color: #7E9F5C;
   border-bottom: 1px solid #ccc;
@@ -193,7 +188,6 @@ a {
 
 .navbar-principal .container {
   max-width: 1200px;
-  /* fijo y centrado */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -213,10 +207,10 @@ a {
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centrado limpio */
+  justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 0 50px; /* margen simétrico */
+  padding: 0 50px;
   margin: 0 auto;
   max-width: 1200px;
   gap: 40px;
@@ -227,7 +221,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* ← esto aplica espacio entre items */
+  gap: 40px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -245,9 +239,7 @@ a {
   font-size: 17px;
   font-weight: 500;
   padding: 8px 16px;
-  /* ↑ más espacio interno */
   max-width: 200px;
-  /* igual que li */
   background: transparent;
   border: none;
   color: #C4BFBF;
@@ -258,7 +250,6 @@ a {
   text-overflow: ellipsis;
 }
 
-/* === Iconos === */
 .icon-group {
   gap: 16px;
 }
@@ -273,7 +264,6 @@ a {
   color: #333;
 }
 
-/* === Footer general === */
 footer.footer-ecozen {
   background-color: #7E9F5C;
   color: white;
@@ -318,7 +308,6 @@ footer.footer-ecozen {
   gap: 6px;
 }
 
-/* === Responsive === */
 @media (max-width: 992px) {
   .navbar-toggle-btn {
     display: block;
@@ -410,7 +399,6 @@ footer.footer-ecozen {
   transition: color 0.3s, font-weight 0.3s;
 }
 
-/* === Ajustes para los combo box del menú === */
 .navbar-principal .menu-select {
   font-family: inherit;
   font-size: 17px;
@@ -460,17 +448,17 @@ footer.footer-ecozen {
 }
 .nav-menu li {
   display: flex;
-  align-items: center; /* <-- alinea verticalmente */
+  align-items: center; 
   justify-content: center;
-  height: 40px; /* altura común */
+  height: 40px; 
 }
 
 .nav-menu li a,
 .nav-menu li select.menu-select {
   display: flex;
-  align-items: center; /* <-- centra texto dentro */
+  align-items: center; 
   justify-content: center;
-  height: 100%; /* ocupar toda la altura del li */
+  height: 100%; 
   box-sizing: border-box;
 }
 
