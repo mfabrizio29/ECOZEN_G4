@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoZenShop | Sostenibilidad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoZenShop | Términos y Condiciones </title>
     <link rel="stylesheet" href="../css/fuente.css">
     <link rel="stylesheet" href="../css/header&footer.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../img/fooder-header/icono.png">
-    <link rel="stylesheet" href="../css/sostenibilidad.css">
-    <link rel="stylesheet" href="../css/fuente.css">
+    <link rel="stylesheet" href="../css/libroReclamaciones.css">
 
 </head>
 
@@ -210,87 +209,151 @@
     </div>
     <!-- FIN ENCABEZADO / HEADER -->
 
-    <main class="container py-5" id="sobre-nosotros">
-        <h2 class="text-center fw-bold mb-5 titulo-seccion">SOSTENIBILIDAD</h2>
-      
-        <!-- Compromiso con el Medio Ambiente -->
-        <div class="row align-items-center mb-5 bloque-sostenibilidad">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <img src="../img/nosotros/compromiso.jpg" alt="Persona con plantas"
-              class="img-fluid rounded shadow-sm" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="fw-bold subtitulo">Compromiso con el Medio Ambiente</h3>
-            <p class="descripcion">
-              En EcoZen creemos que cada acción cuenta. Por eso, todos nuestros productos están
-              seleccionados por su bajo impacto ambiental, desde herramientas reutilizables hasta
-              insumos biodegradables. Promovemos el uso consciente de recursos naturales y buscamos
-              minimizar la huella ecológica en cada venta.
-            </p>
-          </div>
+    <main class="container py-5" id="libro-reclamaciones">
+        <h2 class="text-center fw-bold mb-5 titulo-seccion">LIBRO DE RECLAMACIONES</h2>
+
+        <div class="formulario-box p-5 rounded-4 shadow-sm">
+            <form>
+                <div class="row g-4">
+                    <!-- Columna izquierda -->
+                    <div class="col-md-6">
+                        <h5 class="fw-bold mb-4">1) Datos de la persona que presenta el reclamo</h5>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tipo de Documento</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Nº de Documento</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Nombres y Apellidos</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tipo de Respuesta</label>
+                            <select class="form-select">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Departamento</label>
+                            <select class="form-select">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Provincia</label>
+                            <select class="form-select">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Distrito</label>
+                            <select class="form-select">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" />
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha -->
+                    <div class="col-md-6">
+                        <h5 class="fw-bold mb-4">2) Información general</h5>
+
+                        <div class="mb-3">
+                            <label class="form-label">N° de Orden</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Identificación del Bien Contratado</label>
+                            <select class="form-select">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Monto Reclamado</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Dirección</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <!-- Sección 3 -->
+                        <h5 class="fw-bold mt-5 mb-4">3) Detalles de su reclamo</h5>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tipo</label>
+                            <select class="form-select">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Detalle</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Detalle del Reclamo</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección archivo -->
+                <div class="upload-box my-4">
+                    <div class="upload-content d-flex align-items-center justify-content-between flex-wrap">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-cloud-arrow-up fs-3 text-muted"></i>
+                            <div>
+                                <p class="mb-1 fw">Select a file or drag and drop here</p>
+                                <small class="text-muted">JPG, PNG or PDF, file size no more than 10MB</small>
+                            </div>
+                        </div>
+                        <label for="archivo" class="custom-file-upload">SELECT FILE</label>
+                        <input type="file" id="archivo" accept=".jpg,.jpeg,.png,.pdf" />
+                    </div>
+                </div>
+
+                <!-- Botón enviar -->
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-enviar">enviar</button>
+                </div>
+            </form>
         </div>
-      
-        <!-- Empaque Responsable -->
-        <div class="row align-items-center mb-5 flex-md-row-reverse bloque-sostenibilidad">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <img src="../img/nosotros/empaque.jpg" alt="Equipo reunido"
-              class="img-fluid rounded shadow-sm" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="fw-bold subtitulo">Empaque Responsable</h3>
-            <p class="descripcion">
-              Nuestros envíos se realizan con empaques reciclables y materiales sostenibles.
-              Reducimos el uso de plásticos al mínimo y apostamos por opciones compostables o
-              reutilizables, porque entendemos que cuidar del planeta también empieza por cómo
-              entregamos nuestros productos.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Educación y Comunidad Verde -->
-        <div class="row align-items-center mb-5 bloque-sostenibilidad">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <img src="../img/nosotros/plantandooo.jpg" alt="Equipo creativo"
-              class="img-fluid rounded shadow-sm" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="fw-bold subtitulo">Educación y Comunidad Verde</h3>
-            <p class="descripcion">
-              Queremos inspirar a más personas a adoptar hábitos sostenibles. Por eso, compartimos
-              consejos, tutoriales y buenas prácticas en nuestro blog y redes sociales, para que
-              transformar tus espacios verdes también signifique cuidar del entorno que todos
-              compartimos.
-            </p>
-          </div>
-        </div>
-      </main>
-      
-    <!-- PIE DE PÁGINA / FOOTER -->
+    </main>
+
     <footer class="footer-ecozen mt-5">
         <div class="container">
             <div class="row gy-4">
                 <div class="col-md-3">
                     <h5>Sobre Ecozen</h5>
+                    <p>....</p>
                     <p>Tel: (219) 555-0114</p>
                     <p>Email: ecozen@gmail.com</p>
-                    <p>Desarrollado por:</p>
-                    <ul>
-                        <li>Seclén López, Lucia</li>
-                        <li>contacto: luciaseclop05@gmail.com</li><br>
-                        <li>Uchofen Alejos, Juanpablo</li>
-                        <li>contacto: uchofenalejosjp@gmail.com</li><br>
-                        <li>Vallejos Barbadillo, Sebastián</li>
-                        <li>contacto: svallejosb1@gmail.com</li><br>
-                        <li>Vásquez Centurión, Miguel</li>
-                        <li>contacto: mfabrizio29@gmail.com</li>
-                    </ul>
                 </div>
 
                 <div class="col-md-2">
                     <h5>Mi cuenta</h5>
                     <ul class="list-unstyled">
-                        <li><a href="../html/perfil.html">Sobre mi cuenta</a></li>
-                        <li><a href="../html/carrito.html">Carrito</a></li>
+                        <li><a href="#">Sobre mi cuenta</a></li>
+                        <li><a href="#">Carrito</a></li>
                         <li><a href="#">Historial de pedidos</a></li>
                     </ul>
                 </div>
@@ -306,11 +369,11 @@
                 <div class="col-md-2">
                     <h5>Atención al cliente</h5>
                     <ul class="list-unstyled">
-                        <li><a href="../html/contacto.html">Contacto</a></li>
-                        <li><a href="../html/preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a href="../html/tyc.html">Términos y condiciones</a></li>
-                        <li><a href="../politica.html">Política de privacidad</a></li>
-                        <li><a href="../html/libroreclamaciones.html">Libro de reclamaciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Libro de reclamaciones</a></li>
                     </ul>
                 </div>
 
@@ -325,9 +388,9 @@
                 </div>
             </div>
 
+
             <div class="d-flex justify-content-between align-items-center mt-4 border-top pt-3 flex-wrap">
                 <p class="mb-0">&copy; Ecozen 2025</p>
-                <p class="mb-0" style="margin-left: 40px;">© Desarrollado por el grupo 4</p>
                 <div class="d-flex gap-3 align-items-center">
                     <img src="../img/fooder-header/apple-pay0.svg" alt="Apple Pay" />
                     <img src="../img/fooder-header/visa-logo0.svg" alt="Visa" />
@@ -341,29 +404,38 @@
             </div>
         </div>
     </footer>
-    <!-- FIN PIE DE PAGINA / FOOTER -->
-    <!-- SCRIPT MENU HEADER -->
+
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleMenu() {
             document.querySelector('.nav-menu').classList.toggle('show');
         }
     </script>
-    <!-- FIN SCRIPT MENU HEADER -->
+
+    <script>
+        const archivoInput = document.getElementById("archivo");
+        const archivoNombre = document.getElementById("archivo-nombre");
+
+        archivoInput.addEventListener("change", function () {
+            archivoNombre.textContent = this.files.length > 0 ? this.files[0].name : "Ningún archivo seleccionado";
+        });
+    </script>
+
+    <script src="../js/trabajaConNosotros.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-          const select = document.getElementById('navegacion-nosotros');
-          if (select) {
-            select.addEventListener('change', function () {
-              const url = this.value;
-              if (url !== '#') {
-                window.location.href = url;
-              }
-            });
-          }
+            const select = document.getElementById('navegacion-nosotros');
+            if (select) {
+                select.addEventListener('change', function () {
+                    const url = this.value;
+                    if (url !== '#') {
+                        window.location.href = url;
+                    }
+                });
+            }
         });
-      </script>
+    </script>
 </body>
 
 </html>

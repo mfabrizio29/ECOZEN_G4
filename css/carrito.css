@@ -1,4 +1,8 @@
-/* Wizard – barra y secciones */
+body {
+  background-color: #F9F8F4;
+  font-family: 'Poppins', sans-serif;
+}
+
 .steps-nav{
   list-style:none; padding:0; margin:2rem auto;
   display:flex; gap:2rem; justify-content:center;
@@ -21,7 +25,6 @@
   to  { opacity:1; transform:translateY(0); }
 }
 
-/* Ajustes mínimos a la tabla del carrito */
 #cart-body td{ vertical-align:middle; }
 
 #order-summary ul li{
