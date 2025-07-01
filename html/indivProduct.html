@@ -273,22 +273,71 @@
             </ul>
         </section>
 
-        <!-- Contenedor del pop-up -->
+        <!-- CONTENEDOR DEL POP-UP (OCULTO POR DEFECTO) -->
         <div class="overlay" id="popup">
             <div class="popup">
                 <span class="close-btn" onclick="cerrarPopup()">×</span>
-                <h2>Ficha técnica</h2>
-                <p>Aquí puedes colocar toda la información técnica del producto, Cepty.</p>
+                <h2>Click & Grow Smart Garden 3 - Kit de jardinería para interiores</h2>
+
+                <h3>Contenido del paquete</h3>
+                <ul>
+                    <li>1 unidad Smart Garden 3</li>
+                    <li>3 cápsulas (“pods”) de albahaca</li>
+                    <li>2 brazos de extensión para la luz</li>
+                    <li>3 domos de germinación</li>
+                    <li>3 cubiertas plásticas reutilizables</li>
+                    <li>1 adaptador de corriente (cable de 1,9 m)</li>
+                    <li>Manual de usuario</li>
+                    <li>Garantía limitada de hardware de 1 año</li>
+                </ul>
+
+                <h3>Especificaciones generales</h3>
+                <ul>
+                    <li>Capacidad: 3 pods/cultivos simultáneos</li>
+                    <li>Depósito de agua: 1,2 L (~0,32 gal) (autonomía de hasta 3 semanas)</li>
+                    <li>Consumo de energía: 8 W (~3,8 kWh al mes)</li>
+                    <li>Cable de alimentación: 1.900 mm (~6'3")</li>
+                    <li>Material del chasis: Plástico ABS</li>
+                </ul>
+
+                <h3>Dimensiones y peso</h3>
+                <ul>
+                    <li>Sin brazos: 30 × 12 × 21 cm (L × W × H) (~11.8″ × 4.7″ × 8.3″)</li>
+                    <li>Con un brazo: altura 34 cm (~13.4″)</li>
+                    <li>Con dos brazos: altura máxima 47 cm (~18.5″)</li>
+                    <li>Peso: 1,2 kg sin empaque; peso con empaque: ~1,73 kg</li>
+                </ul>
+
+                <h3>Iluminación</h3>
+                <ul>
+                    <li>Lámpara LED de espectro completo</li>
+                    <li>Ciclo automático de 16 h encendido / 8 h apagado</li>
+                    <li>Brazo(s) extensible(s) para ajustar altura según crecimiento</li>
+                </ul>
+
+                <h3>Tecnología del cultivo</h3>
+                <ul>
+                    <li>Smart Soil: sustrato patentado inspirado en tecnología NASA</li>
+                    <li>Libera agua, oxígeno y nutrientes de forma óptima</li>
+                    <li>Mantiene pH y aireación adecuada</li>
+                    <li>Riego automático por capilaridad (sin bomba, sin botones)</li>
+                    <li>Fácil recarga desde el indicador flotante de agua</li>
+                </ul>
+
+                <h3>Condiciones recomendadas y durabilidad</h3>
+                <ul>
+                    <li>Temperatura ideal: entre 20 °C y 24 °C</li>
+                    <li>Vida útil estimada de los LEDs: ~7 años</li>
+                </ul>
             </div>
         </div>
-
-
-
         <section class="extra-details">
             <h3>Detalles adicionales</h3>
-            <p>La tecnología Heart of the Click and Grow, patentada Smart Soil proporciona las mejores condiciones para
+            <p>La tecnología Heart of the Click and Grow, patentada Smart Soil proporciona las mejores condiciones
+                para
                 el crecimiento de las plantas, asegurando un riego óptimo, equilibrio de ph, oxígeno y nutrientes
-                durante todo el ciclo de crecimiento, mientras que es totalmente natural, sin OMG ni pesticidas. Como
+                durante todo el ciclo de crecimiento, mientras que es totalmente natural, sin OMG ni pesticidas.
+                Como
                 Smart Soil está haciendo todo el trabajo, los Smart Gardens están completamente automatizados y
                 completamente silenciosos
             </p>
@@ -320,14 +369,16 @@
         <!-- Reseñas de usuarios debajo -->
         <div class="user-review">
             <p><strong>Shanta LM</strong> ★★★★★</p>
-            <p>Me encanta. Las vainas incluidas eran de albahaca y empezaron a crecer en un par de semanas. Sin duda, lo
+            <p>Me encanta. Las vainas incluidas eran de albahaca y empezaron a crecer en un par de semanas. Sin
+                duda, lo
                 recomiendo como regalo para un amante de las plantas.</p>
         </div>
 
         <div class="user-review">
             <p><strong>María</strong> ★★★★★</p>
             <p>Lo compré como regalo para mi sobrina y ¡le encantó! Planté albahaca a finales de marzo y ¡sigue
-                creciendo! Calidad increíble, sabor y aroma naturales. Fácil de mantener. Sin duda, la recomiendo para
+                creciendo! Calidad increíble, sabor y aroma naturales. Fácil de mantener. Sin duda, la recomiendo
+                para
                 jardinería de interior.</p>
         </div>
 
@@ -494,17 +545,17 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-          const select = document.getElementById('navegacion-nosotros');
-          if (select) {
-            select.addEventListener('change', function () {
-              const url = this.value;
-              if (url !== '#') {
-                window.location.href = url;
-              }
-            });
-          }
+            const select = document.getElementById('navegacion-nosotros');
+            if (select) {
+                select.addEventListener('change', function () {
+                    const url = this.value;
+                    if (url !== '#') {
+                        window.location.href = url;
+                    }
+                });
+            }
         });
-      </script>
+    </script>
 </body>
 
 </html>
